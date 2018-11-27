@@ -1,0 +1,13 @@
+.ranking {
+    &-Table {
+        width: auto;
+    
+        tr {
+            background-color: grey;
+    
+            th, td {
+                padding: 7px 10px 10px 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.cm-s-default .CodeMirror {
+  background: $color-editor-bg;
+}
+/* To override inbuilt Green color for matchingbracket */
+.cm-s-default .CodeMirror-matchingbracket {
+    color:  $color-gray-dark !important;
+    background-color: $color-gray-lighter !important;
+}
+
+/* Ensure the codemirror editor displays full height gutters when resized */
+.CodeMirror, .CodeMirror-gutter {
+    height: 100% !important;
+    min-height: 100% !important;
+}
+
+/*
+ * Remove border right from "CodeMirror-gutters"
+ * class because its height doesn't increase
+ * with every new line added, instead add border
+ * right to ".CodeMirror-linenumber" class which
+ * adds a new div for every new line added
+ */
+.sql_field_layout .CodeMirror-gutters {
+    border-right: none;
+}
+
+.sql_field_layout .CodeMirror-linenumber {
+    border-right: 1px solid $color-gray-lighter;
+}
+
+.CodeMirror-linenumber {
+    font-size: $font-size-base;
+}
+
+/* class to disable Codemirror editor */
+.cm_disabled {
+  background: $input-disabled-bg;
+}
+
+/* make syntax-highlighting bold */
+.cm-s-default .cm-keyword {
+  font-weight: 600;
+  color: $color-editor-keyword;
+}
+
+.cm-s-default .cm-number {
+  font-weight: 600;
+  color: $color-editor-number;
+}
+
+/* Codemirror buttons */
+.CodeMirror-dialog button {
+    font-family: $font-family-primary;
+    color: $color-fg-inverse;
+    font-size: 70%;
+    background-image: -webkit-linear-gradient(top, $color-primary-light 0%, $color-primary 100%);
+    background-image: -o-linear-gradient(top, $color-primary-light 0%, $color-primary 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from($color-primary-light), to($color-primary));
+    background-image: linear-gradient(to bottom, $color-primary-light 0%, $color-primary 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$color-primary-light}', endColorstr='#{$color-primary}', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: $color-primary;
+    border-radius: 4px;
+}
+
+#history-detail-query .CodeMirror {
+  border: 1px solid $color-gray-light;
+  background-color: $color-gray-lighter;
+  width: 100%;
+  padding-left: 5px;
+  position: absolute;
+}
+
+.CodeMirror-gutters {
+  z-index: 2;
+}
+
+.sql_textarea {
+  height: 100%;
+}
+
+.sql_textarea .CodeMirror-scroll {
+  z-index: 0;
+}
+
+/* workaround for codemirrors 'readOnly' option which is set to true instead of 'noCursor' */
+.hide-cursor-workaround .CodeMirror-cursors {
+  display: none;
+}

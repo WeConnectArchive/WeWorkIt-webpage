@@ -1,0 +1,121 @@
+$bgproc-container-pad: 2px;
+
+.ajs-bg-bgprocess > .pg-bg-bgprocess {
+  background-color: $color-primary;
+  color: $color-fg-inverse;
+  padding: $bgproc-container-pad;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.ajs-bg-bgprocess > .pg-bg-bgprocess > .pg-bg-notify-header {
+  background-color:  $color-gray-dark;
+  margin: (-$bgproc-container-pad) (-$bgproc-container-pad) 5px;
+  padding: 5px;
+  padding-right: 20px;
+  white-space: pre-wrap;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.ajs-bg-bgprocess > .pg-bg-bgprocess > .pg-bg-notify-body {
+  font-family: $font-family-editor;
+  white-space: nowrap;
+  padding: 5px 0px;
+}
+
+.pg-bg-etime {
+  width: 100%;
+  display: block;
+  font-size: 95%;
+  padding: 5px;
+  font-weight: bold;
+  color: $color-fg;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: $color-gray-lighter;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.pg-bg-click {
+  color: $color-gray-lighter;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+
+.pg-bg-click:hover {
+  color:  $color-gray-dark;
+}
+
+.ajs-bg-bgprocess > .pg-bg-bgprocess > .pg-bg-status.bg-success,
+.bg-process-status .bg-bgprocess-success {
+  color: $color-success-light;
+  font-weight: bold;
+}
+
+.bg-process-status .bg-bgprocess-failed {
+  color: $color-danger;
+  font-weight: bold;
+}
+
+.ajs-bg-bgprocess > .pg-bg-bgprocess > .pg-bg-status.bg-failed {
+  color: $color-fg;
+  background-color: $color-danger-light;
+}
+
+.pg-panel-content div.bg-process-watcher {
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+  WebkitTransition: all 1s;
+  transition: all 1s;
+  background-color: $color-primary-lighter;
+}
+
+.pg-bg-res-out {
+  color: $color-primary;
+}
+
+.pg-bg-res-err {
+  color: rgba($color-danger, 0.81);
+}
+
+.pg-panel-content .bg-process-details {
+  padding: 10px 15px;
+  min-height: 70px;
+  color: $color-fg;
+  background-color: $color-gray-lighter;
+}
+
+
+.pg-panel-content .bg-process-footer {
+  border-top: 1px solid $color-gray-light;
+  padding: 10px 25px;
+  position: absolute;
+  bottom: 0;
+  background-color: $color-gray-lighter;
+  right: 0px;
+  left: 0px;
+}
+
+.pg-panel-content .bg-process-footer b, .bg-process-stats span b {
+  color:  $color-gray-dark;
+}
+
+.pg-bg-bgprocess .bg-close {
+  display: inline-block;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  right: -12px;
+  padding: 2px;
+  border: 2px solid $color-primary;
+  border-radius: 4px;
+  opacity: 0.5;
+  background-color: $color-bg;
+  color: $color-danger;
+}

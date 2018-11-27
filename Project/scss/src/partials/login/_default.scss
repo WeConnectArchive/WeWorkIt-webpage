@@ -1,0 +1,116 @@
+.loginPanel {
+    max-height: 100vh;
+
+    .header, .login {
+        position: relative;
+        top: 0vh;
+        bottom: inherit;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, .6);
+        text-align: center;
+        transition: all .5s ease .1s;
+        -webkit-transition: all .5s ease .1s;
+
+        .nav, .loginNav {
+
+            &Contents {
+
+                &List {
+
+                    li {
+                        position: relative;
+                        top: -15px;
+                        max-height: 110px;
+                    }
+                }
+            }
+        }
+    }
+
+    .panel-login {
+        text-align: center;
+
+        &-container {
+            position: relative;
+            display: inline-block;
+            width: 500px;
+            height: 600px;
+            margin: 70px;
+            border: 1px solid black;
+
+            &-logo {
+                display: inline-block;
+                margin: 30px 0;
+                height: auto;
+
+                img {
+                    width: 55%;
+                }
+            }
+
+            .formlogin {
+                text-align: center;
+
+                input {
+                    position: relative;
+                    width: 80%;
+                    height: 45px;
+                    margin: 16px auto;
+                    padding: 11px 13px;
+                    font-weight: 300;
+                    color: $black;
+                    border: 1px solid #b3b7bb;
+                    outline: none;
+                    -webkit-appearance: none;
+                    -webkit-box-shadow: inset 0 0 0 1px #f5f5f6;
+                    box-shadow: inset 0 0 0 1px #f5f5f6;
+                    clear: both;
+                }
+                .forgotpassword {
+                    display: block;
+                    text-align: left;
+                    margin: 5px 0 45px 50px;
+                    right: 0;
+                    color: $red;
+                    font-size: .8em
+                    
+                }
+
+                input[type='submit'] {
+                    clear: both;
+                    width: 37%;
+                    background-color: $colorLogo;
+                    // border: 1px solid $black;
+                    border: none;
+                    margin: 0 3%;
+                    
+                }
+
+                input[class="register"] {
+                    width: 37%;
+                    background-color: $darkgrey;
+                    color: $white;
+                    // border: 1px solid $black;
+                    border: none;
+                    margin: 0 3%;
+                }
+            }
+        }
+    }
+
+    .footer, .fLogin {
+        top: 0vh;
+        height: 90px;
+        margin-top: 3px;
+
+        ul {
+            position: absolute;
+            left: calc(50vw - 80px);
+            display: flex;
+            margin: 20px 0;
+            padding: 0;
+        }
+    }
+}

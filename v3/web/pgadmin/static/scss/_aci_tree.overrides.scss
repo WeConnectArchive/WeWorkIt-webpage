@@ -1,0 +1,27 @@
+.aciTree .aciTreeText {
+	font-family: $font-family-primary;
+	font-size: 12px;
+}
+.aciTree .aciTreeLine.aciTreeHover .aciTreeItem {
+	background-color: $color-primary-lighter;
+	border-color: $color-primary-light;
+}
+.aciTree .aciTreeLine.aciTreeHover .aciTreeText {
+	color: $color-fg;
+}
+.aciTree.aciTreeFocus .aciTreeFocus > .aciTreeLine .aciTreeItem {
+	background-color: $color-primary-lighter;
+}
+.aciTree.aciTreeFocus .aciTreeFocus > .aciTreeLine .aciTreeText {
+	color: $color-fg;
+}
+.aciTree .aciTreeSelected > .aciTreeLine .aciTreeItem {
+	background-color: $color-primary-lighter;
+	border-color: $color-primary-light;
+}
+.aciTree .aciTreeItem {
+	white-space: nowrap !important;
+}
+.aciTree.aciTreeLoad {
+	background: none;
+}

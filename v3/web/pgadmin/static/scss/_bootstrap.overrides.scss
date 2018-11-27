@@ -1,0 +1,257 @@
+.dropdown-menu > .dropdown-item > span {
+	padding-left: 3px;
+}
+.dropdown-menu > .dropdown-item > .has-icon {
+	padding-left: 0px;
+}
+
+/* Ensure simple forms don't hit the top of the screen */
+body {
+	font-family: $font-family-primary;
+	padding-bottom: 20px;
+	padding-top: 50px;
+}
+
+.app-icon {
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+
+
+/* Use the full width of the screen */
+.container {
+	width: 100% !important;
+}
+
+
+/* iFrames should have no border */
+iframe {
+	border-width: 0;
+}
+
+
+
+/* Padding for the treeview */
+.browser-browser-pane {
+	padding-left: 0;
+}
+
+
+
+/* Disabled menu items */
+.mnu-disabled {
+	color: $color-gray !important;
+}
+
+
+.dropdown-divider {
+  margin: 0px;
+}
+/*
+ * Bootstrap 3 remove submenus as they don't work overly well on Mobile. The
+ * following CSS adds them back in - for our purposes they actually work fine
+ * on Mobile and are perfectly responsive
+ */
+.dropdown-submenu {
+	position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+	-moz-border-radius: 0 6px 6px 6px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	border-radius: 0 6px 6px 6px;
+	left: 100%;
+	margin-left: -1px;
+	top: 2px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+	display: block;
+}
+.dropdown-submenu>a:after {
+	border-color: transparent;
+	border-left-color: $color-gray-light;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	content: " ";
+	display: block;
+	float: right;
+	height: 0;
+	margin-right: -10px;
+	margin-top: 5px;
+	width: 0;
+}
+.dropdown-submenu:hover>a:after {
+	border-left-color: $color-bg;
+}
+.dropdown-submenu.pull-left {
+	float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+	-moz-border-radius: 6px 0 6px 6px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
+	left: -100%;
+	margin-left: 10px;
+}
+
+.form-group fieldset {
+	background-color: $color-gray-lighter;
+	border-color: $color-gray-lighter;
+	border-width: 1px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 0px 0px 0px 5px;
+}
+.form-group legend {
+	font-size: 105%;
+	margin-bottom: 0px;
+	margin-left: 0;
+	padding: 0.1em 0.5em;
+	text-align: left;
+	width: 95%;
+}
+.form-group .fieldset-content {
+	width: 100%;
+}
+.form-group fieldset .caret {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid;
+	display: inline-block;
+	height: 0;
+	margin-left: 2px;
+	margin-top: -2px;
+	vertical-align: middle;
+	width: 0;
+}
+.form-group fieldset .collapsed .caret {
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid;
+	border-top: 5px solid transparent;
+}
+.control-label {
+	display: inline-block;
+	margin: 0px;
+	padding: 5px 25px 5px 5px;
+	vertical-align: middle;
+}
+.form-control {
+	color: $color-gray-dark;
+	padding: 3px 6px;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	color: $color-gray-dark;
+}
+
+
+
+
+/* Override default bootstrap popover fonts & size */
+.popover-content {
+	font-family: $font-family-primary;
+	font-size: 13px;
+}
+
+.navbar .dropdown-menu {
+	padding-top: 0;
+}
+
+
+
+/* Remove default left padding from checkbox for bootstrap-switch */
+.checkbox {
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+.checkbox label {
+	padding-left: 0px !important;
+}
+.bootstrap-switch > .bootstrap-switch-container > input {
+	border: 0px solid $color-fg;
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 0px;
+}
+.switch-cell {
+	height: 0px;
+	width: 0px;
+}
+
+
+
+/* Center align the switch in backgrid */
+td.switch-cell > div.bootstrap-switch {
+	display: block;
+	margin: auto;
+}
+
+.dropdown-menu > hr {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.dropdown-menu > li > a > i {
+	margin-left: -17px;
+	width: 13px;
+}
+.dropdown-menu > li > a > span {
+	cursor: pointer;
+	padding-left: 3px;
+}
+.dropdown-menu > li > a > .has-icon {
+	padding-left: 0px;
+}
+.dropdown-menu > li > a:not(.disabled):hover, .dropdown-menu > li > a:not(.disabled):focus {
+	background: $color-gray-dark none;
+	color: $color-fg-inverse;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+  @extend .bg-dark;
+  margin-top: -0.2rem;
+
+  & .dropdown-item {
+    @extend .text-white;
+
+    &.disabled {
+      @extend .text-muted;
+    }
+  }
+}
+
+.nav-tabs>.nav-item>.nav-link.active {
+	color: $color-fg;
+}
+
+.bootstrap-datetimepicker-widget td, .bootstrap-datetimepicker-widget th {
+	display: table-cell;
+	white-space: normal;
+}
+
+.navbar-brand {
+	color: $color-brand !important;
+}
+
+.navbar-brand:hover {
+	color: $color-brand !important;
+}
+.navbar-brand:focus {
+	color: $color-brand !important;
+}
+
+.btn-sm-sq {
+  @extend .btn-sm;
+  line-height: 0.7rem;
+}
+
+
+.bootstrap-switch.bootstrap-switch-disabled, .bootstrap-switch.bootstrap-switch-readonly {
+  background-color: $input-disabled-bg !important;
+  opacity: 1;
+}
+
+
+.btn-toolbar {
+  min-width: 100%;
+}

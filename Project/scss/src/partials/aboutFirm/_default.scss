@@ -1,0 +1,32 @@
+#aboutFirm {
+    position: relative;
+    top: 0;
+    width: inherit;
+    height: 100vh;
+    margin: 50px;
+    margin-bottom: 100px;
+
+}
+
+.aboutfirmContainer {
+    .main {
+        top: 300px;
+        width: 800px;
+        height: 338px;
+
+        p {
+            position: relative;
+            top: -100px;
+            padding: 80px;
+            color: $darkgrey;
+            font-weight: 700;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .right {
+            top: calc(-200px - 4px);
+            left: calc(700px - 4px);
+        }
+    }
+}

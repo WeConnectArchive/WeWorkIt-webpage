@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: $white;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+
+    .fota {
+        height: 100vh;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 1000px;
+            margin: 0;
+        }
+    }
+
+    .flex-nav {
+        
+
+        .header, .hp{
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            height: 159px;
+            background-color: transparent;
+
+            &:hover {
+                background: none repeat scroll 0 0 rgba(0, 0, 0, .3);
+            }
+
+            a {
+                color: $black !important;
+                transition: .5s color ease-in-out;
+
+                &:hover {
+                    color: $darkenwhite !important;
+                }
+            }
+        }
+    }
+
+    .header {
+        position: absolute;
+        bottom: 0vh;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, .3);
+        text-align: center; 
+        transition: all .5s ease .1s;
+        -webkit-transition: all .5s ease .1s;
+
+        
+           
+        
+
+        .nav {
+
+            
+
+            &Contents {
+                position: relative;
+                display: inline-block;
+  
+                &List {
+                    float: left;
+                    padding: 0;
+                    font-weight: normal;
+                    line-height: 1.3;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    li {
+                        float: left;
+                        min-width: 100px;
+                        max-height: 120px;
+                        opacity: 1;
+                        list-style-type: none;
+                        transition: all .5s ease .1s;
+                        -webkit-transition: all .5s ease .1s;
+
+                        a {
+                            height: 120px;
+                            color: $white;
+                            font-weight: 700;
+                            font-size: 1em;
+                            line-height: 9em;
+                            text-decoration: none;
+                            transition: color .5s ease-in-out;
+
+                            &:hover {
+                                color: $darkenwhite;
+                            }
+                        }
+                    }
+
+                    &Logo {
+                        height: 140px;
+                        transform: scale(.6);
+                    }
+                }
+            }
+        }
+    }
+}

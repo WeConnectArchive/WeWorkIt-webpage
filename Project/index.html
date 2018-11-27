@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="scss/builds-dev/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <title>WeWorkIt</title>
+  <script src="jquery-3.2.1.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+
+  
+  <script>
+      jQuery(function($)
+        {
+          //zresetuj scrolla
+          $.scrollTo(0);
+          
+          $('#aboutus').click(function() { $.scrollTo($('#aboutFirm'), 500); });
+          $('#main').click(function() { $.scrollTo($('#mainpage'), 500); });
+        }
+        );
+        </script>
+</head>
+
+<body>
+<div class="wrap" id="wrap">  
+  <div id="mainpage" class="fota">
+      <img class="background" src="zdjecia/background.png"> 
+  </div> 
+
+    <header class="header hp"> 
+      <div class="nav" id="nav">
+        <div class="navContents">
+          <ul class="navContentsList">
+            <li><a href="#">regulamin</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">ranking</a></li>
+            <li><a id="main"><img class="navContentsListLogo" src="zdjecia/weworkit1.png"></a></li>
+            <li><a id="aboutus" href="#">about us</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="#">register</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+  <section id="aboutFirm">
+    
+        <div class="aboutfirmContainer weWorkItContainer">
+          <div class="main">
+            <div class="left"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur deserunt harum? Facere corrupti iure quod asperiores quisquam illo quam officiis perferendis doloribus ipsa vero, porro accusantium minima dolore earum.</p>
+            <div class="right"></div>
+          </div>
+        </div>
+    
+  </section>
+
+  <section id="yourChoice">
+    <div id="secondpage" class="fota">
+      <img class="background" src="zdjecia/background2.png"> 
+    </div>
+    <div class="yourChoiceContainer">
+      <div class="yourChoiceContainerMain">
+
+        <div class="yourChoicePosition">
+            <div class="main">
+                <div class="left animatedBorderTop animatedBorderRight"></div>
+                <div class="yourChoiceEmployee">
+                  <p>Employee</p>
+                  <ul class="yourChoiceEmployeeDropdown">
+                    <li>LOGIN</li>
+                    <li>REGISTER</li>
+                  </ul>
+                </div>
+              <div class="right animatedBorderBottom animatedBorderLeft"></div>
+            </div>      
+        </div>
+
+        <div class="yourChoicePosition">
+            <div class="main">
+                <div class="left animatedBorderTop animatedBorderRight"></div>
+                <div class="yourChoiceEmployer"><p>Employer</p>
+                  <ul class="yourChoiceEmployeeDropdown">
+                      <li>LOGIN</li>
+                      <li>REGISTER</li>
+                    </ul>
+                </div>
+              <div class="right animatedBorderBottom animatedBorderLeft"></div>
+            </div>   
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footericon">
+      <ul>
+        <li class="fb-icon">
+          <a href="#">
+            <span>  </span>
+            <span>  </span>
+            <span>  </span>
+            <span>  </span>
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="gg-icon">
+          <a href="#">
+            <span>  </span>
+            <span>  </span>
+            <span>  </span>
+            <span>  </span>
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+ 
+</div> 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+  <script>
+    $(document).ready(function () {
+
+      var wrap = $('#wrap');
+      var x = screen.height - 280;
+      $(window).on('scroll', 500, function(e) {
+        
+        if ($(this).scrollTop() > x) {
+          wrap.addClass("flex-nav");
+        } else {
+          wrap.removeClass("flex-nav");
+        }
+        
+      });
+    }); 
+  </script>
+</body>
