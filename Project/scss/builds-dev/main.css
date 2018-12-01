@@ -7,6 +7,13 @@
   font-family: "Catamaran";
   @import url("https://fonts.googleapis.com/css?family=Catamaran:500");
 }
+@font-face {
+  font-family: "Catamaran-Regular";
+  @import url("https://fonts.googleapis.com/css?family=Catamaran:400");
+}
+
+}
+}
 body::-webkit-scrollbar {
   width: 0.5em;
 }
@@ -123,6 +130,9 @@ body {
   margin: 0;
   background-color: #D9D8D6;
   font-family: "Catamaran", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
 }
 body .fota {
   height: 100vh;
