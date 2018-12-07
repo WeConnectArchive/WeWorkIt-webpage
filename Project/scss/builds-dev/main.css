@@ -52,8 +52,8 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
   position: relative;
   display: inline-block;
-  width: 500px;
-  height: 600px;
+  width: 460px;
+  height: 586px;
   margin: 70px;
   border: 1px solid black;
   box-shadow: 0px 0px 15px 6px #A19D98;
@@ -96,6 +96,7 @@ body::-webkit-scrollbar-thumb {
   clear: both;
   width: 37%;
   background-color: #48e1ee;
+  border-radius:6px;
   border: none;
   margin: 0 3%;
 }
@@ -119,6 +120,12 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
 }
 
+ .loginPanel {
+background-color: #D9D8D6;
+
+}
+
+
 * {
 
   box-sizing: border-box;
@@ -128,7 +135,7 @@ body::-webkit-scrollbar-thumb {
 body {
   height: 100%;
   margin: 0;
-  background-color: #D9D8D6;
+  background-color: #fff;
   font-family: "Catamaran", "Arial Narrow", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
