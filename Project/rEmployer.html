@@ -9,7 +9,7 @@
     <title>WeWorkIt - Logowanie</title>
     
 </head>
-<body class="registerPanel">
+<body class="registerPanel" onload="checked()">
 
     <header class="header register">
       <div class="nav registerNav" id="nav">
@@ -33,16 +33,32 @@
           <img src="zdjecia/weworkit1.png">
         </div>
 
-        <div class="toggle">
-          <p>private person</p><input type="checkbox" id="switch" /><label for="switch">Toggle</label><p>company</p>
+        <div class="toggle" >
+          <p onclick="uncheck()"> private person </p> <input type="checkbox" onclick=checked() id="switch" /><label for="switch" >Toggle</label><p onclick="check()">company</p>
         </div>
 
-        <form class="formregister" action=".php">
+        <form id="private" class="formregister" style="display: BLOCK;" action=".php">
           <input class="log inputS" type="text" name="login" placeholder="Login">
           <input class="mail inputS" type="email" name="mail" placeholder="E-mail">
           <input class="pass inputS" type="password" name="password" placeholder="Password">
           <input class="rpass inputS" type="password" name="rpassword" placeholder="Reapeat password"></br>
-          <div class="">
+          <div>
+            <label>
+            <input class="acceptreg checkbox" type="checkbox" value="acceptreg"><a href="regulamin.html">Akceptuje Regulamin </a></input>
+            </label>
+            <input class="register inputS" type="submit" href="register.html" value="Zarejestruj">
+          </div>
+        </form>  
+        
+        <form id="company" class="formregister" style="display: none;" action=".php">
+          <input class="log inputS" type="text" name="login" placeholder="Login">
+          <input class="log inputS" type="text" name="login" placeholder="Login">
+          <input class="log inputS" type="text" name="login" placeholder="Login">
+          <input class="log inputS" type="text" name="login" placeholder="Login">
+          <input class="mail inputS" type="email" name="mail" placeholder="E-mail">
+          <input class="pass inputS" type="password" name="password" placeholder="Password">
+          <input class="rpass inputS" type="password" name="rpassword" placeholder="Reapeat password"></br>
+          <div>
             <label>
             <input class="acceptreg checkbox" type="checkbox" value="acceptreg"><a href="regulamin.html">Akceptuje Regulamin </a></input>
             </label>
@@ -50,6 +66,9 @@
           </div>
         </form>  
       </div>
+
+      
+
     </section>
 
     <footer class="footer fRegister">
@@ -76,6 +95,46 @@
           </ul>
         </div>
       </footer>
+    <script>
+    function check() {
+        document.getElementById("switch").checked = true;
+    }
     
+    function uncheck() {
+        document.getElementById("switch").checked = false;
+    }
+    
+
+    var visable = document.getElementById("switch"); 
+    var private = document.getElementById("private");
+    
+    var company = document.getElementById("company");
+</script>
+
+<script>
+  function checked(){
+
+    var visable = document.getElementById("switch"); 
+    var private = document.getElementById("private");
+    var company = document.getElementById("company");
+
+      if(visable.checked = false) {
+            company.classList.remove("visabled");
+            private.classList.add("visabled");
+      }
+      else { 
+            private.classList.remove("visabled");
+            company.classList.add("visabled");
+      }
+
+      var div = document.getElementsByClassName("visabled")[0][1];
+        div.style.display = "block";
+    }
+  </script>
+    
+  
+    
+    
+      
 </body>
 </html>
