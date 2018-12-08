@@ -9,7 +9,7 @@
     <title>WeWorkIt - Logowanie</title>
     
 </head>
-<body class="registerPanel">
+<body class="registerPanel" onload="checkeded()">
 
     <header class="header register">
       <div class="nav registerNav" id="nav">
@@ -37,7 +37,7 @@
           <p onclick="uncheck()"> private person </p> <input type="checkbox" onclick="checkeded()" id="switch" /><label for="switch" >Toggle</label><p onclick="check()">company</p>
         </div>
 
-        <form id="private" class="formregister" style="display: none;" action=".php">
+        <form id="private" class="formregister"  action=".php">
           <input class="log inputS" type="text" name="login" placeholder="Login">
           <input class="mail inputS" type="email" name="mail" placeholder="E-mail">
           <input class="pass inputS" type="password" name="password" placeholder="Password">
@@ -50,7 +50,7 @@
           </div>
         </form>  
         
-        <form id="company" class="formregister" style="display: none;" action=".php">
+        <form id="company" class="formregister" action=".php">
           <input class="log inputS" type="text" name="login" placeholder="Login">
           <input class="log inputS" type="text" name="login" placeholder="Login">
           <input class="log inputS" type="text" name="login" placeholder="Login">
@@ -105,32 +105,31 @@
     }
     
 
-    var visable = document.getElementById("switch"); 
-    var private = document.getElementById("private");
     
-    var company = document.getElementById("company");
 </script>
 
 <script>
   function checkeded(){
-
+    
     var visable = document.getElementById("switch"); 
     var private = document.getElementById("private");
     var company = document.getElementById("company");
-
-    var div = document.getElementsByClassName("visabled")[0];
-
-            div.style.display = "block";
-
-      if(visable.checked == false5) {
-            company.classList.remove("visabled");
-            private.classList.add("visabled");
+    
+      if(visable.checked == false) {
+        private.style.display="block";
+            company.style.display="none";
+            
       }
       else { 
-            private.classList.remove("visabled");
-            company.classList.add("visabled");
+            private.style.display="none";
+            company.style.display="block";
       }
-    }
+    
+	
+
+    
+    
+	}
   </script>
     
   

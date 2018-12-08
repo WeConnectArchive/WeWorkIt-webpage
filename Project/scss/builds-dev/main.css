@@ -114,6 +114,15 @@ body::-webkit-scrollbar-thumb {
 .loginPanel .panel-login-container .toggle label:active:after, .loginPanel .panel-register-container .toggle label:active:after, .registerPanel .panel-login-container .toggle label:active:after, .registerPanel .panel-register-container .toggle label:active:after {
   width: 35px;
 }
+.loginPanel .panel-login-container #company, .loginPanel .panel-register-container #company, .registerPanel .panel-login-container #company, .registerPanel .panel-register-container #company {
+  display: none;
+}
+.loginPanel .panel-login-container #private, .loginPanel .panel-register-container #private, .registerPanel .panel-login-container #private, .registerPanel .panel-register-container #private {
+  display: none;
+}
+.loginPanel .panel-login-container .visable, .loginPanel .panel-register-container .visable, .registerPanel .panel-login-container .visable, .registerPanel .panel-register-container .visable {
+  display: block;
+}
 .loginPanel .panel-login-container .formlogin, .loginPanel .panel-login-container .formregister, .loginPanel .panel-register-container .formlogin, .loginPanel .panel-register-container .formregister, .registerPanel .panel-login-container .formlogin, .registerPanel .panel-login-container .formregister, .registerPanel .panel-register-container .formlogin, .registerPanel .panel-register-container .formregister {
   text-align: center;
 }
