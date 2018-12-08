@@ -1,22 +1,24 @@
-.loginPanel {
+.loginPanel, .registerPanel {
     max-height: 100vh;
+    background-color: $bg-login;
 
-    .header, .login {
+    .header, .login, .register {
         position: relative;
         top: 0vh;
         bottom: inherit;
         left: 0;
         z-index: 99;
         width: 100%;
+        height: 15vh;
         background: none repeat scroll 0 0 rgba(0, 0, 0, .6);
         text-align: center;
         transition: all .5s ease .1s;
         -webkit-transition: all .5s ease .1s;
 
-        .nav, .loginNav {
+        .nav, .loginNav, .registerNav {
 
             &Contents {
-
+                
                 &List {
 
                     li {
@@ -29,7 +31,17 @@
         }
     }
 
-    .panel-login {
+    .panel-register {
+        height: auto !important;
+
+        &-container {
+            height: auto !important;
+            padding-bottom: 40px;
+        }
+    }    
+
+    .panel-login, .panel-register {
+        
         text-align: center;
 
         &-container {
@@ -38,7 +50,9 @@
             width: 500px;
             height: 600px;
             margin: 70px;
+            background-color: $white;
             border: 1px solid black;
+            @include login-shadow;
 
             &-logo {
                 display: inline-block;
@@ -49,11 +63,68 @@
                     width: 55%;
                 }
             }
+            .toggle {
+                display: inline-flex;
+                float: left;
+                margin-left: 55px;
 
-            .formlogin {
+                p {
+
+                    padding: 0 20px;
+                    font-family: catamaran;
+                    font-weight: 600;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+
+                input[type=checkbox]{
+                    height: 0;
+                    width: 0;
+                    visibility: hidden;
+                }
+                
+                label {
+                    cursor: pointer;
+                    text-indent: -9999px;
+                    top: 21px;
+                    width: 50px;
+                    height: 25px;
+                    background: grey;
+                    display: block;
+                    border-radius: 100px;
+                    position: relative;
+                }
+                
+                label:after {
+                    content: '';
+                    position: absolute;
+                    top: 2.5px;
+                    left: 2.5px;
+                    width: 20px;
+                    height: 20px;
+                    background: #fff;
+                    border-radius: 90px;
+                    transition: 0.3s;
+                }
+                
+                input:checked + label {
+                    background: #48e1ee;
+                }
+                
+                input:checked + label:after {
+                    left: calc(100% - 3px);
+                    transform: translateX(-100%);
+                }
+                
+                label:active:after {
+                    width: 35px;
+                }
+            }
+
+            .formlogin, .formregister {
                 text-align: center;
 
-                input {
+                .inputS {
                     position: relative;
                     width: 80%;
                     height: 45px;
@@ -83,26 +154,49 @@
                     width: 37%;
                     background-color: $colorLogo;
                     // border: 1px solid $black;
+                    border-radius:6px;
                     border: none;
                     margin: 0 3%;
                     
                 }
 
-                input[class="register"] {
+                input[class="register inputS"] {
                     width: 37%;
                     background-color: $darkgrey;
                     color: $white;
-                    // border: 1px solid $black;
                     border: none;
+                    border-radius:6px;
                     margin: 0 3%;
                 }
+                div {
+                    display: inline;
+
+                    label {
+                        position: relative;
+                        display: inline-flex;
+                        margin: 20px 0;
+
+                        input[type="checkbox"] {
+                            margin-top: 6px;
+                        }
+
+                        a {
+                            display: block;
+                            text-align: left;
+                        }
+                    }
+
+                    input[class="register inputS"] {
+                        left: 15px;
+                    }
+                }    
             }
         }
     }
 
-    .footer, .fLogin {
-        top: 0vh;
-        height: 90px;
+    .footer, .fLogin, .fRegister {
+        top: 10vh;
+        height: 10vh;
         margin-top: 3px;
 
         ul {

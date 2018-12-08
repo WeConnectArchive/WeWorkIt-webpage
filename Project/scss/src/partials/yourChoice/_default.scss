@@ -43,7 +43,7 @@
                 .right {
                     position: absolute;
                     top: -600px;
-                    z-index: 12;
+                    z-index: 9;
                     width: 0;
                     padding: 200px 150px 300px 150px;
                     border: 0;
@@ -86,14 +86,25 @@
 
                         li {
                             position: relative;
-                            z-index: -1;
+                            z-index: 10;
                             margin: 0;
                             padding: 37px;
                             color: $colorLogo;
                             font-weight: 800;
                             font-size: 18px;
                             text-align: center;
-                            text-transform: uppercase;     
+                            text-transform: uppercase;    
+                            
+                            a {
+                                color: $colorLogo;
+                                text-decoration: none;
+                                transition: 1s color ease-in-out;
+
+                                &:hover {
+                                    color: darken( $colorLogo, 30%);
+                                }
+                            }
+                            
                         }
 
                     }

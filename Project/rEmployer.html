@@ -9,10 +9,10 @@
     <title>WeWorkIt - Logowanie</title>
     
 </head>
-<body class="loginPanel">
+<body class="registerPanel">
 
-    <header class="header login">
-      <div class="nav loginNav" id="nav">
+    <header class="header register">
+      <div class="nav registerNav" id="nav">
         <div class="navContents">
           <ul class="navContentsList">
             <li><a href="#">regulamin</a></li>
@@ -20,29 +20,39 @@
             <li><a href="#">ranking</a></li>
             <li><a id="main" href="index.html"><img class="navContentsListLogo" src="zdjecia/weworkit1.png"></a></li>
             <li><a id="aboutus" href="#">about us</a></li>
-            <li><a href="#" aria-disabled="true">login</a></li>
-            <li><a href="rejestracja.html">register</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="#" aria-disabled="true">register</a></li>
           </ul>
         </div>
       </div>
     </header>
 
-    <section id="panelLogowania" class="panel-login">
-      <div class="panel-login-container">
-        <div class="panel-login-container-logo">
+    <section id="panelRegister" class="panel-register">
+      <div class="panel-register-container">
+        <div class="panel-register-container-logo">
           <img src="zdjecia/weworkit1.png">
         </div>
-        <form class="formlogin" action=".php">
+
+        <div class="toggle">
+          <p>private person</p><input type="checkbox" id="switch" /><label for="switch">Toggle</label><p>company</p>
+        </div>
+
+        <form class="formregister" action=".php">
           <input class="log inputS" type="text" name="login" placeholder="Login">
+          <input class="mail inputS" type="email" name="mail" placeholder="E-mail">
           <input class="pass inputS" type="password" name="password" placeholder="Password">
-          <a class="forgotpassword" href="forgotpassword.html">zapomniałeś hasła?</a>
-          <input class="zaloguj inputS" type="submit" name="buttonLogin" value="Zaloguj">
-          <input class="register inputS" type="submit"  value="Zarejestruj">
+          <input class="rpass inputS" type="password" name="rpassword" placeholder="Reapeat password"></br>
+          <div class="">
+            <label>
+            <input class="acceptreg checkbox" type="checkbox" value="acceptreg"><a href="regulamin.html">Akceptuje Regulamin </a></input>
+            </label>
+            <input class="register inputS" type="submit" href="register.html" value="Zarejestruj">
+          </div>
         </form>  
       </div>
     </section>
 
-    <footer class="footer fLogin">
+    <footer class="footer fRegister">
         <div class="footericon">
           <ul>
             <li class="fb-icon">
