@@ -18,7 +18,7 @@
         .nav, .loginNav, .registerNav {
 
             &Contents {
-                
+
                 &List {
 
                     li {
@@ -36,12 +36,12 @@
 
         &-container {
             height: auto !important;
-            padding-bottom: 40px;
+            padding-bottom: 69px;
         }
-    }    
+    }
 
     .panel-login, .panel-register {
-        
+
         text-align: center;
 
         &-container {
@@ -49,7 +49,7 @@
             display: inline-block;
             width: 500px;
             height: 600px;
-            margin: 70px;
+            margin: 55px;
             background-color: $white;
             border: 1px solid black;
             @include login-shadow;
@@ -82,7 +82,7 @@
                     width: 0;
                     visibility: hidden;
                 }
-                
+
                 label {
                     cursor: pointer;
                     text-indent: -9999px;
@@ -94,7 +94,7 @@
                     border-radius: 100px;
                     position: relative;
                 }
-                
+
                 label:after {
                     content: '';
                     position: absolute;
@@ -106,27 +106,27 @@
                     border-radius: 90px;
                     transition: 0.3s;
                 }
-                
+
                 input:checked + label {
                     background: #48e1ee;
                 }
-                
+
                 input:checked + label:after {
                     left: calc(100% - 3px);
                     transform: translateX(-100%);
                 }
-                
+
                 label:active:after {
                     width: 35px;
                 }
             }
-            
+
 
 
             #company {
                 display:none;
             }
-            
+
             #private {
                 display: none;
             }
@@ -136,9 +136,9 @@
             }
 
             .formlogin, .formregister {
-                
+
                 text-align: center;
-                
+
                 .inputS {
                     position: relative;
                     width: 80%;
@@ -161,7 +161,7 @@
                     right: 0;
                     color: $red;
                     font-size: .8em
-                    
+
                 }
 
                 input[type='submit'] {
@@ -172,7 +172,7 @@
                     border-radius:6px;
                     border: none;
                     margin: 0 3%;
-                    
+
                 }
 
                 input[class="register inputS"] {
@@ -204,7 +204,7 @@
                     input[class="register inputS"] {
                         left: 15px;
                     }
-                }    
+                }
             }
         }
     }

@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
 }
 .loginPanel .panel-register-container, .registerPanel .panel-register-container {
   height: auto !important;
-  padding-bottom: 40px;
+  padding-bottom: 69px;
 }
 .loginPanel .panel-login, .loginPanel .panel-register, .registerPanel .panel-login, .registerPanel .panel-register {
   text-align: center;
