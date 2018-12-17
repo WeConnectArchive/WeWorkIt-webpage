@@ -2,7 +2,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="scss/builds-dev/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <title>WeWorkIt</title>
+  <title>WeWorkIt - Start page</title>
   <script src="jquery-3.2.1.min.js"></script>
 	<script src="jquery.scrollTo.min.js"></script>
 
@@ -16,7 +16,7 @@
           $('#aboutus').click(function() { $.scrollTo($('#aboutFirm'), 500); });
           $('#main').click(function() { $.scrollTo($('#mainpage'), 500); });
 
-          $('#singup').click(function() { $.scrollTo($('#yourChoice'), 500); });
+          $('#signin').click(function() { $.scrollTo($('#yourChoice'), 500); });
           
 
         }
@@ -40,7 +40,7 @@
             <li><a id="main"><img class="navContentsListLogo" src="zdjecia/weworkit1.png"></a></li>
             <li><a id="aboutus" href="#">about us</a></li>
             <li><a href="login.html">login</a></li>
-            <li><a id="singup" href="#">register</a></li>
+            <li><a id="signin" href="#">register</a></li>
           </ul>
         </div>
       </div>
@@ -71,7 +71,7 @@
                 <div class="yourChoiceEmployee">
                   <p>Employee</p>
                   <ul class="yourChoiceEmployeeDropdown">
-                    <li>LOGIN</li>
+                    <li><a href="login.html">LOGIN</a></li>
                     <li><a href="rEmployee.html">REGISTER</a></li>
                   </ul>
                 </div>
@@ -84,7 +84,7 @@
                 <div class="left animatedBorderTop animatedBorderRight"></div>
                 <div class="yourChoiceEmployer"><p>Employer</p>
                   <ul class="yourChoiceEmployeeDropdown">
-                      <li>LOGIN</li>
+                      <li><a href="login.html">LOGIN</a></li>
                       <li><a href="rEmployer.html">REGISTER</a></li>
                     </ul>
                 </div>

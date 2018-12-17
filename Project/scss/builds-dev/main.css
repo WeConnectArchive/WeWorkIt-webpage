@@ -14,11 +14,11 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid #333;
 }
 
-.loginPanel, .registerPanel {
+.loginPanel, .registerPanel, .profilePanel {
   max-height: 100vh;
   background-color: #d9d8d6;
 }
-.loginPanel .header, .loginPanel .login, .loginPanel .register, .registerPanel .header, .registerPanel .login, .registerPanel .register {
+.loginPanel .header, .loginPanel .login, .loginPanel .register, .loginPanel .profile, .registerPanel .header, .registerPanel .login, .registerPanel .register, .registerPanel .profile, .profilePanel .header, .profilePanel .login, .profilePanel .register, .profilePanel .profile {
   position: relative;
   top: 0vh;
   bottom: inherit;
@@ -31,57 +31,57 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.5s ease 0.1s;
   -webkit-transition: all 0.5s ease 0.1s;
 }
-.loginPanel .header .navContentsList li, .loginPanel .header .loginNavContentsList li, .loginPanel .header .registerNavContentsList li, .loginPanel .login .navContentsList li, .loginPanel .login .loginNavContentsList li, .loginPanel .login .registerNavContentsList li, .loginPanel .register .navContentsList li, .loginPanel .register .loginNavContentsList li, .loginPanel .register .registerNavContentsList li, .registerPanel .header .navContentsList li, .registerPanel .header .loginNavContentsList li, .registerPanel .header .registerNavContentsList li, .registerPanel .login .navContentsList li, .registerPanel .login .loginNavContentsList li, .registerPanel .login .registerNavContentsList li, .registerPanel .register .navContentsList li, .registerPanel .register .loginNavContentsList li, .registerPanel .register .registerNavContentsList li {
+.loginPanel .header .navContentsList li, .loginPanel .header .loginNavContentsList li, .loginPanel .header .registerNavContentsList li, .loginPanel .header .profileNavContentsList li, .loginPanel .login .navContentsList li, .loginPanel .login .loginNavContentsList li, .loginPanel .login .registerNavContentsList li, .loginPanel .login .profileNavContentsList li, .loginPanel .register .navContentsList li, .loginPanel .register .loginNavContentsList li, .loginPanel .register .registerNavContentsList li, .loginPanel .register .profileNavContentsList li, .loginPanel .profile .navContentsList li, .loginPanel .profile .loginNavContentsList li, .loginPanel .profile .registerNavContentsList li, .loginPanel .profile .profileNavContentsList li, .registerPanel .header .navContentsList li, .registerPanel .header .loginNavContentsList li, .registerPanel .header .registerNavContentsList li, .registerPanel .header .profileNavContentsList li, .registerPanel .login .navContentsList li, .registerPanel .login .loginNavContentsList li, .registerPanel .login .registerNavContentsList li, .registerPanel .login .profileNavContentsList li, .registerPanel .register .navContentsList li, .registerPanel .register .loginNavContentsList li, .registerPanel .register .registerNavContentsList li, .registerPanel .register .profileNavContentsList li, .registerPanel .profile .navContentsList li, .registerPanel .profile .loginNavContentsList li, .registerPanel .profile .registerNavContentsList li, .registerPanel .profile .profileNavContentsList li, .profilePanel .header .navContentsList li, .profilePanel .header .loginNavContentsList li, .profilePanel .header .registerNavContentsList li, .profilePanel .header .profileNavContentsList li, .profilePanel .login .navContentsList li, .profilePanel .login .loginNavContentsList li, .profilePanel .login .registerNavContentsList li, .profilePanel .login .profileNavContentsList li, .profilePanel .register .navContentsList li, .profilePanel .register .loginNavContentsList li, .profilePanel .register .registerNavContentsList li, .profilePanel .register .profileNavContentsList li, .profilePanel .profile .navContentsList li, .profilePanel .profile .loginNavContentsList li, .profilePanel .profile .registerNavContentsList li, .profilePanel .profile .profileNavContentsList li {
   position: relative;
   top: -15px;
   max-height: 110px;
 }
-.loginPanel .panel-register, .registerPanel .panel-register {
+.loginPanel .panel-register, .registerPanel .panel-register, .profilePanel .panel-register {
   height: auto !important;
 }
-.loginPanel .panel-register-container, .registerPanel .panel-register-container {
+.loginPanel .panel-register-container, .registerPanel .panel-register-container, .profilePanel .panel-register-container {
   height: auto !important;
   padding-bottom: 69px;
 }
-.loginPanel .panel-login, .loginPanel .panel-register, .registerPanel .panel-login, .registerPanel .panel-register {
+.loginPanel .panel-login, .loginPanel .panel-register, .registerPanel .panel-login, .registerPanel .panel-register, .profilePanel .panel-login, .profilePanel .panel-register {
   text-align: center;
 }
-.loginPanel .panel-login-container, .loginPanel .panel-register-container, .registerPanel .panel-login-container, .registerPanel .panel-register-container {
+.loginPanel .panel-login-container, .loginPanel .panel-register-container, .registerPanel .panel-login-container, .registerPanel .panel-register-container, .profilePanel .panel-login-container, .profilePanel .panel-register-container {
   position: relative;
   display: inline-block;
   width: 500px;
   height: 600px;
-  margin: 70px;
+  margin: 55px;
   background-color: #fff;
   border: 1px solid black;
   box-shadow: 0px 0px 15px 6px #a19d98;
 }
-.loginPanel .panel-login-container-logo, .loginPanel .panel-register-container-logo, .registerPanel .panel-login-container-logo, .registerPanel .panel-register-container-logo {
+.loginPanel .panel-login-container-logo, .loginPanel .panel-register-container-logo, .registerPanel .panel-login-container-logo, .registerPanel .panel-register-container-logo, .profilePanel .panel-login-container-logo, .profilePanel .panel-register-container-logo {
   display: inline-block;
   margin: 30px 0;
   height: auto;
 }
-.loginPanel .panel-login-container-logo img, .loginPanel .panel-register-container-logo img, .registerPanel .panel-login-container-logo img, .registerPanel .panel-register-container-logo img {
+.loginPanel .panel-login-container-logo img, .loginPanel .panel-register-container-logo img, .registerPanel .panel-login-container-logo img, .registerPanel .panel-register-container-logo img, .profilePanel .panel-login-container-logo img, .profilePanel .panel-register-container-logo img {
   width: 55%;
 }
-.loginPanel .panel-login-container .toggle, .loginPanel .panel-register-container .toggle, .registerPanel .panel-login-container .toggle, .registerPanel .panel-register-container .toggle {
+.loginPanel .panel-login-container .toggle, .loginPanel .panel-register-container .toggle, .registerPanel .panel-login-container .toggle, .registerPanel .panel-register-container .toggle, .profilePanel .panel-login-container .toggle, .profilePanel .panel-register-container .toggle {
   display: inline-flex;
   float: left;
   margin-left: 55px;
 }
-.loginPanel .panel-login-container .toggle p, .loginPanel .panel-register-container .toggle p, .registerPanel .panel-login-container .toggle p, .registerPanel .panel-register-container .toggle p {
+.loginPanel .panel-login-container .toggle p, .loginPanel .panel-register-container .toggle p, .registerPanel .panel-login-container .toggle p, .registerPanel .panel-register-container .toggle p, .profilePanel .panel-login-container .toggle p, .profilePanel .panel-register-container .toggle p {
   padding: 0 20px;
   font-family: catamaran;
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
 }
-.loginPanel .panel-login-container .toggle input[type=checkbox], .loginPanel .panel-register-container .toggle input[type=checkbox], .registerPanel .panel-login-container .toggle input[type=checkbox], .registerPanel .panel-register-container .toggle input[type=checkbox] {
+.loginPanel .panel-login-container .toggle input[type=checkbox], .loginPanel .panel-register-container .toggle input[type=checkbox], .registerPanel .panel-login-container .toggle input[type=checkbox], .registerPanel .panel-register-container .toggle input[type=checkbox], .profilePanel .panel-login-container .toggle input[type=checkbox], .profilePanel .panel-register-container .toggle input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
-.loginPanel .panel-login-container .toggle label, .loginPanel .panel-register-container .toggle label, .registerPanel .panel-login-container .toggle label, .registerPanel .panel-register-container .toggle label {
+.loginPanel .panel-login-container .toggle label, .loginPanel .panel-register-container .toggle label, .registerPanel .panel-login-container .toggle label, .registerPanel .panel-register-container .toggle label, .profilePanel .panel-login-container .toggle label, .profilePanel .panel-register-container .toggle label {
   cursor: pointer;
   text-indent: -9999px;
   top: 21px;
@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 100px;
   position: relative;
 }
-.loginPanel .panel-login-container .toggle label:after, .loginPanel .panel-register-container .toggle label:after, .registerPanel .panel-login-container .toggle label:after, .registerPanel .panel-register-container .toggle label:after {
+.loginPanel .panel-login-container .toggle label:after, .loginPanel .panel-register-container .toggle label:after, .registerPanel .panel-login-container .toggle label:after, .registerPanel .panel-register-container .toggle label:after, .profilePanel .panel-login-container .toggle label:after, .profilePanel .panel-register-container .toggle label:after {
   content: "";
   position: absolute;
   top: 2.5px;
@@ -103,30 +103,30 @@ body::-webkit-scrollbar-thumb {
   border-radius: 90px;
   transition: 0.3s;
 }
-.loginPanel .panel-login-container .toggle input:checked + label, .loginPanel .panel-register-container .toggle input:checked + label, .registerPanel .panel-login-container .toggle input:checked + label, .registerPanel .panel-register-container .toggle input:checked + label {
+.loginPanel .panel-login-container .toggle input:checked + label, .loginPanel .panel-register-container .toggle input:checked + label, .registerPanel .panel-login-container .toggle input:checked + label, .registerPanel .panel-register-container .toggle input:checked + label, .profilePanel .panel-login-container .toggle input:checked + label, .profilePanel .panel-register-container .toggle input:checked + label {
   background: #48e1ee;
 }
-.loginPanel .panel-login-container .toggle input:checked + label:after, .loginPanel .panel-register-container .toggle input:checked + label:after, .registerPanel .panel-login-container .toggle input:checked + label:after, .registerPanel .panel-register-container .toggle input:checked + label:after {
+.loginPanel .panel-login-container .toggle input:checked + label:after, .loginPanel .panel-register-container .toggle input:checked + label:after, .registerPanel .panel-login-container .toggle input:checked + label:after, .registerPanel .panel-register-container .toggle input:checked + label:after, .profilePanel .panel-login-container .toggle input:checked + label:after, .profilePanel .panel-register-container .toggle input:checked + label:after {
   left: calc(100% - 3px);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
-.loginPanel .panel-login-container .toggle label:active:after, .loginPanel .panel-register-container .toggle label:active:after, .registerPanel .panel-login-container .toggle label:active:after, .registerPanel .panel-register-container .toggle label:active:after {
+.loginPanel .panel-login-container .toggle label:active:after, .loginPanel .panel-register-container .toggle label:active:after, .registerPanel .panel-login-container .toggle label:active:after, .registerPanel .panel-register-container .toggle label:active:after, .profilePanel .panel-login-container .toggle label:active:after, .profilePanel .panel-register-container .toggle label:active:after {
   width: 35px;
 }
-.loginPanel .panel-login-container #company, .loginPanel .panel-register-container #company, .registerPanel .panel-login-container #company, .registerPanel .panel-register-container #company {
+.loginPanel .panel-login-container #company, .loginPanel .panel-register-container #company, .registerPanel .panel-login-container #company, .registerPanel .panel-register-container #company, .profilePanel .panel-login-container #company, .profilePanel .panel-register-container #company {
   display: none;
 }
-.loginPanel .panel-login-container #private, .loginPanel .panel-register-container #private, .registerPanel .panel-login-container #private, .registerPanel .panel-register-container #private {
+.loginPanel .panel-login-container #private, .loginPanel .panel-register-container #private, .registerPanel .panel-login-container #private, .registerPanel .panel-register-container #private, .profilePanel .panel-login-container #private, .profilePanel .panel-register-container #private {
   display: none;
 }
-.loginPanel .panel-login-container .visable, .loginPanel .panel-register-container .visable, .registerPanel .panel-login-container .visable, .registerPanel .panel-register-container .visable {
+.loginPanel .panel-login-container .visable, .loginPanel .panel-register-container .visable, .registerPanel .panel-login-container .visable, .registerPanel .panel-register-container .visable, .profilePanel .panel-login-container .visable, .profilePanel .panel-register-container .visable {
   display: block;
 }
-.loginPanel .panel-login-container .formlogin, .loginPanel .panel-login-container .formregister, .loginPanel .panel-register-container .formlogin, .loginPanel .panel-register-container .formregister, .registerPanel .panel-login-container .formlogin, .registerPanel .panel-login-container .formregister, .registerPanel .panel-register-container .formlogin, .registerPanel .panel-register-container .formregister {
+.loginPanel .panel-login-container .formlogin, .loginPanel .panel-login-container .formregister, .loginPanel .panel-register-container .formlogin, .loginPanel .panel-register-container .formregister, .registerPanel .panel-login-container .formlogin, .registerPanel .panel-login-container .formregister, .registerPanel .panel-register-container .formlogin, .registerPanel .panel-register-container .formregister, .profilePanel .panel-login-container .formlogin, .profilePanel .panel-login-container .formregister, .profilePanel .panel-register-container .formlogin, .profilePanel .panel-register-container .formregister {
   text-align: center;
 }
-.loginPanel .panel-login-container .formlogin .inputS, .loginPanel .panel-login-container .formregister .inputS, .loginPanel .panel-register-container .formlogin .inputS, .loginPanel .panel-register-container .formregister .inputS, .registerPanel .panel-login-container .formlogin .inputS, .registerPanel .panel-login-container .formregister .inputS, .registerPanel .panel-register-container .formlogin .inputS, .registerPanel .panel-register-container .formregister .inputS {
+.loginPanel .panel-login-container .formlogin .inputS, .loginPanel .panel-login-container .formregister .inputS, .loginPanel .panel-register-container .formlogin .inputS, .loginPanel .panel-register-container .formregister .inputS, .registerPanel .panel-login-container .formlogin .inputS, .registerPanel .panel-login-container .formregister .inputS, .registerPanel .panel-register-container .formlogin .inputS, .registerPanel .panel-register-container .formregister .inputS, .profilePanel .panel-login-container .formlogin .inputS, .profilePanel .panel-login-container .formregister .inputS, .profilePanel .panel-register-container .formlogin .inputS, .profilePanel .panel-register-container .formregister .inputS {
   position: relative;
   width: 80%;
   height: 45px;
@@ -140,7 +140,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 0 1px #f5f5f6;
   clear: both;
 }
-.loginPanel .panel-login-container .formlogin .forgotpassword, .loginPanel .panel-login-container .formregister .forgotpassword, .loginPanel .panel-register-container .formlogin .forgotpassword, .loginPanel .panel-register-container .formregister .forgotpassword, .registerPanel .panel-login-container .formlogin .forgotpassword, .registerPanel .panel-login-container .formregister .forgotpassword, .registerPanel .panel-register-container .formlogin .forgotpassword, .registerPanel .panel-register-container .formregister .forgotpassword {
+.loginPanel .panel-login-container .formlogin .forgotpassword, .loginPanel .panel-login-container .formregister .forgotpassword, .loginPanel .panel-register-container .formlogin .forgotpassword, .loginPanel .panel-register-container .formregister .forgotpassword, .registerPanel .panel-login-container .formlogin .forgotpassword, .registerPanel .panel-login-container .formregister .forgotpassword, .registerPanel .panel-register-container .formlogin .forgotpassword, .registerPanel .panel-register-container .formregister .forgotpassword, .profilePanel .panel-login-container .formlogin .forgotpassword, .profilePanel .panel-login-container .formregister .forgotpassword, .profilePanel .panel-register-container .formlogin .forgotpassword, .profilePanel .panel-register-container .formregister .forgotpassword {
   display: block;
   text-align: left;
   margin: 5px 0 45px 50px;
@@ -148,7 +148,7 @@ body::-webkit-scrollbar-thumb {
   color: #f00;
   font-size: 0.8em;
 }
-.loginPanel .panel-login-container .formlogin input[type=submit], .loginPanel .panel-login-container .formregister input[type=submit], .loginPanel .panel-register-container .formlogin input[type=submit], .loginPanel .panel-register-container .formregister input[type=submit], .registerPanel .panel-login-container .formlogin input[type=submit], .registerPanel .panel-login-container .formregister input[type=submit], .registerPanel .panel-register-container .formlogin input[type=submit], .registerPanel .panel-register-container .formregister input[type=submit] {
+.loginPanel .panel-login-container .formlogin input[type=submit], .loginPanel .panel-login-container .formregister input[type=submit], .loginPanel .panel-register-container .formlogin input[type=submit], .loginPanel .panel-register-container .formregister input[type=submit], .registerPanel .panel-login-container .formlogin input[type=submit], .registerPanel .panel-login-container .formregister input[type=submit], .registerPanel .panel-register-container .formlogin input[type=submit], .registerPanel .panel-register-container .formregister input[type=submit], .profilePanel .panel-login-container .formlogin input[type=submit], .profilePanel .panel-login-container .formregister input[type=submit], .profilePanel .panel-register-container .formlogin input[type=submit], .profilePanel .panel-register-container .formregister input[type=submit] {
   clear: both;
   width: 37%;
   background-color: #48e1ee;
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb {
   border: none;
   margin: 0 3%;
 }
-.loginPanel .panel-login-container .formlogin input[class="register inputS"], .loginPanel .panel-login-container .formregister input[class="register inputS"], .loginPanel .panel-register-container .formlogin input[class="register inputS"], .loginPanel .panel-register-container .formregister input[class="register inputS"], .registerPanel .panel-login-container .formlogin input[class="register inputS"], .registerPanel .panel-login-container .formregister input[class="register inputS"], .registerPanel .panel-register-container .formlogin input[class="register inputS"], .registerPanel .panel-register-container .formregister input[class="register inputS"] {
+.loginPanel .panel-login-container .formlogin input[class="register inputS"], .loginPanel .panel-login-container .formregister input[class="register inputS"], .loginPanel .panel-register-container .formlogin input[class="register inputS"], .loginPanel .panel-register-container .formregister input[class="register inputS"], .registerPanel .panel-login-container .formlogin input[class="register inputS"], .registerPanel .panel-login-container .formregister input[class="register inputS"], .registerPanel .panel-register-container .formlogin input[class="register inputS"], .registerPanel .panel-register-container .formregister input[class="register inputS"], .profilePanel .panel-login-container .formlogin input[class="register inputS"], .profilePanel .panel-login-container .formregister input[class="register inputS"], .profilePanel .panel-register-container .formlogin input[class="register inputS"], .profilePanel .panel-register-container .formregister input[class="register inputS"] {
   width: 37%;
   background-color: #333;
   color: #fff;
@@ -164,30 +164,30 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   margin: 0 3%;
 }
-.loginPanel .panel-login-container .formlogin div, .loginPanel .panel-login-container .formregister div, .loginPanel .panel-register-container .formlogin div, .loginPanel .panel-register-container .formregister div, .registerPanel .panel-login-container .formlogin div, .registerPanel .panel-login-container .formregister div, .registerPanel .panel-register-container .formlogin div, .registerPanel .panel-register-container .formregister div {
+.loginPanel .panel-login-container .formlogin div, .loginPanel .panel-login-container .formregister div, .loginPanel .panel-register-container .formlogin div, .loginPanel .panel-register-container .formregister div, .registerPanel .panel-login-container .formlogin div, .registerPanel .panel-login-container .formregister div, .registerPanel .panel-register-container .formlogin div, .registerPanel .panel-register-container .formregister div, .profilePanel .panel-login-container .formlogin div, .profilePanel .panel-login-container .formregister div, .profilePanel .panel-register-container .formlogin div, .profilePanel .panel-register-container .formregister div {
   display: inline;
 }
-.loginPanel .panel-login-container .formlogin div label, .loginPanel .panel-login-container .formregister div label, .loginPanel .panel-register-container .formlogin div label, .loginPanel .panel-register-container .formregister div label, .registerPanel .panel-login-container .formlogin div label, .registerPanel .panel-login-container .formregister div label, .registerPanel .panel-register-container .formlogin div label, .registerPanel .panel-register-container .formregister div label {
+.loginPanel .panel-login-container .formlogin div label, .loginPanel .panel-login-container .formregister div label, .loginPanel .panel-register-container .formlogin div label, .loginPanel .panel-register-container .formregister div label, .registerPanel .panel-login-container .formlogin div label, .registerPanel .panel-login-container .formregister div label, .registerPanel .panel-register-container .formlogin div label, .registerPanel .panel-register-container .formregister div label, .profilePanel .panel-login-container .formlogin div label, .profilePanel .panel-login-container .formregister div label, .profilePanel .panel-register-container .formlogin div label, .profilePanel .panel-register-container .formregister div label {
   position: relative;
   display: inline-flex;
   margin: 20px 0;
 }
-.loginPanel .panel-login-container .formlogin div label input[type=checkbox], .loginPanel .panel-login-container .formregister div label input[type=checkbox], .loginPanel .panel-register-container .formlogin div label input[type=checkbox], .loginPanel .panel-register-container .formregister div label input[type=checkbox], .registerPanel .panel-login-container .formlogin div label input[type=checkbox], .registerPanel .panel-login-container .formregister div label input[type=checkbox], .registerPanel .panel-register-container .formlogin div label input[type=checkbox], .registerPanel .panel-register-container .formregister div label input[type=checkbox] {
+.loginPanel .panel-login-container .formlogin div label input[type=checkbox], .loginPanel .panel-login-container .formregister div label input[type=checkbox], .loginPanel .panel-register-container .formlogin div label input[type=checkbox], .loginPanel .panel-register-container .formregister div label input[type=checkbox], .registerPanel .panel-login-container .formlogin div label input[type=checkbox], .registerPanel .panel-login-container .formregister div label input[type=checkbox], .registerPanel .panel-register-container .formlogin div label input[type=checkbox], .registerPanel .panel-register-container .formregister div label input[type=checkbox], .profilePanel .panel-login-container .formlogin div label input[type=checkbox], .profilePanel .panel-login-container .formregister div label input[type=checkbox], .profilePanel .panel-register-container .formlogin div label input[type=checkbox], .profilePanel .panel-register-container .formregister div label input[type=checkbox] {
   margin-top: 6px;
 }
-.loginPanel .panel-login-container .formlogin div label a, .loginPanel .panel-login-container .formregister div label a, .loginPanel .panel-register-container .formlogin div label a, .loginPanel .panel-register-container .formregister div label a, .registerPanel .panel-login-container .formlogin div label a, .registerPanel .panel-login-container .formregister div label a, .registerPanel .panel-register-container .formlogin div label a, .registerPanel .panel-register-container .formregister div label a {
+.loginPanel .panel-login-container .formlogin div label a, .loginPanel .panel-login-container .formregister div label a, .loginPanel .panel-register-container .formlogin div label a, .loginPanel .panel-register-container .formregister div label a, .registerPanel .panel-login-container .formlogin div label a, .registerPanel .panel-login-container .formregister div label a, .registerPanel .panel-register-container .formlogin div label a, .registerPanel .panel-register-container .formregister div label a, .profilePanel .panel-login-container .formlogin div label a, .profilePanel .panel-login-container .formregister div label a, .profilePanel .panel-register-container .formlogin div label a, .profilePanel .panel-register-container .formregister div label a {
   display: block;
   text-align: left;
 }
-.loginPanel .panel-login-container .formlogin div input[class="register inputS"], .loginPanel .panel-login-container .formregister div input[class="register inputS"], .loginPanel .panel-register-container .formlogin div input[class="register inputS"], .loginPanel .panel-register-container .formregister div input[class="register inputS"], .registerPanel .panel-login-container .formlogin div input[class="register inputS"], .registerPanel .panel-login-container .formregister div input[class="register inputS"], .registerPanel .panel-register-container .formlogin div input[class="register inputS"], .registerPanel .panel-register-container .formregister div input[class="register inputS"] {
+.loginPanel .panel-login-container .formlogin div input[class="register inputS"], .loginPanel .panel-login-container .formregister div input[class="register inputS"], .loginPanel .panel-register-container .formlogin div input[class="register inputS"], .loginPanel .panel-register-container .formregister div input[class="register inputS"], .registerPanel .panel-login-container .formlogin div input[class="register inputS"], .registerPanel .panel-login-container .formregister div input[class="register inputS"], .registerPanel .panel-register-container .formlogin div input[class="register inputS"], .registerPanel .panel-register-container .formregister div input[class="register inputS"], .profilePanel .panel-login-container .formlogin div input[class="register inputS"], .profilePanel .panel-login-container .formregister div input[class="register inputS"], .profilePanel .panel-register-container .formlogin div input[class="register inputS"], .profilePanel .panel-register-container .formregister div input[class="register inputS"] {
   left: 15px;
 }
-.loginPanel .footer, .loginPanel .fLogin, .loginPanel .fRegister, .registerPanel .footer, .registerPanel .fLogin, .registerPanel .fRegister {
+.loginPanel .footer, .loginPanel .fLogin, .loginPanel .fRegister, .registerPanel .footer, .registerPanel .fLogin, .registerPanel .fRegister, .profilePanel .footer, .profilePanel .fLogin, .profilePanel .fRegister {
   top: 10vh;
   height: 10vh;
   margin-top: 3px;
 }
-.loginPanel .footer ul, .loginPanel .fLogin ul, .loginPanel .fRegister ul, .registerPanel .footer ul, .registerPanel .fLogin ul, .registerPanel .fRegister ul {
+.loginPanel .footer ul, .loginPanel .fLogin ul, .loginPanel .fRegister ul, .registerPanel .footer ul, .registerPanel .fLogin ul, .registerPanel .fRegister ul, .profilePanel .footer ul, .profilePanel .fLogin ul, .profilePanel .fRegister ul {
   position: absolute;
   left: calc(50vw - 80px);
   display: flex;
@@ -203,7 +203,7 @@ body {
   height: 100%;
   margin: 0;
   background-color: #fff;
-  font-family: "Catamaran", "Arial Narrow", Arial, sans-serif;
+  font-family: "Catamaran", "Arial Narrow", Arial, sans-serif !important;
 }
 body .fota {
   height: 100vh;
@@ -245,6 +245,7 @@ body .header {
 body .header .navContents {
   position: relative;
   display: inline-block;
+  margin: 0 auto;
 }
 body .header .navContentsList {
   float: left;
@@ -505,6 +506,46 @@ body .header .navContentsListLogo {
 }
 .yourChoiceContainerMain .yourChoicePosition .main:hover .animatedBorderRight::after {
   bottom: 0;
+}
+
+.profilePanel .container {
+  height: 100vh;
+  margin: 50px auto;
+}
+.profilePanel .container h1 {
+  text-align: center;
+}
+.profilePanel .container .row {
+  text-align: center;
+}
+.profilePanel .container .row .col-sm {
+  height: 280px;
+}
+.profilePanel .container .row .col-sm .alerts, .profilePanel .container .row .col-sm .search, .profilePanel .container .row .col-sm .scoreboard, .profilePanel .container .row .col-sm .yourStats, .profilePanel .container .row .col-sm .news, .profilePanel .container .row .col-sm .messenger, .profilePanel .container .row .col-sm .help {
+  display: block;
+  background-color: #fff;
+}
+.profilePanel .container .row .col-sm .alerts-Container, .profilePanel .container .row .col-sm .alerts .sm, .profilePanel .container .row .col-sm .search-Container, .profilePanel .container .row .col-sm .search .sm, .profilePanel .container .row .col-sm .scoreboard-Container, .profilePanel .container .row .col-sm .scoreboard .sm, .profilePanel .container .row .col-sm .yourStats-Container, .profilePanel .container .row .col-sm .yourStats .sm, .profilePanel .container .row .col-sm .news-Container, .profilePanel .container .row .col-sm .news .sm, .profilePanel .container .row .col-sm .messenger-Container, .profilePanel .container .row .col-sm .messenger .sm, .profilePanel .container .row .col-sm .help-Container, .profilePanel .container .row .col-sm .help .sm {
+  width: 100%;
+  height: 250px;
+  margin: 10px auto;
+  border: 3px solid #333;
+  border-radius: 5px;
+}
+.profilePanel .container .row .col-sm .alerts-Container .infoDropdown, .profilePanel .container .row .col-sm .alerts .sm .infoDropdown, .profilePanel .container .row .col-sm .search-Container .infoDropdown, .profilePanel .container .row .col-sm .search .sm .infoDropdown, .profilePanel .container .row .col-sm .scoreboard-Container .infoDropdown, .profilePanel .container .row .col-sm .scoreboard .sm .infoDropdown, .profilePanel .container .row .col-sm .yourStats-Container .infoDropdown, .profilePanel .container .row .col-sm .yourStats .sm .infoDropdown, .profilePanel .container .row .col-sm .news-Container .infoDropdown, .profilePanel .container .row .col-sm .news .sm .infoDropdown, .profilePanel .container .row .col-sm .messenger-Container .infoDropdown, .profilePanel .container .row .col-sm .messenger .sm .infoDropdown, .profilePanel .container .row .col-sm .help-Container .infoDropdown, .profilePanel .container .row .col-sm .help .sm .infoDropdown {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  z-index: -2;
+  background-color: red;
+  top: -50px;
+}
+.profilePanel .container .row .col-sm .alerts-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .alerts .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .search-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .search .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .scoreboard-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .scoreboard .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .yourStats-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .yourStats .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .news-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .news .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .messenger-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .messenger .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .help-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .help .sm:hover .infoDropdown {
+  top: 0;
+}
+.profilePanel .container .row .col-sm .alerts-Container, .profilePanel .container .row .col-sm .alerts .lg, .profilePanel .container .row .col-sm .search-Container, .profilePanel .container .row .col-sm .search .lg, .profilePanel .container .row .col-sm .scoreboard-Container, .profilePanel .container .row .col-sm .scoreboard .lg, .profilePanel .container .row .col-sm .yourStats-Container, .profilePanel .container .row .col-sm .yourStats .lg, .profilePanel .container .row .col-sm .news-Container, .profilePanel .container .row .col-sm .news .lg, .profilePanel .container .row .col-sm .messenger-Container, .profilePanel .container .row .col-sm .messenger .lg, .profilePanel .container .row .col-sm .help-Container, .profilePanel .container .row .col-sm .help .lg {
+  height: 530px;
+  margin: 10px auto;
 }
 
 footer {
