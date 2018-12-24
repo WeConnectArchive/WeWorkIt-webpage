@@ -1,0 +1,21 @@
+.container.account {
+    .row {
+        .col-sm-3 {
+            height: 100px;
+            margin: 5px;
+            border: 1px solid black;
+            background-color: red;
+            
+            .aImg {
+                width: 250px;
+                height: 300px;
+            }
+        }
+        .col-sm-8 {
+            height: 100px;
+            margin: 5px;
+            border: 1px solid black;
+            background-color: blue;
+        }
+    }
+}

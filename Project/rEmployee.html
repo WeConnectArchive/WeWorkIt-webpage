@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="scss/builds-dev/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <title>WeWorkIt - Sign in Employee</title>
-    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/builds-dev/scripts.js"></script>
 </head>
 <body class="registerPanel">
 
@@ -41,10 +42,19 @@
             <label>
             <input class="acceptreg checkbox" type="checkbox" value="acceptreg"><a href="regulamin.html">Akceptuje Regulamin </a></input>
             </label>
-            <input class="register inputS" type="submit" href="register.html" value="Zarejestruj">
+              <div id="html_element">
+                <input class="register inputS" type="submit" href="register.html" value="Zarejestruj">
+                <div class="g-recaptcha" data-sitekey="6LdfV4MUAAAAAGBKp0Htf4ionHdc98Q8pO897lh5"></div></div>
+              </div>
+
           </div>
         </form>  
       </div>
+    </section>
+
+    <section id="reklama">
+      <div class="reklama-content"></div>
+
     </section>
 
     <footer class="footer fRegister">
@@ -71,6 +81,5 @@
           </ul>
         </div>
       </footer>
-    
 </body>
 </html>

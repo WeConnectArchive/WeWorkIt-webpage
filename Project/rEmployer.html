@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="scss/builds-dev/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <title>WeWorkIt - Sign in Employer</title>
+    <script src="js/builds-dev/scripts.js"></script>
 
 </head>
 <body class="registerPanel" onload="checkeded()">
@@ -64,8 +65,10 @@
           </div>
         </form>
       </div>
+    </section>
 
-
+    <section id="reklama">
+      <div class="reklama-content"></div>
 
     </section>
 
@@ -93,46 +96,5 @@
           </ul>
         </div>
       </footer>
-    <script>
-    function check() {
-        document.getElementById("switch").checked = true;
-    }
-
-    function uncheck() {
-        document.getElementById("switch").checked = false;
-    }
-
-
-
-</script>
-
-<script>
-  function checkeded(){
-
-    var visable = document.getElementById("switch");
-    var private = document.getElementById("private");
-    var company = document.getElementById("company");
-
-      if(visable.checked == false) {
-        private.style.display="block";
-            company.style.display="none";
-
-      }
-      else {
-            private.style.display="none";
-            company.style.display="block";
-      }
-
-
-
-
-
-	}
-  </script>
-
-
-
-
-
 </body>
 </html>

@@ -209,6 +209,15 @@
         }
     }
 
+    #reklama {
+        width: 970px;
+        height: 90px;
+        margin: 30px auto;
+        border: 2px solid $colorLogo;
+        background-color: grey;
+        
+    }
+
     .footer, .fLogin, .fRegister {
         top: 10vh;
         height: 10vh;

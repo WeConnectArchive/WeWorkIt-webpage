@@ -182,6 +182,13 @@ body::-webkit-scrollbar-thumb {
 .loginPanel .panel-login-container .formlogin div input[class="register inputS"], .loginPanel .panel-login-container .formregister div input[class="register inputS"], .loginPanel .panel-register-container .formlogin div input[class="register inputS"], .loginPanel .panel-register-container .formregister div input[class="register inputS"], .registerPanel .panel-login-container .formlogin div input[class="register inputS"], .registerPanel .panel-login-container .formregister div input[class="register inputS"], .registerPanel .panel-register-container .formlogin div input[class="register inputS"], .registerPanel .panel-register-container .formregister div input[class="register inputS"], .profilePanel .panel-login-container .formlogin div input[class="register inputS"], .profilePanel .panel-login-container .formregister div input[class="register inputS"], .profilePanel .panel-register-container .formlogin div input[class="register inputS"], .profilePanel .panel-register-container .formregister div input[class="register inputS"] {
   left: 15px;
 }
+.loginPanel #reklama, .registerPanel #reklama, .profilePanel #reklama {
+  width: 970px;
+  height: 90px;
+  margin: 30px auto;
+  border: 2px solid #48e1ee;
+  background-color: grey;
+}
 .loginPanel .footer, .loginPanel .fLogin, .loginPanel .fRegister, .registerPanel .footer, .registerPanel .fLogin, .registerPanel .fRegister, .profilePanel .footer, .profilePanel .fLogin, .profilePanel .fRegister {
   top: 10vh;
   height: 10vh;
@@ -508,44 +515,54 @@ body .header .navContentsListLogo {
   bottom: 0;
 }
 
-.profilePanel .container {
+.profilePanel .container.profile {
   height: 100vh;
   margin: 50px auto;
 }
-.profilePanel .container h1 {
+.profilePanel .container.profile h1 {
   text-align: center;
 }
-.profilePanel .container .row {
+.profilePanel .container.profile .row {
   text-align: center;
 }
-.profilePanel .container .row .col-sm {
-  height: 280px;
+.profilePanel .container.profile .row .col-sm {
+  height: 300px;
 }
-.profilePanel .container .row .col-sm .alerts, .profilePanel .container .row .col-sm .search, .profilePanel .container .row .col-sm .scoreboard, .profilePanel .container .row .col-sm .yourStats, .profilePanel .container .row .col-sm .news, .profilePanel .container .row .col-sm .messenger, .profilePanel .container .row .col-sm .help {
+.profilePanel .container.profile .row .col-sm.null {
+  z-index: -1;
+}
+.profilePanel .container.profile .row .col-sm .alerts, .profilePanel .container.profile .row .col-sm .search, .profilePanel .container.profile .row .col-sm .scoreboard, .profilePanel .container.profile .row .col-sm .yourStats, .profilePanel .container.profile .row .col-sm .news, .profilePanel .container.profile .row .col-sm .messenger, .profilePanel .container.profile .row .col-sm .help {
   display: block;
-  background-color: #fff;
-}
-.profilePanel .container .row .col-sm .alerts-Container, .profilePanel .container .row .col-sm .alerts .sm, .profilePanel .container .row .col-sm .search-Container, .profilePanel .container .row .col-sm .search .sm, .profilePanel .container .row .col-sm .scoreboard-Container, .profilePanel .container .row .col-sm .scoreboard .sm, .profilePanel .container .row .col-sm .yourStats-Container, .profilePanel .container .row .col-sm .yourStats .sm, .profilePanel .container .row .col-sm .news-Container, .profilePanel .container .row .col-sm .news .sm, .profilePanel .container .row .col-sm .messenger-Container, .profilePanel .container .row .col-sm .messenger .sm, .profilePanel .container .row .col-sm .help-Container, .profilePanel .container .row .col-sm .help .sm {
-  width: 100%;
-  height: 250px;
-  margin: 10px auto;
   border: 3px solid #333;
   border-radius: 5px;
+  background-color: #fff;
 }
-.profilePanel .container .row .col-sm .alerts-Container .infoDropdown, .profilePanel .container .row .col-sm .alerts .sm .infoDropdown, .profilePanel .container .row .col-sm .search-Container .infoDropdown, .profilePanel .container .row .col-sm .search .sm .infoDropdown, .profilePanel .container .row .col-sm .scoreboard-Container .infoDropdown, .profilePanel .container .row .col-sm .scoreboard .sm .infoDropdown, .profilePanel .container .row .col-sm .yourStats-Container .infoDropdown, .profilePanel .container .row .col-sm .yourStats .sm .infoDropdown, .profilePanel .container .row .col-sm .news-Container .infoDropdown, .profilePanel .container .row .col-sm .news .sm .infoDropdown, .profilePanel .container .row .col-sm .messenger-Container .infoDropdown, .profilePanel .container .row .col-sm .messenger .sm .infoDropdown, .profilePanel .container .row .col-sm .help-Container .infoDropdown, .profilePanel .container .row .col-sm .help .sm .infoDropdown {
+.profilePanel .container.profile .row .col-sm .alerts-Container.sm, .profilePanel .container.profile .row .col-sm .search-Container.sm, .profilePanel .container.profile .row .col-sm .scoreboard-Container.sm, .profilePanel .container.profile .row .col-sm .yourStats-Container.sm, .profilePanel .container.profile .row .col-sm .news-Container.sm, .profilePanel .container.profile .row .col-sm .messenger-Container.sm, .profilePanel .container.profile .row .col-sm .help-Container.sm {
+  height: 250px;
+}
+.profilePanel .container.profile .row .col-sm .alerts-Container.lg, .profilePanel .container.profile .row .col-sm .search-Container.lg, .profilePanel .container.profile .row .col-sm .scoreboard-Container.lg, .profilePanel .container.profile .row .col-sm .yourStats-Container.lg, .profilePanel .container.profile .row .col-sm .news-Container.lg, .profilePanel .container.profile .row .col-sm .messenger-Container.lg, .profilePanel .container.profile .row .col-sm .help-Container.lg {
+  height: 550px;
+}
+.profilePanel .container.profile .row .col-sm .alerts-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .search-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .scoreboard-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .yourStats-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .news-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .messenger-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .help-Container .infoDropdown {
   position: relative;
-  height: 50px;
-  width: 100%;
-  z-index: -2;
-  background-color: red;
-  top: -50px;
-}
-.profilePanel .container .row .col-sm .alerts-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .alerts .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .search-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .search .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .scoreboard-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .scoreboard .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .yourStats-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .yourStats .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .news-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .news .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .messenger-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .messenger .sm:hover .infoDropdown, .profilePanel .container .row .col-sm .help-Container:hover .infoDropdown, .profilePanel .container .row .col-sm .help .sm:hover .infoDropdown {
   top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 0;
+  background-color: #c6c6c6;
+  transition: 0.3s all ease-in-out;
 }
-.profilePanel .container .row .col-sm .alerts-Container, .profilePanel .container .row .col-sm .alerts .lg, .profilePanel .container .row .col-sm .search-Container, .profilePanel .container .row .col-sm .search .lg, .profilePanel .container .row .col-sm .scoreboard-Container, .profilePanel .container .row .col-sm .scoreboard .lg, .profilePanel .container .row .col-sm .yourStats-Container, .profilePanel .container .row .col-sm .yourStats .lg, .profilePanel .container .row .col-sm .news-Container, .profilePanel .container .row .col-sm .news .lg, .profilePanel .container .row .col-sm .messenger-Container, .profilePanel .container .row .col-sm .messenger .lg, .profilePanel .container .row .col-sm .help-Container, .profilePanel .container .row .col-sm .help .lg {
-  height: 530px;
-  margin: 10px auto;
+.profilePanel .container.profile .row .col-sm .alerts-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .search-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .scoreboard-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .yourStats-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .news-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .messenger-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .help-Container .infoDropdown p {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 0;
+  transition: 0.3s all ease-in;
+}
+.profilePanel .container.profile .row .col-sm .alerts-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .search-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .scoreboard-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .yourStats-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .news-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .messenger-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .help-Container:hover .infoDropdown {
+  height: 50px;
+}
+.profilePanel .container.profile .row .col-sm .alerts-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .search-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .scoreboard-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .yourStats-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .news-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .messenger-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .help-Container:hover .infoDropdown p {
+  font-size: 1em;
 }
 
 footer {
@@ -663,4 +680,21 @@ footer {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.container.account .row .col-sm-3 {
+  height: 100px;
+  margin: 5px;
+  border: 1px solid black;
+  background-color: red;
+}
+.container.account .row .col-sm-3 .aImg {
+  width: 250px;
+  height: 300px;
+}
+.container.account .row .col-sm-8 {
+  height: 100px;
+  margin: 5px;
+  border: 1px solid black;
+  background-color: blue;
 }
