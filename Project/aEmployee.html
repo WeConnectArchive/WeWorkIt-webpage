@@ -4,10 +4,10 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <title>WeWorkIt - Profile</title>
+        <title>WeWorkIt - Account</title>
     </head>
 
-    <body class="profilePanel">
+    <body class="account profilePanel">
 
         <header class="header profile"> 
             <div class="nav profileNav" id="nav">
@@ -17,52 +17,99 @@
                     <li><a href="#">contact</a></li>
                     <li><a id="main"><img class="navContentsListLogo" src="zdjecia/weworkit1.png"></a></li>
                     <li><a href="#">ranking</a></li>
-                    <li><a href="#">konto</a></li>
+                    <li><a href="#">control panel</a></li>
                 </ul>
                 </div>
             </div>
         </header>
 
         <div class="container account">
-
             <div class="row">
-                <div class="col-sm-3"><section class="aImg"></section></div>
-                <div class="col-sm-8"><section class="aRanking"></section></div>
+                <div class="col-sm-3 col-1">
+                    <section class="aImg">
+                        <img src="zdjecia/account.png">
+                    </section>
+                </div>
+                <div class="col-sm-8 col-2">
+                    <div class="row">
+                        <section class="aRanking">
+                            <span>
+                                <h4>Ranking:</h4>    <p>Nr 1 w Polsce</p>
+                            </span>
+                        </section>
+                    </div>
+
+                    <div class="row">
+                        <section class="aAbout">
+                            <span>
+                            <h3>O mnie</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nemo magni quis ea reiciendis laborum eaque quod quaerat quam qui ex mollitia nulla non repudiandae, rerum voluptas facere praesentium.</p>
+                        </section>
+                    </div>     
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-8"> <section class="aAbout"></section></div>
-            </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="row">
+                            <div class="col-3 col-4"><section class="aLogo"><img src="zdjecia/weworkit1.png"></section></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 col-5"><section class="aInfo"></section></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 col-5">
+                                <section class="aSpecial">
+                                    <h4>języki obce + poziom</h4>
 
-            <div class="row">
-                <div class="col-sm-3"><section class="alogo"></section></div>
-                <div class="col-sm-8"> <section class="aCV"></section></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-3"> <section class="aInfo"></section></div>
+                                </section></div>    
+                            </div>
+                        <div class="row">
+                            <div class="col-sm-3 col-5">
+                                <section class="aOpinions">
+                                    <h5>opinie</h5>
+                                </section>
+                            </div>     
+                        </div>
+                    </div>
                 
-            </div>
+                    <div class="col-sm-8 col-6">
+                        <section class="aCV">
+                            <div class="aCV-main">
+                                <div class="left"></div>
+                                    <div class="aCV-main-content">
+                                        <h1 class="aCV-main-content-header">doświadczenie</h1>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                        <h1 class="aCV-main-content-header">programy + poziom</h1>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
 
-            <div class="row">
-                <div class="col-sm-3"> <section class="aSpecial"></section></div>
-                
-            </div>
+                                        <h1 class="aCV-main-content-header">edukacja + certyfikaty, szkolenia</h1>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
 
-            
-            
+                                    </div>
+                                <div class="right"></div>
+                            </div>    
+                        </section>
+                    </div>
+            </div>
         </div>
 
-
-
-
-
-
-
-
-
-        <!-- <footer>
+        <footer>
             <div class="footericon">
                 <ul>
                     <li class="fb-icon">
@@ -85,6 +132,6 @@
                     </li>
                 </ul>
             </div>
-        </footer> -->
+        </footer>
     </body>
 </html>    

@@ -289,16 +289,16 @@ body .header .navContentsListLogo {
           transform: scale(0.6);
 }
 
-.weWorkItContainer {
+.weWorkItContainer, .aCV {
   min-height: 100%;
 }
-.weWorkItContainer .main {
+.weWorkItContainer .main, .weWorkItContainer .aCV-main, .aCV .main, .aCV .aCV-main {
   position: relative;
   margin-right: auto;
   margin-left: auto;
   background-color: transparent;
 }
-.weWorkItContainer .main .left {
+.weWorkItContainer .main .left, .weWorkItContainer .aCV-main .left, .aCV .main .left, .aCV .aCV-main .left {
   position: relative;
   width: 100px;
   height: 100px;
@@ -306,10 +306,10 @@ body .header .navContentsListLogo {
   border-left: 4px solid #48e1ee;
   background-color: transparent;
 }
-.weWorkItContainer .main p {
+.weWorkItContainer .main p, .weWorkItContainer .aCV-main p, .aCV .main p, .aCV .aCV-main p {
   text-align: center;
 }
-.weWorkItContainer .main .right {
+.weWorkItContainer .main .right, .weWorkItContainer .aCV-main .right, .aCV .main .right, .aCV .aCV-main .right {
   position: relative;
   width: 100px;
   height: 100px;
@@ -682,19 +682,93 @@ footer {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.container.account .row .col-sm-3 {
-  height: 100px;
-  margin: 5px;
-  border: 1px solid black;
-  background-color: red;
+.account {
+  background-color: #fff;
 }
-.container.account .row .col-sm-3 .aImg {
+.account .container.account {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.account .container.account .row .col-sm-3 {
   width: 250px;
+  margin: 5px;
+}
+.account .container.account .row .col-sm-3.col-1 .aImg {
   height: 300px;
 }
-.container.account .row .col-sm-8 {
-  height: 100px;
+.account .container.account .row .col-sm-3.col-1 .aImg img {
+  width: 244px;
+  height: 294px;
+}
+.account .container.account .row .col-sm-3 .aLogo {
+  margin: 20px 0 13px 0;
+}
+.account .container.account .row .col-sm-3 .aLogo img {
+  height: 125px;
+}
+.account .container.account .row .col-sm-3 .aInfo, .account .container.account .row .col-sm-3 .aSpecial, .account .container.account .row .col-sm-3 .aOpinions {
+  width: 250px;
+  height: 200px;
+  margin: 10px 0 10px 0;
+  box-shadow: 2px 3px 14px -1px rgba(0, 0, 0, 0.75);
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+}
+.account .container.account .row .col-sm-8 .row {
+  width: 100%;
   margin: 5px;
-  border: 1px solid black;
-  background-color: blue;
+}
+.account .container.account .row .col-sm-8 .row .aRanking {
+  width: 100%;
+  height: 50px;
+  box-shadow: 2px 3px 14px -1px rgba(0, 0, 0, 0.75);
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+}
+.account .container.account .row .col-sm-8 .row .aRanking span {
+  margin-left: 16px;
+  line-height: 3.4em;
+}
+.account .container.account .row .col-sm-8 .row .aRanking span h4 {
+  display: inline;
+}
+.account .container.account .row .col-sm-8 .row .aRanking span p {
+  display: contents;
+  line-height: 1.5em;
+}
+.account .container.account .row .col-sm-8 .row .aAbout {
+  width: 100%;
+  height: 200px;
+  margin: 19px 0 19px 0;
+  box-shadow: 2px 3px 14px -1px rgba(0, 0, 0, 0.75);
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+}
+.account .container.account .row .col-sm-8 .aCV {
+  height: 700px;
+  background-color: #fff;
+}
+.account .container.account .row .col-sm-8 .aCV-main {
+  height: 100%;
+}
+.account .container.account .row .col-sm-8 .aCV-main .right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content-header {
+  width: calc(100% - 100px);
+  margin: 0 50px 0 50px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 3px solid #48e1ee;
+  color: #7c7f84;
+  text-transform: uppercase;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content ul {
+  margin: 40px 50px 0 30px;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content ul li {
+  margin: 10px 0;
 }

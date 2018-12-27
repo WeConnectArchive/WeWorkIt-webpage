@@ -1,21 +1,132 @@
-.container.account {
-    .row {
-        .col-sm-3 {
-            height: 100px;
-            margin: 5px;
-            border: 1px solid black;
-            background-color: red;
+.account {
+    background-color: $white;
+
+    .container.account {
+        margin-top: 50px;
+        margin-bottom: 150px;
+        .row {
+    
             
-            .aImg {
+            .col-sm-3 {
                 width: 250px;
-                height: 300px;
+                
+                margin: 5px;
+    
+                &.col-1 .aImg {
+                    height: 300px;
+                    
+    
+                    img {
+                        width: 244px;
+                        height: 294px;
+                    }
+                }
+    
+                .aLogo {
+                    margin: 20px 0 13px 0;
+    
+                    img {
+                        height: 125px;
+                    }
+                }
+    
+                .aInfo, .aSpecial, .aOpinions {
+                    width: 250px;
+                    height: 200px;
+                    margin: 10px 0 10px 0;
+                    -webkit-box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                    box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                    border: 2px solid $grey;
+                    border-radius: 6px;
+    
+                }
             }
-        }
-        .col-sm-8 {
-            height: 100px;
-            margin: 5px;
-            border: 1px solid black;
-            background-color: blue;
+    
+            .col-sm-8 {
+                
+    
+                .row {
+                    width: 100%;
+                    margin: 5px;
+    
+                    .aRanking {
+                        width: 100%;
+                        height: 50px;
+                        -webkit-box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                        box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                        border: 2px solid $grey;
+                        border-radius: 6px;
+
+                        span {
+                            margin-left: 16px;
+                            line-height: 3.4em;
+
+                            h4 {
+                                display: inline;
+                            }
+                            p {
+                                
+                                display: contents;
+                                line-height: 1.5em;
+                            }
+                        }
+                    }
+    
+                    .aAbout {
+                        width: 100%;
+                        height: 200px;
+                        margin: 19px 0 19px 0;
+                        -webkit-box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                        box-shadow: 2px 3px 14px -1px rgba(0,0,0,0.75);
+                        border: 2px solid $grey;
+                        border-radius: 6px;
+
+                        h3 {
+                            margin: 10px;
+                        }
+
+                        p {
+
+                        }
+                    }
+                }
+                .aCV {
+                    height: 700px;
+                    background-color: $white;
+                    &-main {
+                        height: 100%;
+                        .right {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+
+                        &-content {
+                            &-header {
+                                width: calc(100% - 100px);
+                                margin: 0 50px 0 50px;
+                                font-size: 24px;
+                                text-align: center;
+                                font-weight: 700;
+                                border-bottom: 3px solid $colorLogo;
+                                color: #7c7f84;
+                                text-transform: uppercase;
+                            }
+
+                            ul {
+                                margin: 40px 50px 0 30px;
+
+                                li {
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
