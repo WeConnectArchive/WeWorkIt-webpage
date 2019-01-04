@@ -1,0 +1,44 @@
+
+body.visiting-card {
+    background-color: grey !important;
+    overflow: hidden;
+
+    .visiting-card {
+        &-container {
+            width: 900px;
+            height: 450px;
+            margin: 250px auto;
+            background-color: white;
+            border: 2px solid black;
+
+            .container {
+
+                .row {
+                    .col-3 {
+                        .row {
+                            .vImg {
+                                margin: 25px 25px;
+                                img {
+                                    height: 200px;
+                                    width: 166px;
+                                    border-radius:  4px;
+                                }
+                            }
+                            .vLogo {
+                                img {
+                                    width: 166px;
+                                    height: 90px;
+                                    margin: 0 25px;
+                                }
+                            }
+                            button {
+                                margin: 25px 0 0 75px
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

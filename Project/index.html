@@ -48,31 +48,29 @@
     </div>
     <div class="yourChoiceContainer">
       <div class="yourChoiceContainerMain">
-
         <div class="yourChoicePosition">
             <div class="main">
-                <div class="left animatedBorderTop animatedBorderRight"></div>
                 <div class="yourChoiceEmployee">
-                  <p>Employee</p>
+                  <p class="yourChoiceEmployeeTitle">Employee</p>
                   <ul class="yourChoiceEmployeeDropdown">
                     <li><a href="login.html">LOGIN</a></li>
                     <li><a href="rEmployee.html">REGISTER</a></li>
                   </ul>
                 </div>
-              <div class="right animatedBorderBottom animatedBorderLeft"></div>
             </div>      
         </div>
 
         <div class="yourChoicePosition">
             <div class="main">
-                <div class="left animatedBorderTop animatedBorderRight"></div>
-                <div class="yourChoiceEmployer"><p>Employer</p>
-                  <ul class="yourChoiceEmployeeDropdown">
+               
+                <div class="yourChoiceEmployer"><p class="yourChoiceEmployerTitle">Employer</p>
+                  <ul class="yourChoiceEmployerDropdown">
                       <li><a href="login.html">LOGIN</a></li>
                       <li><a href="rEmployer.html">REGISTER</a></li>
+                      <li></li>
                     </ul>
                 </div>
-              <div class="right animatedBorderBottom animatedBorderLeft"></div>
+             
             </div>   
         </div>
 
@@ -114,15 +112,59 @@
 
       var wrap = $('#wrap');
       var x = screen.height - 280;
-      $(window).on('scroll', 500, function(e) {
+        $(window).on('scroll', 500, function(e) {
         
-        if ($(this).scrollTop() > x) {
-          wrap.addClass("flex-nav");
-        } else {
-          wrap.removeClass("flex-nav");
+          if ($(this).scrollTop() > x) {
+            wrap.addClass("flex-nav");
+          } else {
+            wrap.removeClass("flex-nav");
+          }
+        
+        });
+
+      var service_item1 = $(".yourChoiceEmployer");
+      var service_item2 = $(".yourChoiceEmployee");
+
+        // service_item.mouseenter(function(){
+          
+        //   if (!(service_item.hasClass("open"))) {
+        // }
+
+        // service_item.mouseleave(function(){
+            
+          
+
+        $(".yourChoiceEmployerTitle").click(function(){
+
+          if (!(service_item1.hasClass("open"))) {
+            
+            service_opened1 = $(this).parents(".yourChoiceEmployer");
+            service_opened1.addClass("open");
+          }
+
+        });
+
+        $(".yourChoiceEmployeeTitle").click(function() {
+
+          if (!(service_item2.hasClass("open"))) {
+            service_opened2 = $(this).parents(".yourChoiceEmployee");
+            service_opened2.addClass("open");
+          }
+        });
+
+        $(".yourChoiceEmployeeTitle").click(function(){
+
+        if (!(service_item2.hasClass("open"))) {
+          
+          service_opened2 = $(this).parents(".yourChoiceEmployee");
+          service_opened2.addClass("open");
         }
-        
-      });
-    }); 
+
+        });
+
+      }); 
+
+
+    
   </script>
 </body>

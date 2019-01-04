@@ -382,59 +382,46 @@ body .header .navContentsListLogo {
   color: #c6c6c6;
 }
 .yourChoiceContainerMain {
-  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 .yourChoiceContainerMain .yourChoicePosition {
-  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 100%;
 }
 .yourChoiceContainerMain .yourChoicePosition .main {
-  top: 100px;
-  z-index: 100;
-  height: 500px;
-  margin: 250px 150px;
-}
-.yourChoiceContainerMain .yourChoicePosition .main .left,
-.yourChoiceContainerMain .yourChoicePosition .main .right {
-  position: absolute;
-  top: -600px;
-  z-index: 9;
-  width: 0;
-  padding: 200px 150px 300px 150px;
-  border: 0;
-  background-color: transparent;
-}
-.yourChoiceContainerMain .yourChoicePosition .main .left {
   top: 0;
+  z-index: 100;
+  height: 100%;
+  text-align: center;
 }
 .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer {
   position: relative;
-  top: -340px;
+  top: 40%;
   z-index: 999;
-  height: 100px;
-  margin: 5px 5px 0 5px;
-  transition: all 800ms ease-in-out;
-  transition-delay: 0.5s;
-}
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee p, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer p {
-  position: relative;
-  top: 45px;
-  margin: 0;
-  color: #48e1ee;
-  font-weight: 800;
-  font-size: 24px;
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+  height: 5em;
   text-align: center;
-  text-transform: uppercase;
+  transition: all 800ms ease-in-out;
+  vertical-align: middle;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdown {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open {
+  top: 25%;
+  height: 50%;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown {
   position: relative;
-  bottom: 50px;
+  bottom: 0;
   padding: 0;
-  opacity: 0;
+  opacity: 1;
   list-style: none;
   transition: all 1.5s ease-in-out;
   transition-delay: 0.3s;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdown li, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdown li {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown li, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown li, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown li, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown li {
   position: relative;
   z-index: 10;
   margin: 0;
@@ -445,105 +432,56 @@ body .header .navContentsListLogo {
   text-align: center;
   text-transform: uppercase;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdown li a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdown li a {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown li a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown li a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown li a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown li a {
   color: #48e1ee;
   text-decoration: none;
   transition: 1s color ease-in-out;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdown li a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdown li a:hover {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown li a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown li a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown li a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown li a:hover {
   color: #0d8590;
 }
-.yourChoiceContainerMain .yourChoicePosition .main:hover .yourChoiceEmployee, .yourChoiceContainerMain .yourChoicePosition .main:hover .yourChoiceEmployer {
-  top: -410px;
-}
-.yourChoiceContainerMain .yourChoicePosition .main:hover .yourChoiceEmployeeDropdown {
-  bottom: -50px;
-  opacity: 1;
-}
-.yourChoiceContainerMain .yourChoicePosition .main .animatedBorderTop,
-.yourChoiceContainerMain .yourChoicePosition .main .animatedBorderBottom,
-.yourChoiceContainerMain .yourChoicePosition .main .animatedBorderLeft,
-.yourChoiceContainerMain .yourChoicePosition .main .animatedBorderRight {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployeeTitle, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployerTitle {
   position: relative;
+  margin: 0;
+  color: #48e1ee;
+  font-weight: 800;
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .animatedBorderTop::before {
-  position: absolute;
-  top: 0;
-  right: 80%;
-  left: 0;
-  border-bottom: 5px solid #48e1ee;
-  content: "";
-  transition: all 500ms;
-}
-.yourChoiceContainerMain .yourChoicePosition .main:hover .animatedBorderTop::before {
-  right: 0;
-}
-.yourChoiceContainerMain .yourChoicePosition .main .animatedBorderBottom::before {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 80%;
-  border-bottom: 5px solid #48e1ee;
-  content: "";
-  transition: all 500ms;
-}
-.yourChoiceContainerMain .yourChoicePosition .main:hover .animatedBorderBottom::before {
-  left: 0;
-}
-.yourChoiceContainerMain .yourChoicePosition .main .animatedBorderLeft::after {
-  position: absolute;
-  top: 88%;
-  right: 0;
-  bottom: 0;
-  border-left: 5px solid #48e1ee;
-  content: "";
-  transition: all 500ms;
-}
-.yourChoiceContainerMain .yourChoicePosition .main:hover .animatedBorderLeft::after {
-  top: 0;
-}
-.yourChoiceContainerMain .yourChoicePosition .main .animatedBorderRight::after {
-  position: absolute;
-  top: 0;
-  bottom: 88%;
-  left: 0;
-  border-left: 5px solid #48e1ee;
-  content: "";
-  transition: all 500ms;
-}
-.yourChoiceContainerMain .yourChoicePosition .main:hover .animatedBorderRight::after {
-  bottom: 0;
+.yourChoiceContainerMain .yourChoicePosition .main:hover {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
 }
 
-.profilePanel .container.profile {
+.profilePanel .container.controlPanel {
   height: 100vh;
   margin: 50px auto;
 }
-.profilePanel .container.profile h1 {
+.profilePanel .container.controlPanel h1 {
   text-align: center;
 }
-.profilePanel .container.profile .row {
+.profilePanel .container.controlPanel .row {
   text-align: center;
 }
-.profilePanel .container.profile .row .col-sm {
+.profilePanel .container.controlPanel .row .col-sm {
   height: 300px;
 }
-.profilePanel .container.profile .row .col-sm.null {
+.profilePanel .container.controlPanel .row .col-sm.null {
   z-index: -1;
 }
-.profilePanel .container.profile .row .col-sm .alerts, .profilePanel .container.profile .row .col-sm .search, .profilePanel .container.profile .row .col-sm .scoreboard, .profilePanel .container.profile .row .col-sm .yourStats, .profilePanel .container.profile .row .col-sm .news, .profilePanel .container.profile .row .col-sm .messenger, .profilePanel .container.profile .row .col-sm .help {
+.profilePanel .container.controlPanel .row .col-sm .alerts, .profilePanel .container.controlPanel .row .col-sm .search, .profilePanel .container.controlPanel .row .col-sm .scoreboard, .profilePanel .container.controlPanel .row .col-sm .yourStats, .profilePanel .container.controlPanel .row .col-sm .news, .profilePanel .container.controlPanel .row .col-sm .messenger, .profilePanel .container.controlPanel .row .col-sm .help {
   display: block;
   border: 3px solid #333;
   border-radius: 5px;
   background-color: #fff;
 }
-.profilePanel .container.profile .row .col-sm .alerts-Container.sm, .profilePanel .container.profile .row .col-sm .search-Container.sm, .profilePanel .container.profile .row .col-sm .scoreboard-Container.sm, .profilePanel .container.profile .row .col-sm .yourStats-Container.sm, .profilePanel .container.profile .row .col-sm .news-Container.sm, .profilePanel .container.profile .row .col-sm .messenger-Container.sm, .profilePanel .container.profile .row .col-sm .help-Container.sm {
+.profilePanel .container.controlPanel .row .col-sm .alerts-Container.sm, .profilePanel .container.controlPanel .row .col-sm .search-Container.sm, .profilePanel .container.controlPanel .row .col-sm .scoreboard-Container.sm, .profilePanel .container.controlPanel .row .col-sm .yourStats-Container.sm, .profilePanel .container.controlPanel .row .col-sm .news-Container.sm, .profilePanel .container.controlPanel .row .col-sm .messenger-Container.sm, .profilePanel .container.controlPanel .row .col-sm .help-Container.sm {
   height: 250px;
 }
-.profilePanel .container.profile .row .col-sm .alerts-Container.lg, .profilePanel .container.profile .row .col-sm .search-Container.lg, .profilePanel .container.profile .row .col-sm .scoreboard-Container.lg, .profilePanel .container.profile .row .col-sm .yourStats-Container.lg, .profilePanel .container.profile .row .col-sm .news-Container.lg, .profilePanel .container.profile .row .col-sm .messenger-Container.lg, .profilePanel .container.profile .row .col-sm .help-Container.lg {
+.profilePanel .container.controlPanel .row .col-sm .alerts-Container.lg, .profilePanel .container.controlPanel .row .col-sm .search-Container.lg, .profilePanel .container.controlPanel .row .col-sm .scoreboard-Container.lg, .profilePanel .container.controlPanel .row .col-sm .yourStats-Container.lg, .profilePanel .container.controlPanel .row .col-sm .news-Container.lg, .profilePanel .container.controlPanel .row .col-sm .messenger-Container.lg, .profilePanel .container.controlPanel .row .col-sm .help-Container.lg {
   height: 550px;
 }
-.profilePanel .container.profile .row .col-sm .alerts-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .search-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .scoreboard-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .yourStats-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .news-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .messenger-Container .infoDropdown, .profilePanel .container.profile .row .col-sm .help-Container .infoDropdown {
+.profilePanel .container.controlPanel .row .col-sm .alerts-Container .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .search-Container .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .scoreboard-Container .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .yourStats-Container .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .news-Container .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .messenger-Container .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .help-Container .infoDropdown {
   position: relative;
   top: 0;
   z-index: 2;
@@ -552,17 +490,45 @@ body .header .navContentsListLogo {
   background-color: #c6c6c6;
   transition: 0.3s all ease-in-out;
 }
-.profilePanel .container.profile .row .col-sm .alerts-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .search-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .scoreboard-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .yourStats-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .news-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .messenger-Container .infoDropdown p, .profilePanel .container.profile .row .col-sm .help-Container .infoDropdown p {
+.profilePanel .container.controlPanel .row .col-sm .alerts-Container .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .search-Container .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .scoreboard-Container .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .yourStats-Container .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .news-Container .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .messenger-Container .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .help-Container .infoDropdown p {
   padding: 10px;
   font-weight: 700;
   font-size: 0;
   transition: 0.3s all ease-in;
 }
-.profilePanel .container.profile .row .col-sm .alerts-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .search-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .scoreboard-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .yourStats-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .news-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .messenger-Container:hover .infoDropdown, .profilePanel .container.profile .row .col-sm .help-Container:hover .infoDropdown {
+.profilePanel .container.controlPanel .row .col-sm .alerts-Container:hover .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .search-Container:hover .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .scoreboard-Container:hover .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .yourStats-Container:hover .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .news-Container:hover .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .messenger-Container:hover .infoDropdown, .profilePanel .container.controlPanel .row .col-sm .help-Container:hover .infoDropdown {
   height: 50px;
 }
-.profilePanel .container.profile .row .col-sm .alerts-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .search-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .scoreboard-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .yourStats-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .news-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .messenger-Container:hover .infoDropdown p, .profilePanel .container.profile .row .col-sm .help-Container:hover .infoDropdown p {
+.profilePanel .container.controlPanel .row .col-sm .alerts-Container:hover .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .search-Container:hover .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .scoreboard-Container:hover .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .yourStats-Container:hover .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .news-Container:hover .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .messenger-Container:hover .infoDropdown p, .profilePanel .container.controlPanel .row .col-sm .help-Container:hover .infoDropdown p {
   font-size: 1em;
+}
+
+body.visiting-card {
+  background-color: grey !important;
+  overflow: hidden;
+}
+body.visiting-card .visiting-card-container {
+  width: 900px;
+  height: 450px;
+  margin: 250px auto;
+  background-color: white;
+  border: 2px solid black;
+}
+body.visiting-card .visiting-card-container .container .row .col-3 .row .vImg {
+  margin: 25px 25px;
+}
+body.visiting-card .visiting-card-container .container .row .col-3 .row .vImg img {
+  height: 200px;
+  width: 166px;
+  border-radius: 4px;
+}
+body.visiting-card .visiting-card-container .container .row .col-3 .row .vLogo img {
+  width: 166px;
+  height: 90px;
+  margin: 0 25px;
+}
+body.visiting-card .visiting-card-container .container .row .col-3 .row button {
+  margin: 25px 0 0 75px;
 }
 
 footer {
@@ -743,6 +709,9 @@ footer {
   box-shadow: 2px 3px 14px -1px rgba(0, 0, 0, 0.75);
   border: 2px solid #afafaf;
   border-radius: 6px;
+}
+.account .container.account .row .col-sm-8 .row .aAbout h3 {
+  margin: 10px;
 }
 .account .container.account .row .col-sm-8 .aCV {
   height: 700px;

@@ -28,162 +28,83 @@
     }
 
     &Main {
-        
-        text-align: center;
+        width: 100%;
+        height: 100%;
 
         .yourChoicePosition {
-            display: inline-block;
+            float: left;
+            width: 50%;
+            height: 100%;
             
             .main {
-                top: 100px;
+                top: 0;
                 z-index: 100;
-                height: 500px;
-                margin: 250px 150px;
-
-                .left,
-                .right {
-                    position: absolute;
-                    top: -600px;
-                    z-index: 9;
-                    width: 0;
-                    padding: 200px 150px 300px 150px;
-                    border: 0;
-                    background-color: transparent;
-                }
-
-                .left {
-                    top: 0;
-                }
+                height: 100%;
+                text-align: center;
+                
 
                 .yourChoiceEmployee, .yourChoiceEmployer {
                     position: relative;
-                    top: -340px;
+                    top: 40%;
                     z-index: 999;
-                    height: 100px;
-                    margin: 5px 5px 0 5px;
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 50%;
+                    height: 5em;
+                    text-align: center;
                     transition: all 800ms ease-in-out;
-                    transition-delay: .5s;
-                   
+                    vertical-align: middle;
 
-                    p {
+                    &.open {
+                        top: 25%;
+                        height: 50%;
+                        
+                        .yourChoiceEmployeeDropdown, .yourChoiceEmployerDropdown {
+                            position: relative;
+                            bottom: 0;
+                            padding: 0;
+                            opacity: 1;
+                            list-style: none;
+                            transition: all 1.5s ease-in-out;
+                            transition-delay: .3s;
+    
+                            li {
+                                position: relative;
+                                z-index: 10;
+                                margin: 0;
+                                padding: 37px;
+                                color: $colorLogo;
+                                font-weight: 800;
+                                font-size: 18px;
+                                text-align: center;
+                                text-transform: uppercase;    
+                                
+                                a {
+                                    color: $colorLogo;
+                                    text-decoration: none;
+                                    transition: 1s color ease-in-out;
+    
+                                    &:hover {
+                                        color: darken( $colorLogo, 30%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &Title {
                         position: relative;
-                        top: 45px;
                         margin: 0;
                         color: $colorLogo;
                         font-weight: 800;
-                        font-size: 24px;
+                        font-size: 4em;
                         text-align: center;
                         text-transform: uppercase;
                     }
-
-                    .yourChoiceEmployeeDropdown {
-                        position: relative;
-                        bottom: 50px;
-                        padding: 0;
-                        opacity: 0;
-                        list-style: none;
-                        transition: all 1.5s ease-in-out;
-                        transition-delay: .3s;
-
-                        li {
-                            position: relative;
-                            z-index: 10;
-                            margin: 0;
-                            padding: 37px;
-                            color: $colorLogo;
-                            font-weight: 800;
-                            font-size: 18px;
-                            text-align: center;
-                            text-transform: uppercase;    
-                            
-                            a {
-                                color: $colorLogo;
-                                text-decoration: none;
-                                transition: 1s color ease-in-out;
-
-                                &:hover {
-                                    color: darken( $colorLogo, 30%);
-                                }
-                            }
-                            
-                        }
-
-                    }
-
-                    
                 }
 
-                &:hover .yourChoiceEmployee,
-                &:hover .yourChoiceEmployer {
-                    top: -410px;
-                }
-
-                &:hover .yourChoiceEmployeeDropdown {
-                    bottom: -50px;
-                    opacity: 1;
-                }
-
-                .animatedBorderTop,
-                .animatedBorderBottom,
-                .animatedBorderLeft,
-                .animatedBorderRight {
-                    position: relative;
-                }
-
-                .animatedBorderTop::before {
-                    position: absolute;
-                    top: 0;
-                    right: 80%;
-                    left: 0;
-                    border-bottom: 5px solid $colorLogo;
-                    content: '';
-                    transition: all 500ms;
-                }
-
-                &:hover .animatedBorderTop::before {
-                    right: 0;
-                }
-
-                .animatedBorderBottom::before {
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-                    left: 80%;
-                    border-bottom: 5px solid $colorLogo;
-                    content: '';
-                    transition: all 500ms;
-                }
-
-                &:hover .animatedBorderBottom::before {
-                    left: 0;
-                }
-
-                .animatedBorderLeft::after {
-                    position: absolute;
-                    top: 88%;
-                    right: 0;
-                    bottom: 0;
-                    border-left: 5px solid $colorLogo;
-                    content: '';
-                    transition: all 500ms;
-                }
-
-                &:hover .animatedBorderLeft::after {
-                    top: 0;
-                }
-
-                .animatedBorderRight::after {
-                    position: absolute;
-                    top: 0;
-                    bottom: 88%;
-                    left: 0;
-                    border-left: 5px solid $colorLogo;
-                    content: '';
-                    transition: all 500ms;
-                }
-
-                &:hover .animatedBorderRight::after {
-                    bottom: 0;
+                &:hover {
+                    background: none repeat scroll 0 0 rgba(0, 0, 0, .3);
                 }
             }   
         } 
