@@ -2,6 +2,9 @@
 <head>
   <link rel="stylesheet" type="text/css" href="scss/builds-dev/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>WeWorkIt - Start page</title>
   <script src="jquery-3.2.1.min.js"></script>
   <script src="jquery.scrollTo.min.js"></script>
@@ -13,23 +16,22 @@
   <div id="mainpage" class="fota">
       <img class="background" src="zdjecia/background.png"> 
   </div> 
-
     <header class="header hp"> 
       <div class="nav" id="nav">
         <div class="navContents">
           <ul class="navContentsList">
-            <li><a href="#">regulamin</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">ranking</a></li>
-            <li><a id="main"><img class="navContentsListLogo" src="zdjecia/weworkit1.png"></a></li>
-            <li><a id="aboutus" href="#">about us</a></li>
-            <li><a href="login.html">login</a></li>
-            <li><a id="signin" href="#">register</a></li>
+            <li class="navContentsListC"><a href="#">regulamin</a></li>
+            <li class="navContentsListC"><a href="#">contact</a></li>
+            <li class="navContentsListC"><a href="#">ranking</a></li>
+            <li class="navContentsListC"><a id="main"><img class="navContentsListCLogo" src="zdjecia/weworkit1.png"></a></li>
+            <li class="navContentsListC"><a id="aboutus" href="#">about us</a></li>
+            <li class="navContentsListC"><a href="login.html">login</a></li>
+            <li class="navContentsListC"><a id="signin" href="#">register</a></li>
           </ul>
         </div>
       </div>
     </header>
-
+    
   <section id="aboutFirm">
     
         <div class="aboutfirmContainer weWorkItContainer">
@@ -53,8 +55,9 @@
                 <div class="yourChoiceEmployee">
                   <p class="yourChoiceEmployeeTitle">Employee</p>
                   <ul class="yourChoiceEmployeeDropdown">
-                    <li><a href="login.html">LOGIN</a></li>
-                    <li><a href="rEmployee.html">REGISTER</a></li>
+                    <li class="yourChoiceEmployeeDropdownList"><a href="login.html">LOGIN</a></li>
+                    <li class="yourChoiceEmployeeDropdownList"><a href="rEmployee.html">REGISTER</a></li>
+                    <li class="yourChoiceEmployeeDropdownList"><a><span class="glyphicon glyphicon2 glyphicon-remove-circle"></span></a></li>
                   </ul>
                 </div>
             </div>      
@@ -65,9 +68,9 @@
                
                 <div class="yourChoiceEmployer"><p class="yourChoiceEmployerTitle">Employer</p>
                   <ul class="yourChoiceEmployerDropdown">
-                      <li><a href="login.html">LOGIN</a></li>
-                      <li><a href="rEmployer.html">REGISTER</a></li>
-                      <li></li>
+                      <li class="yourChoiceEmployeeDropdownList"><a href="login.html">LOGIN</a></li>
+                      <li class="yourChoiceEmployeeDropdownList"><a href="rEmployer.html">REGISTER</a></li>
+                      <li class="yourChoiceEmployeeDropdownList"><a><span class="glyphicon glyphicon1 glyphicon-remove-circle"></span></a></li>
                     </ul>
                 </div>
              
@@ -103,68 +106,7 @@
       </ul>
     </div>
   </footer>
-
  
 </div> 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
-  <script>
-    $(document).ready(function () {
-
-      var wrap = $('#wrap');
-      var x = screen.height - 280;
-        $(window).on('scroll', 500, function(e) {
-        
-          if ($(this).scrollTop() > x) {
-            wrap.addClass("flex-nav");
-          } else {
-            wrap.removeClass("flex-nav");
-          }
-        
-        });
-
-      var service_item1 = $(".yourChoiceEmployer");
-      var service_item2 = $(".yourChoiceEmployee");
-
-        // service_item.mouseenter(function(){
-          
-        //   if (!(service_item.hasClass("open"))) {
-        // }
-
-        // service_item.mouseleave(function(){
-            
-          
-
-        $(".yourChoiceEmployerTitle").click(function(){
-
-          if (!(service_item1.hasClass("open"))) {
-            
-            service_opened1 = $(this).parents(".yourChoiceEmployer");
-            service_opened1.addClass("open");
-          }
-
-        });
-
-        $(".yourChoiceEmployeeTitle").click(function() {
-
-          if (!(service_item2.hasClass("open"))) {
-            service_opened2 = $(this).parents(".yourChoiceEmployee");
-            service_opened2.addClass("open");
-          }
-        });
-
-        $(".yourChoiceEmployeeTitle").click(function(){
-
-        if (!(service_item2.hasClass("open"))) {
-          
-          service_opened2 = $(this).parents(".yourChoiceEmployee");
-          service_opened2.addClass("open");
-        }
-
-        });
-
-      }); 
-
-
-    
-  </script>
 </body>

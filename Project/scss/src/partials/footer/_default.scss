@@ -1,8 +1,6 @@
-footer {
+footer, body::after {
     position: relative;
-    clear: both;
     height: 130px;
-    margin-top: -100px;
     background-color: $black;
 }
 

@@ -9,3 +9,18 @@ jQuery(function($){
     
     }
 );
+
+$(document).ready(function () {
+
+    var wrap = $('#wrap');
+    var x = screen.height - 230;
+      $(window).on('scroll', 500, function(e) {
+      
+        if ($(this).scrollTop() > x) {
+          wrap.addClass("flex-nav");
+        } else {
+          wrap.removeClass("flex-nav");
+        }
+      
+      });
+});      

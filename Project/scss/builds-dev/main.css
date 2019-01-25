@@ -25,15 +25,15 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   z-index: 99;
   width: 100%;
-  height: 15vh;
+  height: 12vh;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
   text-align: center;
   transition: all 0.5s ease 0.1s;
   -webkit-transition: all 0.5s ease 0.1s;
 }
-.loginPanel .header .navContentsList li, .loginPanel .header .loginNavContentsList li, .loginPanel .header .registerNavContentsList li, .loginPanel .header .profileNavContentsList li, .loginPanel .login .navContentsList li, .loginPanel .login .loginNavContentsList li, .loginPanel .login .registerNavContentsList li, .loginPanel .login .profileNavContentsList li, .loginPanel .register .navContentsList li, .loginPanel .register .loginNavContentsList li, .loginPanel .register .registerNavContentsList li, .loginPanel .register .profileNavContentsList li, .loginPanel .profile .navContentsList li, .loginPanel .profile .loginNavContentsList li, .loginPanel .profile .registerNavContentsList li, .loginPanel .profile .profileNavContentsList li, .registerPanel .header .navContentsList li, .registerPanel .header .loginNavContentsList li, .registerPanel .header .registerNavContentsList li, .registerPanel .header .profileNavContentsList li, .registerPanel .login .navContentsList li, .registerPanel .login .loginNavContentsList li, .registerPanel .login .registerNavContentsList li, .registerPanel .login .profileNavContentsList li, .registerPanel .register .navContentsList li, .registerPanel .register .loginNavContentsList li, .registerPanel .register .registerNavContentsList li, .registerPanel .register .profileNavContentsList li, .registerPanel .profile .navContentsList li, .registerPanel .profile .loginNavContentsList li, .registerPanel .profile .registerNavContentsList li, .registerPanel .profile .profileNavContentsList li, .profilePanel .header .navContentsList li, .profilePanel .header .loginNavContentsList li, .profilePanel .header .registerNavContentsList li, .profilePanel .header .profileNavContentsList li, .profilePanel .login .navContentsList li, .profilePanel .login .loginNavContentsList li, .profilePanel .login .registerNavContentsList li, .profilePanel .login .profileNavContentsList li, .profilePanel .register .navContentsList li, .profilePanel .register .loginNavContentsList li, .profilePanel .register .registerNavContentsList li, .profilePanel .register .profileNavContentsList li, .profilePanel .profile .navContentsList li, .profilePanel .profile .loginNavContentsList li, .profilePanel .profile .registerNavContentsList li, .profilePanel .profile .profileNavContentsList li {
+.loginPanel .header .navContentsListC, .loginPanel .header .loginNavContentsListC, .loginPanel .header .registerNavContentsListC, .loginPanel .header .profileNavContentsListC, .loginPanel .login .navContentsListC, .loginPanel .login .loginNavContentsListC, .loginPanel .login .registerNavContentsListC, .loginPanel .login .profileNavContentsListC, .loginPanel .register .navContentsListC, .loginPanel .register .loginNavContentsListC, .loginPanel .register .registerNavContentsListC, .loginPanel .register .profileNavContentsListC, .loginPanel .profile .navContentsListC, .loginPanel .profile .loginNavContentsListC, .loginPanel .profile .registerNavContentsListC, .loginPanel .profile .profileNavContentsListC, .registerPanel .header .navContentsListC, .registerPanel .header .loginNavContentsListC, .registerPanel .header .registerNavContentsListC, .registerPanel .header .profileNavContentsListC, .registerPanel .login .navContentsListC, .registerPanel .login .loginNavContentsListC, .registerPanel .login .registerNavContentsListC, .registerPanel .login .profileNavContentsListC, .registerPanel .register .navContentsListC, .registerPanel .register .loginNavContentsListC, .registerPanel .register .registerNavContentsListC, .registerPanel .register .profileNavContentsListC, .registerPanel .profile .navContentsListC, .registerPanel .profile .loginNavContentsListC, .registerPanel .profile .registerNavContentsListC, .registerPanel .profile .profileNavContentsListC, .profilePanel .header .navContentsListC, .profilePanel .header .loginNavContentsListC, .profilePanel .header .registerNavContentsListC, .profilePanel .header .profileNavContentsListC, .profilePanel .login .navContentsListC, .profilePanel .login .loginNavContentsListC, .profilePanel .login .registerNavContentsListC, .profilePanel .login .profileNavContentsListC, .profilePanel .register .navContentsListC, .profilePanel .register .loginNavContentsListC, .profilePanel .register .registerNavContentsListC, .profilePanel .register .profileNavContentsListC, .profilePanel .profile .navContentsListC, .profilePanel .profile .loginNavContentsListC, .profilePanel .profile .registerNavContentsListC, .profilePanel .profile .profileNavContentsListC {
   position: relative;
-  top: -15px;
+  top: 0;
   max-height: 110px;
 }
 .loginPanel .panel-register, .registerPanel .panel-register, .profilePanel .panel-register {
@@ -189,18 +189,6 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #48e1ee;
   background-color: grey;
 }
-.loginPanel .footer, .loginPanel .fLogin, .loginPanel .fRegister, .registerPanel .footer, .registerPanel .fLogin, .registerPanel .fRegister, .profilePanel .footer, .profilePanel .fLogin, .profilePanel .fRegister {
-  top: 10vh;
-  height: 10vh;
-  margin-top: 3px;
-}
-.loginPanel .footer ul, .loginPanel .fLogin ul, .loginPanel .fRegister ul, .registerPanel .footer ul, .registerPanel .fLogin ul, .registerPanel .fRegister ul, .profilePanel .footer ul, .profilePanel .fLogin ul, .profilePanel .fRegister ul {
-  position: absolute;
-  left: calc(50vw - 80px);
-  display: flex;
-  margin: 20px 0;
-  padding: 0;
-}
 
 * {
   box-sizing: border-box;
@@ -221,21 +209,21 @@ body .fota img {
   height: 1000px;
   margin: 0;
 }
-body .flex-nav .header, body .flex-nav .hp {
+body .flex-nav .header.hp {
   position: fixed;
-  top: 0;
+  top: 0vh;
+  height: 130px;
   z-index: 1000;
-  height: 159px;
   background-color: transparent;
 }
-body .flex-nav .header:hover, body .flex-nav .hp:hover {
+body .flex-nav .header.hp:hover {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
 }
-body .flex-nav .header a, body .flex-nav .hp a {
+body .flex-nav .header.hp a {
   color: #000 !important;
   transition: 0.5s color ease-in-out;
 }
-body .flex-nav .header a:hover, body .flex-nav .hp a:hover {
+body .flex-nav .header.hp a:hover {
   color: #c6c6c6 !important;
 }
 body .header {
@@ -249,9 +237,12 @@ body .header {
   transition: all 0.5s ease 0.1s;
   -webkit-transition: all 0.5s ease 0.1s;
 }
+body .header.login {
+  bottom: initial;
+}
 body .header .navContents {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   margin: 0 auto;
 }
 body .header .navContentsList {
@@ -262,31 +253,31 @@ body .header .navContentsList {
   text-align: center;
   text-transform: uppercase;
 }
-body .header .navContentsList li {
+body .header .navContentsListC {
   float: left;
   min-width: 100px;
-  max-height: 120px;
+  max-height: 10vh;
   opacity: 1;
   list-style-type: none;
   transition: all 0.5s ease 0.1s;
   -webkit-transition: all 0.5s ease 0.1s;
 }
-body .header .navContentsList li a {
-  height: 120px;
+body .header .navContentsListC a {
+  height: 10vh;
   color: #fff;
   font-weight: 700;
   font-size: 1em;
-  line-height: 9em;
+  line-height: 7em;
   text-decoration: none;
   transition: color 0.5s ease-in-out;
 }
-body .header .navContentsList li a:hover {
+body .header .navContentsListC a:hover {
   color: #c6c6c6;
 }
-body .header .navContentsListLogo {
+body .header .navContentsListCLogo {
   height: 140px;
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
+  -webkit-transform: scale(0.6) translateY(-25px);
+          transform: scale(0.6) translateY(-25px);
 }
 
 .weWorkItContainer, .aCV {
@@ -358,11 +349,10 @@ body .header .navContentsListLogo {
 
 #yourChoice {
   position: relative;
-  top: 0;
+  top: 100;
   width: inherit;
   height: 100vh;
   font-family: "Catamaran";
-  margin-bottom: 100px;
 }
 #yourChoice img {
   -webkit-filter: blur(4px);
@@ -377,6 +367,7 @@ body .header .navContentsListLogo {
   top: -100vh;
   height: 100vh;
   transition: all 500ms;
+  overflow: hidden;
 }
 .yourChoiceContainer h3 {
   color: #c6c6c6;
@@ -408,6 +399,28 @@ body .header .navContentsListLogo {
   transition: all 800ms ease-in-out;
   vertical-align: middle;
 }
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployerDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployerDropdown {
+  list-style: none;
+  transition: all 1.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployerDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployerDropdownList {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding: 37px;
+  color: #48e1ee;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployerDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployerDropdownList a {
+  color: #48e1ee;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s color ease-in-out;
+}
 .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open {
   top: 25%;
   height: 50%;
@@ -421,7 +434,7 @@ body .header .navContentsListLogo {
   transition: all 1.5s ease-in-out;
   transition-delay: 0.3s;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown li, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown li, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown li, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown li {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList {
   position: relative;
   z-index: 10;
   margin: 0;
@@ -432,13 +445,17 @@ body .header .navContentsListLogo {
   text-align: center;
   text-transform: uppercase;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown li a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown li a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown li a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown li a {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList a {
   color: #48e1ee;
   text-decoration: none;
+  cursor: pointer;
   transition: 1s color ease-in-out;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown li a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown li a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown li a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown li a:hover {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList a:hover {
   color: #0d8590;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown .glyphicon, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown .glyphicon, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown .glyphicon, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown .glyphicon {
+  font-size: 24px;
 }
 .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployeeTitle, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployerTitle {
   position: relative;
@@ -447,6 +464,7 @@ body .header .navContentsListLogo {
   font-weight: 800;
   font-size: 4em;
   text-align: center;
+  cursor: pointer;
   text-transform: uppercase;
 }
 .yourChoiceContainerMain .yourChoicePosition .main:hover {
@@ -531,11 +549,9 @@ body.visiting-card .visiting-card-container .container .row .col-3 .row button {
   margin: 25px 0 0 75px;
 }
 
-footer {
+footer, body::after {
   position: relative;
-  clear: both;
   height: 130px;
-  margin-top: -100px;
   background-color: #000;
 }
 

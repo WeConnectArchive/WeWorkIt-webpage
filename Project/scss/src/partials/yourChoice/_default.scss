@@ -2,11 +2,10 @@
 
 #yourChoice {
     position: relative;
-    top: 0;
+    top: 100;
     width: inherit;
     height: 100vh;
     font-family: 'Catamaran';
-    margin-bottom: 100px;
 
     img {
         -webkit-filter: blur(4px);
@@ -22,6 +21,7 @@
     top: -100vh;
     height: 100vh;
     transition: all 500ms;
+    overflow: hidden;
 
     h3 {
         color: $darkenwhite;
@@ -55,6 +55,32 @@
                     transition: all 800ms ease-in-out;
                     vertical-align: middle;
 
+                    .yourChoiceEmployeeDropdown, .yourChoiceEmployerDropdown {
+
+                        list-style: none;
+                        transition: all 1.5s ease-in-out;
+                        transition-delay: .3s;
+
+                        &List {
+                            position: relative;
+                            z-index: 10;
+                            margin: 0;
+                            padding: 37px;
+                            color: $colorLogo;
+                            font-weight: 800;
+                            font-size: 18px;
+                            text-align: center;
+                            text-transform: uppercase;
+
+                            a {
+                                color: $colorLogo;
+                                text-decoration: none;
+                                cursor: pointer;
+                                transition: 1s color ease-in-out;
+                            }
+                        }
+                    }
+
                     &.open {
                         top: 25%;
                         height: 50%;
@@ -68,7 +94,7 @@
                             transition: all 1.5s ease-in-out;
                             transition-delay: .3s;
     
-                            li {
+                            &List {
                                 position: relative;
                                 z-index: 10;
                                 margin: 0;
@@ -82,12 +108,17 @@
                                 a {
                                     color: $colorLogo;
                                     text-decoration: none;
+                                    cursor: pointer;
                                     transition: 1s color ease-in-out;
     
                                     &:hover {
                                         color: darken( $colorLogo, 30%);
                                     }
                                 }
+                            }
+
+                            .glyphicon {
+                                font-size: 24px;
                             }
                         }
                     }
@@ -99,6 +130,7 @@
                         font-weight: 800;
                         font-size: 4em;
                         text-align: center;
+                        cursor: pointer;
                         text-transform: uppercase;
                     }
                 }

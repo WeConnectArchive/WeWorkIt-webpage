@@ -22,11 +22,11 @@ body {
     .flex-nav {
         
 
-        .header, .hp{
+        .header.hp{
             position: fixed;
-            top: 0;
+            top: 0vh;
+            height: 130px;
             z-index: 1000;
-            height: 159px;
             background-color: transparent;
 
             &:hover {
@@ -55,11 +55,14 @@ body {
         transition: all .5s ease .1s;
         -webkit-transition: all .5s ease .1s;
 
+        &.login {
+            bottom: initial;
+        }
         .nav {
 
             &Contents {
                 position: relative;
-                display: inline-block;
+                display: inline-flex;
                 margin: 0 auto;
   
                 &List {
@@ -70,21 +73,21 @@ body {
                     text-align: center;
                     text-transform: uppercase;
 
-                    li {
+                    &C {
                         float: left;
                         min-width: 100px;
-                        max-height: 120px;
+                        max-height: 10vh;
                         opacity: 1;
                         list-style-type: none;
                         transition: all .5s ease .1s;
                         -webkit-transition: all .5s ease .1s;
 
                         a {
-                            height: 120px;
+                            height: 10vh;
                             color: $white;
                             font-weight: 700;
                             font-size: 1em;
-                            line-height: 9em;
+                            line-height: 7em;
                             text-decoration: none;
                             transition: color .5s ease-in-out;
 
@@ -94,9 +97,9 @@ body {
                         }
                     }
 
-                    &Logo {
+                    &CLogo {
                         height: 140px;
-                        transform: scale(.6);
+                        transform: scale(0.6) translateY(-25px);
                     }
                 }
             }

@@ -17,6 +17,21 @@ jQuery(function($){
     
     }
 );
+
+$(document).ready(function () {
+
+    var wrap = $('#wrap');
+    var x = screen.height - 230;
+      $(window).on('scroll', 500, function(e) {
+      
+        if ($(this).scrollTop() > x) {
+          wrap.addClass("flex-nav");
+        } else {
+          wrap.removeClass("flex-nav");
+        }
+      
+      });
+});      
 function check() {
     document.getElementById("switch").checked = true;
 }
@@ -41,3 +56,54 @@ function checkeded(){
             company.style.display="block";
       }
 }
+
+$(document).ready(function () {
+
+    
+
+    var service_item1 = $(".yourChoiceEmployer");
+    var service_item2 = $(".yourChoiceEmployee");
+    
+
+      $(".yourChoiceEmployerTitle").click(function(){
+
+        if (!(service_item1.hasClass("open"))) {
+          
+          service_opened1 = $(this).parents(".yourChoiceEmployer");
+          service_opened1.addClass("open");
+        }
+
+      });
+
+      
+
+      $(".yourChoiceEmployeeTitle").click(function() {
+
+        if (!(service_item2.hasClass("open"))) {
+          service_opened2 = $(this).parents(".yourChoiceEmployee");
+          service_opened2.addClass("open");
+        }
+      });
+
+      $(".yourChoiceEmployeeTitle").click(function(){
+
+      if (!(service_item2.hasClass("open"))) {
+        
+        service_opened2 = $(this).parents(".yourChoiceEmployee");
+        service_opened2.addClass("open");
+      }
+
+      });
+
+      $(".glyphicon2").click(function() {
+
+              service_opened2.removeClass("open");
+              
+            });
+
+            $(".glyphicon1").click(function() {
+
+              service_opened1.removeClass("open");
+              
+            });
+    }); 
