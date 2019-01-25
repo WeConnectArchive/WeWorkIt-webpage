@@ -729,6 +729,15 @@ footer, body::after {
 .account .container.account .row .col-sm-8 .row .aAbout h3 {
   margin: 10px;
 }
+.account .container.account .row .col-sm-8 .row .aAboutPanel {
+  padding: 0 10px;
+}
+.account .container.account .row .col-sm-8 .row .aAboutPanelEdit {
+  display: block;
+}
+.account .container.account .row .col-sm-8 .row .aAboutPanelSave {
+  display: none;
+}
 .account .container.account .row .col-sm-8 .aCV {
   height: 700px;
   background-color: #fff;

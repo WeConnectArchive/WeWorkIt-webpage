@@ -88,9 +88,18 @@
                             margin: 10px;
                         }
 
-                        p {
+                        &Panel {
+                            
+                            padding: 0 10px;
 
-                        }
+                            &Edit {
+                                display: block;
+                            }
+                            &Save {
+                                display: none;
+                            }
+                        
+                        }    
                     }
                 }
                 .aCV {
