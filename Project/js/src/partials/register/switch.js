@@ -14,7 +14,7 @@ function checkeded(){
 
       if(visable.checked == false) {
         private.style.display="block";
-            company.style.display="none";
+        company.style.display="none";
 
       }
       else {

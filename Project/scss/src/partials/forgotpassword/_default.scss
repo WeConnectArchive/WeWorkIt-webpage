@@ -1,3 +1,74 @@
 .forgotpassword {
+    display: block;
+    width: 100%;
+    height: calc(100% - 240px);
+    padding: 100px 100px;
+    background-color: $darkenwhite;
 
+    &-content {
+        display: block;
+        width: 1055px;
+        height: 486px;
+        margin: 0 auto;
+        border: 1px solid $white;
+        border-radius: 5px;
+        background-color: $white;
+        -webkit-box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.35);
+        -moz-box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.35);
+        box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.35);
+        
+
+        &-box {
+            display: block;
+            margin: 90px 180px 90px 40px;
+
+            &-image {
+                display: inline-block;
+                margin: 0;
+                vertical-align: bottom;
+                
+            }
+
+            &-title {
+                display: inline-block;
+                width: 210px;
+                margin: 0 20px;
+                margin-bottom: 20px;
+                padding: 0;
+                color: $darkgrey;
+                font-size: 1.2em;
+            }
+
+            &-form {
+                float: right;
+                width: 300px;
+                margin: 0;
+
+                label {
+                    padding-left: 10px;
+                    margin: 53px 0 0 0;
+                }
+
+                &-inputs {
+                    width: 300px;
+                    height: 40px;
+                    line-height: 2;
+                    margin-top: 30px;
+                    border: 2px solid $grey;
+                    border-radius: 5px;
+                    padding: 5px;
+                    user-select: none;
+                }
+
+                .btn-primary {
+                    float: right;
+                    margin-top: 20px;
+                    border-color: $colorLogo !important;
+                    background-color: $colorLogo !important;
+                    padding: 7px 30px;
+                    
+                }
+            }
+        }
+    }
 }

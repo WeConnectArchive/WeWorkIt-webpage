@@ -1,11 +1,10 @@
 footer, body::after {
-    position: relative;
-    height: 130px;
     background-color: $black;
 }
 
 .footericon {
-    
+    width: 100%;
+    height: 130px;
     ul {
         position: absolute;
         left: calc(50vw - 80px);
@@ -25,7 +24,7 @@ footer, body::after {
                 margin: 0 10px;
                 color: $darkgrey;
                 font-size: 20px;
-                line-height: 50px;
+                line-height: 50px !important;
                 text-align: center;
                 text-decoration: none;
                 transition: .5s;
@@ -56,7 +55,7 @@ footer, body::after {
                         color: $red;
                     }
 
-                    //Tu się kończy.
+                    //Tu się kończy, spoko.
                     
                     &:nth-child(3) {
                         bottom: 0;

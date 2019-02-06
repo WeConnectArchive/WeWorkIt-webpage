@@ -1,4 +1,4 @@
-.loginPanel, .registerPanel, .profilePanel {
+.loginPanel, .registerPanel, .profilePanel, .forgotpasswordbody {
     max-height: 100vh;
     background-color: $bg-login;
 
@@ -9,7 +9,7 @@
         left: 0;
         z-index: 99;
         width: 100%;
-        height: 12vh;
+        height: auto;
         background: none repeat scroll 0 0 rgba(0, 0, 0, .6);
         text-align: center;
         transition: all .5s ease .1s;
@@ -50,14 +50,14 @@
             width: 500px;
             height: 600px;
             margin: 55px;
-            background-color: $white;
             border: 1px solid black;
+            background-color: $white;
             @include login-shadow;
 
             &-logo {
                 display: inline-block;
-                margin: 30px 0;
                 height: auto;
+                margin: 30px 0;
 
                 img {
                     width: 55%;
@@ -69,30 +69,30 @@
                 margin-left: 55px;
 
                 p {
-
                     padding: 0 20px;
-                    font-family: catamaran;
                     font-weight: 600;
                     font-size: 18px;
+                    font-family: catamaran;
                     text-transform: uppercase;
                 }
 
-                input[type=checkbox]{
-                    height: 0;
-                    width: 0;
+                input[type=checkbox] {
                     visibility: hidden;
+                    width: 0;
+                    height: 0;
                 }
 
                 label {
-                    cursor: pointer;
-                    text-indent: -9999px;
+                    position: relative;
                     top: 21px;
-                    width: 50px;
                     height: 25px;
-                    background: grey;
+                    width: 50px;
                     display: block;
                     border-radius: 100px;
-                    position: relative;
+                    background: $grey;
+                    cursor: pointer;
+                    text-indent: -9999px;
+                    
                 }
 
                 label:after {
@@ -121,8 +121,6 @@
                 }
             }
 
-
-
             #company {
                 display:none;
             }
@@ -141,10 +139,10 @@
 
                 .inputS {
                     position: relative;
-                    width: 80%;
                     height: 45px;
-                    margin: 16px auto;
+                    width: 80%;
                     padding: 11px 13px;
+                    margin: 16px auto;
                     font-weight: 300;
                     color: $black;
                     border: 1px solid #b3b7bb;
@@ -154,13 +152,13 @@
                     box-shadow: inset 0 0 0 1px #f5f5f6;
                     clear: both;
                 }
-                .forgotpassword {
+                .forgotpasswordbtn {
                     display: block;
                     text-align: left;
                     margin: 5px 0 45px 50px;
                     right: 0;
                     color: $red;
-                    font-size: .8em
+                    font-size: .8em;
 
                 }
 
@@ -168,7 +166,6 @@
                     clear: both;
                     width: 37%;
                     background-color: $colorLogo;
-                    // border: 1px solid $black;
                     border-radius:6px;
                     border: none;
                     margin: 0 3%;
