@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400");
 @import url("https://fonts.googleapis.com/css?family=Catamaran:500");
 @font-face {
@@ -63,6 +64,84 @@ body::-webkit-scrollbar-thumb {
 }
 .loginPanel .panel-login-container-logo img, .loginPanel .panel-register-container-logo img, .registerPanel .panel-login-container-logo img, .registerPanel .panel-register-container-logo img, .profilePanel .panel-login-container-logo img, .profilePanel .panel-register-container-logo img, .forgotpasswordbody .panel-login-container-logo img, .forgotpasswordbody .panel-register-container-logo img {
   width: 55%;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch {
+  width: 70%;
+  border-radius: 25px;
+  border: none;
+  background-color: #fff;
+  height: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input[type=radio], .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input[type=radio], .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input[type=radio], .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input[type=radio], .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input[type=radio], .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input[type=radio], .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input[type=radio], .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input[type=radio] {
+  display: none;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch label, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch label, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch label, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch label, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch label, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch label, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch label, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch label {
+  cursor: pointer;
+  width: 32%;
+  height: 25px;
+  display: inline-block;
+  padding: 16px 0;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+  transition: color 0.5s ease-in-out;
+  color: #4a4a4a;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch span, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch span, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch span, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch span, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch span, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch span, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch span, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch span {
+  position: absolute;
+  background-color: #48e1ee;
+  border-radius: 25px;
+  transition: all 0.3s ease-out;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: 1;
+  width: 33.333%;
+  height: 100%;
+  box-shadow: 3px 3px 9px -2px rgba(0, 0, 0, 0.75);
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span {
+  left: 50%;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3) {
+  color: #fff;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span {
+  left: 67%;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span {
+  left: 33%;
 }
 .loginPanel .panel-login-container .toggle, .loginPanel .panel-register-container .toggle, .registerPanel .panel-login-container .toggle, .registerPanel .panel-register-container .toggle, .profilePanel .panel-login-container .toggle, .profilePanel .panel-register-container .toggle, .forgotpasswordbody .panel-login-container .toggle, .forgotpasswordbody .panel-register-container .toggle {
   display: inline-flex;
@@ -212,7 +291,7 @@ body .fota img {
 body .flex-nav .header.hp {
   position: fixed;
   top: 0vh;
-  height: 130px;
+  height: 107px;
   z-index: 1000;
   background-color: transparent;
 }
@@ -280,6 +359,16 @@ body .header .navContentsListCLogo {
           transform: scale(0.6) translateY(-25px);
 }
 
+@media only screen and (max-width: 1760px) {
+  body .flex-nav .header.hp {
+    height: 100px;
+  }
+  body .wrap .header .navContentsListCLogo {
+    height: 140px;
+    -webkit-transform: scale(0.5) translateY(-45px);
+            transform: scale(0.5) translateY(-45px);
+  }
+}
 .weWorkItContainer, .aCV {
   min-height: 100%;
 }
@@ -387,24 +476,31 @@ body .header .navContentsListCLogo {
   height: 100%;
   text-align: center;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed {
   position: relative;
-  top: 40%;
   z-index: 999;
   display: inline-block;
   overflow: hidden;
-  width: 50%;
-  height: 5em;
+  height: 80px;
+  margin-top: calc(50% - 80px);
   text-align: center;
   transition: all 800ms ease-in-out;
   vertical-align: middle;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployerDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployerDropdown {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployeeDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployerDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployeeDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployerDropdown {
+  padding: 0;
   list-style: none;
   transition: all 1.5s ease-in-out;
   transition-delay: 0.3s;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployerDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployerDropdownList {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployeeDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployerDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployeeDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployerDropdownList {
   position: relative;
   z-index: 10;
   margin: 0;
@@ -415,17 +511,31 @@ body .header .navContentsListCLogo {
   text-align: center;
   text-transform: uppercase;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployeeDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee .yourChoiceEmployerDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployeeDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer .yourChoiceEmployerDropdownList a {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployeeDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployerDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployeeDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployerDropdownList a {
   color: #48e1ee;
   text-decoration: none;
   cursor: pointer;
   transition: 1s color ease-in-out;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open {
-  top: 25%;
-  height: 50%;
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open {
+  position: relative;
+  z-index: 999;
+  display: inline-block;
+  overflow: hidden;
+  height: 40%;
+  margin-top: calc(50% - 160px);
+  text-align: center;
+  transition: all 800ms ease-in-out;
+  vertical-align: middle;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown {
   position: relative;
   bottom: 0;
   padding: 0;
@@ -434,7 +544,10 @@ body .header .navContentsListCLogo {
   transition: all 1.5s ease-in-out;
   transition-delay: 0.3s;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList {
   position: relative;
   z-index: 10;
   margin: 0;
@@ -445,19 +558,29 @@ body .header .navContentsListCLogo {
   text-align: center;
   text-transform: uppercase;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList a, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList a {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList a {
   color: #48e1ee;
   text-decoration: none;
   cursor: pointer;
   transition: 1s color ease-in-out;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList a:hover, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList a:hover {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList a:hover,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList a:hover,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList a:hover,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList a:hover {
   color: #0d8590;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown .glyphicon, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown .glyphicon, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown .glyphicon, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown .glyphicon {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown .glyphicon,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown .glyphicon,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown .glyphicon,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown .glyphicon {
   font-size: 24px;
 }
-.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployeeTitle, .yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployerTitle {
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployeeTitle,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployerTitle {
   position: relative;
   margin: 0;
   color: #48e1ee;
@@ -472,7 +595,7 @@ body .header .navContentsListCLogo {
 }
 
 .controlPanel {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: block;
 }
@@ -784,10 +907,9 @@ footer, body::after {
 }
 
 .forgotpassword {
-  display: block;
   width: 100%;
-  height: calc(100% - 240px);
-  padding: 100px 100px;
+  height: calc(100% - 135px);
+  padding: 100px;
   background-color: #c6c6c6;
 }
 .forgotpassword-content {
@@ -846,4 +968,494 @@ footer, body::after {
   border-color: #48e1ee !important;
   background-color: #48e1ee !important;
   padding: 7px 30px;
+}
+
+@media only screen and (max-width: 1760px) {
+  .forgotpassword-content {
+    width: 1000px;
+    height: 468px;
+  }
+}
+.report {
+  display: block;
+  height: calc(100% - 130px);
+  padding: 100px;
+  background-color: #c6c6c6;
+}
+.report-content {
+  height: 100%;
+  margin: 100px !important;
+}
+.report-content-personal {
+  height: 100%;
+}
+.report-content-personal-title {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.5em;
+}
+.report-content-personal-form {
+  display: grid;
+}
+.report-content-personal-form-input {
+  width: 270px;
+  height: 35px;
+  border: 2px solid #48e1ee;
+}
+.report-content-personal-form-input.email {
+  width: 350px;
+}
+.report-content-personal-form-label {
+  color: #fff;
+  font-size: 24px;
+}
+.report-content-problem {
+  float: left;
+}
+.report-content-problem-form {
+  width: auto;
+  height: auto;
+}
+.report-content-problem-form-title {
+  color: #fff;
+  font-size: 24px;
+}
+.report-content-problem-form-input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border: 2px solid #48e1ee;
+}
+.report-content-problem-form-textarea {
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+  border: 2px solid #48e1ee;
+  padding: 20px;
+}
+.report-content-problem-form-button {
+  float: right;
+  width: 200px;
+  height: 50px;
+  margin-top: 40px;
+  border: 1px solid #48e1ee;
+  color: #fff;
+  font-size: 24px;
+  background-color: #48e1ee;
+}
+
+.ss .report {
+  display: block;
+  width: 100%;
+  height: calc(100% - 130px);
+  padding: 100px;
+  background-color: #c6c6c6;
+}
+.ss .report-content {
+  width: 100%;
+  height: 100%;
+  margin: 100px auto;
+}
+.header.formComissionheader {
+  position: relative;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+}
+
+.formComission,
+.searchPanel {
+  padding: 100px 0 50px 0;
+  background-color: #d5d5d5;
+}
+.formComission .row,
+.searchPanel .row {
+  margin: 0;
+}
+.formComission-section,
+.searchPanel-section {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.formComission-section-img,
+.searchPanel-section-img {
+  margin: 0 auto;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  background-color: #fff;
+}
+.formComission-section-img img,
+.searchPanel-section-img img {
+  max-width: 100%;
+}
+.formComission-section-info,
+.searchPanel-section-info {
+  width: 250px;
+  height: 300px;
+  margin: 50px auto 0 auto;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  background-color: #fff;
+}
+.formComission-section-info form,
+.searchPanel-section-info form {
+  margin: 0 auto;
+  min-width: 100%;
+}
+.formComission-section-buttonSend,
+.searchPanel-section-buttonSend {
+  min-width: 100%;
+  height: 60px;
+  padding: 0px 0px;
+  margin: 30px auto;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  background-color: #fff;
+}
+.formComission-section-buttonSend p,
+.searchPanel-section-buttonSend p {
+  margin: 0 auto;
+  font-size: 1.3em;
+  line-height: 1em;
+  text-align: center;
+  color: #48e1ee;
+}
+.formComission-section .section-category,
+.searchPanel-section .section-category {
+  position: relative;
+  width: 50%;
+  font-family: Arial;
+  /* Point the arrow upwards when the select box is open (active): */
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+.formComission-section .section-category:first-child,
+.searchPanel-section .section-category:first-child {
+  margin-bottom: 65px;
+}
+.formComission-section .section-category:nth-child(2),
+.searchPanel-section .section-category:nth-child(2) {
+  margin-bottom: 145px;
+}
+.formComission-section .section-category select,
+.searchPanel-section .section-category select {
+  display: none;
+  /*hide original SELECT element: */
+}
+.formComission-section .section-category .select-selected,
+.searchPanel-section .section-category .select-selected {
+  background-color: #fff;
+}
+.formComission-section .section-category .select-selected::after,
+.searchPanel-section .section-category .select-selected::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+.formComission-section .section-category .select-selected.select-arrow-active::after,
+.searchPanel-section .section-category .select-selected.select-arrow-active::after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+.formComission-section .section-category .select-items div,
+.formComission-section .section-category .select-selected,
+.searchPanel-section .section-category .select-items div,
+.searchPanel-section .section-category .select-selected {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 20px;
+  color: #48e1ee;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  border-radius: 4px;
+}
+.formComission-section .section-category .select-items,
+.searchPanel-section .section-category .select-items {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+.formComission-section .section-category .select-hide,
+.searchPanel-section .section-category .select-hide {
+  display: none;
+}
+.formComission-section .section-category .select-items div:hover, .formComission-section .section-category .same-as-selected,
+.searchPanel-section .section-category .select-items div:hover,
+.searchPanel-section .section-category .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.formComission-section-wybrane,
+.searchPanel-section-wybrane {
+  display: inline-block;
+  margin: 0 auto;
+  width: 50%;
+}
+.formComission-section-wybrane .selectedCategory,
+.searchPanel-section-wybrane .selectedCategory {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  margin: -10px 0 20px 0;
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  overflow-y: hidden;
+}
+.formComission-section-wybrane .selectedCategory option,
+.searchPanel-section-wybrane .selectedCategory option {
+  display: inline;
+  float: left;
+  color: #868686;
+  font-size: 1.2em;
+  font-family: "catamaran";
+}
+.formComission-section-wybrane .selectedCategory option::after,
+.searchPanel-section-wybrane .selectedCategory option::after {
+  content: ", ";
+}
+.formComission-section-wybrane .selectedCategory option:last-child::after,
+.searchPanel-section-wybrane .selectedCategory option:last-child::after {
+  content: ".";
+}
+.formComission-section-wybrane .selectedCategory:focus,
+.searchPanel-section-wybrane .selectedCategory:focus {
+  outline-width: 0;
+}
+.formComission-section-information,
+.searchPanel-section-information {
+  width: 100%;
+  display: inline-flex;
+}
+.formComission-section-date,
+.searchPanel-section-date {
+  width: 100%;
+}
+.formComission-section-date-box, .formComission-section-date input,
+.searchPanel-section-date-box,
+.searchPanel-section-date input {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+}
+.formComission-section-date-box::-webkit-input-placeholder, .formComission-section-date input::-webkit-input-placeholder,
+.searchPanel-section-date-box::-webkit-input-placeholder,
+.searchPanel-section-date input::-webkit-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-date-box:-ms-input-placeholder, .formComission-section-date input:-ms-input-placeholder,
+.searchPanel-section-date-box:-ms-input-placeholder,
+.searchPanel-section-date input:-ms-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-date-box::-ms-input-placeholder, .formComission-section-date input::-ms-input-placeholder,
+.searchPanel-section-date-box::-ms-input-placeholder,
+.searchPanel-section-date input::-ms-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-date-box::placeholder, .formComission-section-date input::placeholder,
+.searchPanel-section-date-box::placeholder,
+.searchPanel-section-date input::placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-date-box::-webkit-inner-spin-button, .formComission-section-date input::-webkit-inner-spin-button,
+.searchPanel-section-date-box::-webkit-inner-spin-button,
+.searchPanel-section-date input::-webkit-inner-spin-button {
+  display: none;
+}
+.formComission-section-date-box,
+.searchPanel-section-date-box {
+  padding: 0;
+  border: 1px solid #48e1ee;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  padding: 8px;
+  width: 40%;
+  background-color: #fff;
+}
+.formComission-section-prize,
+.searchPanel-section-prize {
+  float: right;
+  max-width: 50%;
+}
+.formComission-section-prize-box, .formComission-section-prize input,
+.searchPanel-section-prize-box,
+.searchPanel-section-prize input {
+  max-width: 100%;
+  height: 40px;
+  padding: 0px 18% 0 10%;
+  border: none;
+  float: right;
+}
+.formComission-section-prize-box::-webkit-input-placeholder, .formComission-section-prize input::-webkit-input-placeholder,
+.searchPanel-section-prize-box::-webkit-input-placeholder,
+.searchPanel-section-prize input::-webkit-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-prize-box:-ms-input-placeholder, .formComission-section-prize input:-ms-input-placeholder,
+.searchPanel-section-prize-box:-ms-input-placeholder,
+.searchPanel-section-prize input:-ms-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-prize-box::-ms-input-placeholder, .formComission-section-prize input::-ms-input-placeholder,
+.searchPanel-section-prize-box::-ms-input-placeholder,
+.searchPanel-section-prize input::-ms-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-prize-box::placeholder, .formComission-section-prize input::placeholder,
+.searchPanel-section-prize-box::placeholder,
+.searchPanel-section-prize input::placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-prize-box,
+.searchPanel-section-prize-box {
+  background-color: #fff;
+  border: 1px solid #48e1ee;
+  color: #48e1ee;
+  padding-right: 40%;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+}
+.formComission-section-prize-box p,
+.searchPanel-section-prize-box p {
+  padding: 8px;
+}
+.formComission-section-prize::after,
+.searchPanel-section-prize::after {
+  z-index: 12;
+  width: 20px;
+  position: relative;
+  padding: 0 20px;
+  content: "€";
+  left: -6px;
+  top: -32px;
+  float: right;
+  background-color: #fff;
+}
+.formComission-section-title,
+.searchPanel-section-title {
+  width: 100%;
+  height: 45px;
+  margin: 40px 0 10px 0;
+  font-family: "catamaran";
+}
+.formComission-section-title-box, .formComission-section-title input,
+.searchPanel-section-title-box,
+.searchPanel-section-title input {
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  color: #868686;
+  background-color: #fff;
+  font-size: 1.2em;
+}
+.formComission-section-title-box::-webkit-input-placeholder-shown, .formComission-section-title-box::-webkit-input-placeholder, .formComission-section-title input::-webkit-input-placeholder-shown, .formComission-section-title input::-webkit-input-placeholder,
+.searchPanel-section-title-box::-webkit-input-placeholder-shown,
+.searchPanel-section-title-box::-webkit-input-placeholder,
+.searchPanel-section-title input::-webkit-input-placeholder-shown,
+.searchPanel-section-title input::-webkit-input-placeholder {
+  text-align: left;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-title-box:-ms-input-placeholder-shown, .formComission-section-title-box:-ms-input-placeholder, .formComission-section-title input:-ms-input-placeholder-shown, .formComission-section-title input:-ms-input-placeholder,
+.searchPanel-section-title-box:-ms-input-placeholder-shown,
+.searchPanel-section-title-box:-ms-input-placeholder,
+.searchPanel-section-title input:-ms-input-placeholder-shown,
+.searchPanel-section-title input:-ms-input-placeholder {
+  text-align: left;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-title-box::-ms-input-placeholder-shown, .formComission-section-title-box::-ms-input-placeholder, .formComission-section-title input::-ms-input-placeholder-shown, .formComission-section-title input::-ms-input-placeholder,
+.searchPanel-section-title-box::-ms-input-placeholder-shown,
+.searchPanel-section-title-box::-ms-input-placeholder,
+.searchPanel-section-title input::-ms-input-placeholder-shown,
+.searchPanel-section-title input::-ms-input-placeholder {
+  text-align: left;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-title-box::placeholder-shown, .formComission-section-title-box::placeholder, .formComission-section-title input::placeholder-shown, .formComission-section-title input::placeholder,
+.searchPanel-section-title-box::placeholder-shown,
+.searchPanel-section-title-box::placeholder,
+.searchPanel-section-title input::placeholder-shown,
+.searchPanel-section-title input::placeholder {
+  text-align: left;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-section-title-box p,
+.searchPanel-section-title-box p {
+  padding: 8px;
+  margin: 0;
+}
+.formComission-section-about,
+.searchPanel-section-about {
+  width: 100%;
+  height: 100%;
+}
+.formComission-section-about-box, .formComission-section-about textarea,
+.searchPanel-section-about-box,
+.searchPanel-section-about textarea {
+  width: 100%;
+  padding: 15px;
+  min-height: 380px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  color: #868686;
+  background-color: #fff;
+  font-size: 1.4em;
+  font-family: "catamaran";
+}
+
+@media only screen and (min-width: 1800px) {
+  .formComission-Section-date {
+    width: 50%;
+  }
+}
+.searchPanel {
+  width: 100vw;
+  height: 100vh;
 }

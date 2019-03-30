@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="scss/builds-dev/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <title>WeWorkIt - Log in</title>
-    
+    <script src="js/builds-dev/scripts.js"></script>
 </head>
-<body class="loginPanel">
+<body class="loginPanel" onload="radiolog()">
 
     <header class="header login">
       <div class="nav loginNav" id="nav">
@@ -32,10 +32,35 @@
         <div class="panel-login-container-logo">
           <img src="zdjecia/weworkit1.png">
         </div>
-        <form class="formlogin" action="kurwa.php">
+        <form class="formSwitchPanel">
+          <fieldset class="toggle-switch">
+            <input type="radio" id="ppersonRadio" name="contact" class="pperson-radio" checked="checked" onclick="radiolog()">
+            <input type="radio" id="companyRadio" name="contact" class="company-radio" onclick="radiolog()">
+            <input type="radio" id="employeeRadio" name="contact" class="employee-radio" onclick="radiolog()">
+            <label for="ppersonRadio">Private person</label>
+            <label for="companyRadio">Company</label>
+            <label for="employeeRadio">Employee</label>
+            <span></span>
+          </fieldset>
+        </form>
+        <form class="formlogin" id="ppersonSection" action="kurwa.php">
           <input class="log inputS" type="text" name="login" placeholder="Login">
           <input class="pass inputS" type="password" name="password" placeholder="Password">
-          <a class="forgotpasswordbtn" href="forgotpassword.html">zapomniałeś hasła?</a>
+          <a class="forgotpasswordbtn" href="forgotpassword.html">1</a>
+          <input class="zaloguj inputS" type="submit" name="buttonLogin" value="Zaloguj">
+          <input class="register inputS" type="submit"  value="Zarejestruj">
+        </form>  
+        <form class="formlogin" id="companySection" action="kurwa.php">
+          <input class="log inputS" type="text" name="login" placeholder="Login">
+          <input class="pass inputS" type="password" name="password" placeholder="Password">
+          <a class="forgotpasswordbtn" href="forgotpassword.html">2</a>
+          <input class="zaloguj inputS" type="submit" name="buttonLogin" value="Zaloguj">
+          <input class="register inputS" type="submit"  value="Zarejestruj">
+        </form>  
+        <form class="formlogin" id="employeeSection" action="kurwa.php">
+          <input class="log inputS" type="text" name="login" placeholder="Login">
+          <input class="pass inputS" type="password" name="password" placeholder="Password">
+          <a class="forgotpasswordbtn" href="forgotpassword.html">3</a>
           <input class="zaloguj inputS" type="submit" name="buttonLogin" value="Zaloguj">
           <input class="register inputS" type="submit"  value="Zarejestruj">
         </form>  
@@ -71,6 +96,6 @@
           </ul>
         </div>
       </footer>
-    
+    <script src="js/builds-dev/scripts.js"></script>
 </body>
 </html>

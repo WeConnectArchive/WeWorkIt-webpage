@@ -43,56 +43,71 @@
                 text-align: center;
                 
 
-                .yourChoiceEmployee, .yourChoiceEmployer {
-                    position: relative;
-                    top: 40%;
-                    z-index: 999;
-                    display: inline-block;
-                    overflow: hidden;
-                    width: 50%;
-                    height: 5em;
-                    text-align: center;
-                    transition: all 800ms ease-in-out;
-                    vertical-align: middle;
+                .yourChoiceEmployee,
+                .yourChoiceEmployer {
 
-                    .yourChoiceEmployeeDropdown, .yourChoiceEmployerDropdown {
+                    &.closed {
+                        position: relative;
+                        z-index: 999;
+                        display: inline-block;
+                        overflow: hidden;
+                        height: 80px;
+                        margin-top: calc(50% - 80px);
+                        text-align: center;
+                        transition: all 800ms ease-in-out;
+                        vertical-align: middle;
 
-                        list-style: none;
-                        transition: all 1.5s ease-in-out;
-                        transition-delay: .3s;
+                        
 
-                        &List {
-                            position: relative;
-                            z-index: 10;
-                            margin: 0;
-                            padding: 37px;
-                            color: $colorLogo;
-                            font-weight: 800;
-                            font-size: 18px;
-                            text-align: center;
-                            text-transform: uppercase;
+                        .yourChoiceEmployeeDropdown,
+                        .yourChoiceEmployerDropdown {
+                            padding: 0;
+                            list-style: none;
+                            transition: all 1.5s ease-in-out;
+                            transition-delay: .3s;
 
-                            a {
+                            &List {
+                                position: relative;
+                                z-index: 10;
+                                margin: 0;
+                                padding: 37px;
                                 color: $colorLogo;
-                                text-decoration: none;
-                                cursor: pointer;
-                                transition: 1s color ease-in-out;
+                                font-weight: 800;
+                                font-size: 18px;
+                                text-align: center;
+                                text-transform: uppercase;
+
+                                a {
+                                    color: $colorLogo;
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                    transition: 1s color ease-in-out;
+                                }
                             }
                         }
                     }
 
                     &.open {
-                        top: 25%;
-                        height: 50%;
-                        
-                        .yourChoiceEmployeeDropdown, .yourChoiceEmployerDropdown {
+                        position: relative;
+                        z-index: 999;
+                        display: inline-block;
+                        overflow: hidden;
+                        height: 40%;
+                        margin-top: calc(50% - 160px);
+                        text-align: center;
+                        transition: all 800ms ease-in-out;
+                        vertical-align: middle;
+
+                        .yourChoiceEmployeeDropdown,
+                        .yourChoiceEmployerDropdown {
                             position: relative;
                             bottom: 0;
                             padding: 0;
                             opacity: 1;
-                            list-style: none;
+                            list-style: none; 
                             transition: all 1.5s ease-in-out;
                             transition-delay: .3s;
+                            
     
                             &List {
                                 position: relative;
@@ -112,7 +127,7 @@
                                     transition: 1s color ease-in-out;
     
                                     &:hover {
-                                        color: darken( $colorLogo, 30%);
+                                        color: darken($colorLogo, 30%);
                                     }
                                 }
                             }

@@ -1,0 +1,159 @@
+.report {
+    display: block;
+    height: calc(100% - 130px);
+    padding: 100px;
+    background-color: $darkenwhite;
+
+    &-content {
+        height: 100%;
+        margin: 100px !important;
+        
+
+        &-personal {
+            height: 100%;
+
+
+            &-title {
+                margin: 0;
+                padding: 0;
+                color: $white;
+                font-weight: 500;
+                font-size: 2.5em;
+            }
+
+            &-form {
+                display: grid;
+
+                &-input {
+                    width: 270px;
+                    height: 35px;
+                    border: 2px solid $colorLogo;
+
+                    &.email {
+                        width: 350px;
+                    }
+                }
+
+                &-label {
+                    
+                    color: $white;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &-problem {
+            float: left;
+
+            &-form {
+                width: auto;
+                height: auto;
+
+                &-title {
+
+                    color: $white;
+                    font-size: 24px;
+                }
+
+                &-input {
+                    width: 100%;
+                    height: 35px;
+                    margin-bottom: 10px;
+                    padding-left: 20px;
+                    border: 2px solid $colorLogo;
+                }
+
+                &-textarea {
+                    width: 100%;
+                    height: 50%;
+                    font-size: 20px;
+                    border: 2px solid $colorLogo;
+                    padding: 20px;
+                }
+
+                &-button {
+                    float: right;
+                    width: 200px;
+                    height: 50px;
+                    margin-top: 40px;
+                    border: 1px solid $colorLogo;
+                    color: $white;
+                    font-size: 24px;
+                    background-color: $colorLogo;
+                    
+                }
+            }
+        }
+    }
+}
+
+.ss{
+    .report {
+        display: block;
+        width: 100%;
+        height: calc(100% - 130px);
+        padding: 100px;
+        background-color: $darkenwhite;
+    
+        &-content {
+            width: 100%;
+            height: 100%;
+            margin: 100px auto;
+            
+    
+            &-personal {
+                
+    
+    
+                &-title {
+                    
+                    
+                    
+                    
+                }
+    
+                &-form {
+                    
+    
+                    &-input {
+                       
+    
+                        &.email {
+                            
+                        }
+                    }
+    
+                    &-label {
+                      
+                    }
+                }
+            }
+    
+            &-problem {
+                
+    
+                &-form {
+                    
+    
+                    &-title {
+    
+                       
+                    }
+    
+                    &-input {
+                        
+                    }
+    
+                    &-textarea {
+                        
+                    }
+    
+                    &-button {
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+}

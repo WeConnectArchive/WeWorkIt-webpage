@@ -1,8 +1,7 @@
 .forgotpassword {
-    display: block;
     width: 100%;
-    height: calc(100% - 240px);
-    padding: 100px 100px;
+    height: calc(100% - 135px);
+    padding: 100px;
     background-color: $darkenwhite;
 
     &-content {
@@ -69,6 +68,15 @@
                     
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1760px) {
+    .forgotpassword {
+        &-content {
+            width: 1000px;
+            height: 468px;
         }
     }
 }

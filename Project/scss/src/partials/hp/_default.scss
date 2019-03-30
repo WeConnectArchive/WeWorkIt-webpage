@@ -25,7 +25,7 @@ body {
         .header.hp{
             position: fixed;
             top: 0vh;
-            height: 130px;
+            height: 107px;
             z-index: 1000;
             background-color: transparent;
 
@@ -100,6 +100,30 @@ body {
                     &CLogo {
                         height: 140px;
                         transform: scale(0.6) translateY(-25px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1760px) {
+    body {
+        .flex-nav {
+            .header.hp{
+                height: 100px;
+            }
+        }
+        .wrap {
+            .header {
+                .nav {
+                    &Contents {
+                        &List {
+                            &CLogo {
+                                height: 140px;
+                                transform: scale(.5) translateY(-45px);
+                            }
+                        }
                     }
                 }
             }
