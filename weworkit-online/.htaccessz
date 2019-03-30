@@ -1,0 +1,6 @@
+RewriteEngine On
+DirectoryIndex index.html
+RewriteCond %{HTTP_HOST} weworkit-online.com [NC]
+RewriteCond %{HTTP_HOST} (.*).weworkit-online.com [NC]
+RewriteRule .* /%2%{REQUEST_URI}
+

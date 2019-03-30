@@ -1,0 +1,1381 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:500");
+@font-face {
+  font-family: "Catamaran";
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #000;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #48e1ee;
+  outline: 1px solid #333;
+}
+
+.loginPanel, .registerPanel, .profilePanel, .forgotpasswordbody {
+  max-height: 100vh;
+  background-color: #d9d8d6;
+}
+.loginPanel .header, .loginPanel .login, .loginPanel .register, .loginPanel .profile, .registerPanel .header, .registerPanel .login, .registerPanel .register, .registerPanel .profile, .profilePanel .header, .profilePanel .login, .profilePanel .register, .profilePanel .profile, .forgotpasswordbody .header, .forgotpasswordbody .login, .forgotpasswordbody .register, .forgotpasswordbody .profile {
+  position: relative;
+  top: 0vh;
+  bottom: inherit;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: auto;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: all 0.5s ease 0.1s;
+  -webkit-transition: all 0.5s ease 0.1s;
+}
+.loginPanel .header .navContentsListC, .loginPanel .header .loginNavContentsListC, .loginPanel .header .registerNavContentsListC, .loginPanel .header .profileNavContentsListC, .loginPanel .login .navContentsListC, .loginPanel .login .loginNavContentsListC, .loginPanel .login .registerNavContentsListC, .loginPanel .login .profileNavContentsListC, .loginPanel .register .navContentsListC, .loginPanel .register .loginNavContentsListC, .loginPanel .register .registerNavContentsListC, .loginPanel .register .profileNavContentsListC, .loginPanel .profile .navContentsListC, .loginPanel .profile .loginNavContentsListC, .loginPanel .profile .registerNavContentsListC, .loginPanel .profile .profileNavContentsListC, .registerPanel .header .navContentsListC, .registerPanel .header .loginNavContentsListC, .registerPanel .header .registerNavContentsListC, .registerPanel .header .profileNavContentsListC, .registerPanel .login .navContentsListC, .registerPanel .login .loginNavContentsListC, .registerPanel .login .registerNavContentsListC, .registerPanel .login .profileNavContentsListC, .registerPanel .register .navContentsListC, .registerPanel .register .loginNavContentsListC, .registerPanel .register .registerNavContentsListC, .registerPanel .register .profileNavContentsListC, .registerPanel .profile .navContentsListC, .registerPanel .profile .loginNavContentsListC, .registerPanel .profile .registerNavContentsListC, .registerPanel .profile .profileNavContentsListC, .profilePanel .header .navContentsListC, .profilePanel .header .loginNavContentsListC, .profilePanel .header .registerNavContentsListC, .profilePanel .header .profileNavContentsListC, .profilePanel .login .navContentsListC, .profilePanel .login .loginNavContentsListC, .profilePanel .login .registerNavContentsListC, .profilePanel .login .profileNavContentsListC, .profilePanel .register .navContentsListC, .profilePanel .register .loginNavContentsListC, .profilePanel .register .registerNavContentsListC, .profilePanel .register .profileNavContentsListC, .profilePanel .profile .navContentsListC, .profilePanel .profile .loginNavContentsListC, .profilePanel .profile .registerNavContentsListC, .profilePanel .profile .profileNavContentsListC, .forgotpasswordbody .header .navContentsListC, .forgotpasswordbody .header .loginNavContentsListC, .forgotpasswordbody .header .registerNavContentsListC, .forgotpasswordbody .header .profileNavContentsListC, .forgotpasswordbody .login .navContentsListC, .forgotpasswordbody .login .loginNavContentsListC, .forgotpasswordbody .login .registerNavContentsListC, .forgotpasswordbody .login .profileNavContentsListC, .forgotpasswordbody .register .navContentsListC, .forgotpasswordbody .register .loginNavContentsListC, .forgotpasswordbody .register .registerNavContentsListC, .forgotpasswordbody .register .profileNavContentsListC, .forgotpasswordbody .profile .navContentsListC, .forgotpasswordbody .profile .loginNavContentsListC, .forgotpasswordbody .profile .registerNavContentsListC, .forgotpasswordbody .profile .profileNavContentsListC {
+  position: relative;
+  top: 0;
+  max-height: 110px;
+}
+.loginPanel .panel-register, .registerPanel .panel-register, .profilePanel .panel-register, .forgotpasswordbody .panel-register {
+  height: auto !important;
+}
+.loginPanel .panel-register-container, .registerPanel .panel-register-container, .profilePanel .panel-register-container, .forgotpasswordbody .panel-register-container {
+  height: auto !important;
+  padding-bottom: 69px;
+}
+.loginPanel .panel-login, .loginPanel .panel-register, .registerPanel .panel-login, .registerPanel .panel-register, .profilePanel .panel-login, .profilePanel .panel-register, .forgotpasswordbody .panel-login, .forgotpasswordbody .panel-register {
+  text-align: center;
+}
+.loginPanel .panel-login-container, .loginPanel .panel-register-container, .registerPanel .panel-login-container, .registerPanel .panel-register-container, .profilePanel .panel-login-container, .profilePanel .panel-register-container, .forgotpasswordbody .panel-login-container, .forgotpasswordbody .panel-register-container {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 600px;
+  margin: 55px;
+  border: 1px solid black;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 6px #a19d98;
+}
+.loginPanel .panel-login-container-logo, .loginPanel .panel-register-container-logo, .registerPanel .panel-login-container-logo, .registerPanel .panel-register-container-logo, .profilePanel .panel-login-container-logo, .profilePanel .panel-register-container-logo, .forgotpasswordbody .panel-login-container-logo, .forgotpasswordbody .panel-register-container-logo {
+  display: inline-block;
+  height: auto;
+  margin: 30px 0;
+}
+.loginPanel .panel-login-container-logo img, .loginPanel .panel-register-container-logo img, .registerPanel .panel-login-container-logo img, .registerPanel .panel-register-container-logo img, .profilePanel .panel-login-container-logo img, .profilePanel .panel-register-container-logo img, .forgotpasswordbody .panel-login-container-logo img, .forgotpasswordbody .panel-register-container-logo img {
+  width: 55%;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch {
+  width: 70%;
+  border-radius: 25px;
+  border: none;
+  background-color: #fff;
+  height: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input[type=radio], .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input[type=radio], .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input[type=radio], .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input[type=radio], .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input[type=radio], .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input[type=radio], .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input[type=radio], .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input[type=radio] {
+  display: none;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch label, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch label, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch label, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch label, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch label, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch label, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch label, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch label {
+  cursor: pointer;
+  width: 32%;
+  height: 25px;
+  display: inline-block;
+  padding: 16px 0;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+  transition: color 0.5s ease-in-out;
+  color: #4a4a4a;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch span, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch span, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch span, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch span, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch span, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch span, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch span, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch span {
+  position: absolute;
+  background-color: #48e1ee;
+  border-radius: 25px;
+  transition: all 0.3s ease-out;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: 1;
+  width: 33.333%;
+  height: 100%;
+  box-shadow: 3px 3px 9px -2px rgba(0, 0, 0, 0.75);
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span {
+  left: 50%;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3), .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ label:last-of-type,
+.forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:first-of-type:checked ~ label:first-of-type,
+.forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ label:nth-of-type(2),
+.forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(3) ~ label:nth-of-type(3) {
+  color: #fff;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:last-of-type:checked ~ span {
+  left: 67%;
+}
+.loginPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .loginPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .registerPanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .registerPanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .profilePanel .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .profilePanel .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .forgotpasswordbody .panel-login-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span, .forgotpasswordbody .panel-register-container .formSwitchPanel .toggle-switch input:checked:nth-of-type(2) ~ span {
+  left: 33%;
+}
+.loginPanel .panel-login-container .toggle, .loginPanel .panel-register-container .toggle, .registerPanel .panel-login-container .toggle, .registerPanel .panel-register-container .toggle, .profilePanel .panel-login-container .toggle, .profilePanel .panel-register-container .toggle, .forgotpasswordbody .panel-login-container .toggle, .forgotpasswordbody .panel-register-container .toggle {
+  display: inline-flex;
+  float: left;
+  margin-left: 55px;
+}
+.loginPanel .panel-login-container .toggle p, .loginPanel .panel-register-container .toggle p, .registerPanel .panel-login-container .toggle p, .registerPanel .panel-register-container .toggle p, .profilePanel .panel-login-container .toggle p, .profilePanel .panel-register-container .toggle p, .forgotpasswordbody .panel-login-container .toggle p, .forgotpasswordbody .panel-register-container .toggle p {
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: catamaran;
+  text-transform: uppercase;
+}
+.loginPanel .panel-login-container .toggle input[type=checkbox], .loginPanel .panel-register-container .toggle input[type=checkbox], .registerPanel .panel-login-container .toggle input[type=checkbox], .registerPanel .panel-register-container .toggle input[type=checkbox], .profilePanel .panel-login-container .toggle input[type=checkbox], .profilePanel .panel-register-container .toggle input[type=checkbox], .forgotpasswordbody .panel-login-container .toggle input[type=checkbox], .forgotpasswordbody .panel-register-container .toggle input[type=checkbox] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.loginPanel .panel-login-container .toggle label, .loginPanel .panel-register-container .toggle label, .registerPanel .panel-login-container .toggle label, .registerPanel .panel-register-container .toggle label, .profilePanel .panel-login-container .toggle label, .profilePanel .panel-register-container .toggle label, .forgotpasswordbody .panel-login-container .toggle label, .forgotpasswordbody .panel-register-container .toggle label {
+  position: relative;
+  top: 21px;
+  height: 25px;
+  width: 50px;
+  display: block;
+  border-radius: 100px;
+  background: #afafaf;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+.loginPanel .panel-login-container .toggle label:after, .loginPanel .panel-register-container .toggle label:after, .registerPanel .panel-login-container .toggle label:after, .registerPanel .panel-register-container .toggle label:after, .profilePanel .panel-login-container .toggle label:after, .profilePanel .panel-register-container .toggle label:after, .forgotpasswordbody .panel-login-container .toggle label:after, .forgotpasswordbody .panel-register-container .toggle label:after {
+  content: "";
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.loginPanel .panel-login-container .toggle input:checked + label, .loginPanel .panel-register-container .toggle input:checked + label, .registerPanel .panel-login-container .toggle input:checked + label, .registerPanel .panel-register-container .toggle input:checked + label, .profilePanel .panel-login-container .toggle input:checked + label, .profilePanel .panel-register-container .toggle input:checked + label, .forgotpasswordbody .panel-login-container .toggle input:checked + label, .forgotpasswordbody .panel-register-container .toggle input:checked + label {
+  background: #48e1ee;
+}
+.loginPanel .panel-login-container .toggle input:checked + label:after, .loginPanel .panel-register-container .toggle input:checked + label:after, .registerPanel .panel-login-container .toggle input:checked + label:after, .registerPanel .panel-register-container .toggle input:checked + label:after, .profilePanel .panel-login-container .toggle input:checked + label:after, .profilePanel .panel-register-container .toggle input:checked + label:after, .forgotpasswordbody .panel-login-container .toggle input:checked + label:after, .forgotpasswordbody .panel-register-container .toggle input:checked + label:after {
+  left: calc(100% - 3px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.loginPanel .panel-login-container .toggle label:active:after, .loginPanel .panel-register-container .toggle label:active:after, .registerPanel .panel-login-container .toggle label:active:after, .registerPanel .panel-register-container .toggle label:active:after, .profilePanel .panel-login-container .toggle label:active:after, .profilePanel .panel-register-container .toggle label:active:after, .forgotpasswordbody .panel-login-container .toggle label:active:after, .forgotpasswordbody .panel-register-container .toggle label:active:after {
+  width: 35px;
+}
+.loginPanel .panel-login-container #company, .loginPanel .panel-register-container #company, .registerPanel .panel-login-container #company, .registerPanel .panel-register-container #company, .profilePanel .panel-login-container #company, .profilePanel .panel-register-container #company, .forgotpasswordbody .panel-login-container #company, .forgotpasswordbody .panel-register-container #company {
+  display: none;
+}
+.loginPanel .panel-login-container #private, .loginPanel .panel-register-container #private, .registerPanel .panel-login-container #private, .registerPanel .panel-register-container #private, .profilePanel .panel-login-container #private, .profilePanel .panel-register-container #private, .forgotpasswordbody .panel-login-container #private, .forgotpasswordbody .panel-register-container #private {
+  display: none;
+}
+.loginPanel .panel-login-container .visable, .loginPanel .panel-register-container .visable, .registerPanel .panel-login-container .visable, .registerPanel .panel-register-container .visable, .profilePanel .panel-login-container .visable, .profilePanel .panel-register-container .visable, .forgotpasswordbody .panel-login-container .visable, .forgotpasswordbody .panel-register-container .visable {
+  display: block;
+}
+.loginPanel .panel-login-container .formlogin, .loginPanel .panel-login-container .formregister, .loginPanel .panel-register-container .formlogin, .loginPanel .panel-register-container .formregister, .registerPanel .panel-login-container .formlogin, .registerPanel .panel-login-container .formregister, .registerPanel .panel-register-container .formlogin, .registerPanel .panel-register-container .formregister, .profilePanel .panel-login-container .formlogin, .profilePanel .panel-login-container .formregister, .profilePanel .panel-register-container .formlogin, .profilePanel .panel-register-container .formregister, .forgotpasswordbody .panel-login-container .formlogin, .forgotpasswordbody .panel-login-container .formregister, .forgotpasswordbody .panel-register-container .formlogin, .forgotpasswordbody .panel-register-container .formregister {
+  text-align: center;
+}
+.loginPanel .panel-login-container .formlogin .inputS, .loginPanel .panel-login-container .formregister .inputS, .loginPanel .panel-register-container .formlogin .inputS, .loginPanel .panel-register-container .formregister .inputS, .registerPanel .panel-login-container .formlogin .inputS, .registerPanel .panel-login-container .formregister .inputS, .registerPanel .panel-register-container .formlogin .inputS, .registerPanel .panel-register-container .formregister .inputS, .profilePanel .panel-login-container .formlogin .inputS, .profilePanel .panel-login-container .formregister .inputS, .profilePanel .panel-register-container .formlogin .inputS, .profilePanel .panel-register-container .formregister .inputS, .forgotpasswordbody .panel-login-container .formlogin .inputS, .forgotpasswordbody .panel-login-container .formregister .inputS, .forgotpasswordbody .panel-register-container .formlogin .inputS, .forgotpasswordbody .panel-register-container .formregister .inputS {
+  position: relative;
+  height: 45px;
+  width: 80%;
+  padding: 11px 13px;
+  margin: 16px auto;
+  font-weight: 300;
+  color: #000;
+  border: 1px solid #b3b7bb;
+  outline: none;
+  -webkit-appearance: none;
+  box-shadow: inset 0 0 0 1px #f5f5f6;
+  clear: both;
+}
+.loginPanel .panel-login-container .formlogin .forgotpasswordbtn, .loginPanel .panel-login-container .formregister .forgotpasswordbtn, .loginPanel .panel-register-container .formlogin .forgotpasswordbtn, .loginPanel .panel-register-container .formregister .forgotpasswordbtn, .registerPanel .panel-login-container .formlogin .forgotpasswordbtn, .registerPanel .panel-login-container .formregister .forgotpasswordbtn, .registerPanel .panel-register-container .formlogin .forgotpasswordbtn, .registerPanel .panel-register-container .formregister .forgotpasswordbtn, .profilePanel .panel-login-container .formlogin .forgotpasswordbtn, .profilePanel .panel-login-container .formregister .forgotpasswordbtn, .profilePanel .panel-register-container .formlogin .forgotpasswordbtn, .profilePanel .panel-register-container .formregister .forgotpasswordbtn, .forgotpasswordbody .panel-login-container .formlogin .forgotpasswordbtn, .forgotpasswordbody .panel-login-container .formregister .forgotpasswordbtn, .forgotpasswordbody .panel-register-container .formlogin .forgotpasswordbtn, .forgotpasswordbody .panel-register-container .formregister .forgotpasswordbtn {
+  display: block;
+  text-align: left;
+  margin: 5px 0 45px 50px;
+  right: 0;
+  color: #f00;
+  font-size: 0.8em;
+}
+.loginPanel .panel-login-container .formlogin input[type=submit], .loginPanel .panel-login-container .formregister input[type=submit], .loginPanel .panel-register-container .formlogin input[type=submit], .loginPanel .panel-register-container .formregister input[type=submit], .registerPanel .panel-login-container .formlogin input[type=submit], .registerPanel .panel-login-container .formregister input[type=submit], .registerPanel .panel-register-container .formlogin input[type=submit], .registerPanel .panel-register-container .formregister input[type=submit], .profilePanel .panel-login-container .formlogin input[type=submit], .profilePanel .panel-login-container .formregister input[type=submit], .profilePanel .panel-register-container .formlogin input[type=submit], .profilePanel .panel-register-container .formregister input[type=submit], .forgotpasswordbody .panel-login-container .formlogin input[type=submit], .forgotpasswordbody .panel-login-container .formregister input[type=submit], .forgotpasswordbody .panel-register-container .formlogin input[type=submit], .forgotpasswordbody .panel-register-container .formregister input[type=submit] {
+  clear: both;
+  width: 37%;
+  background-color: #48e1ee;
+  border-radius: 6px;
+  border: none;
+  margin: 0 3%;
+}
+.loginPanel .panel-login-container .formlogin input[class="register inputS"], .loginPanel .panel-login-container .formregister input[class="register inputS"], .loginPanel .panel-register-container .formlogin input[class="register inputS"], .loginPanel .panel-register-container .formregister input[class="register inputS"], .registerPanel .panel-login-container .formlogin input[class="register inputS"], .registerPanel .panel-login-container .formregister input[class="register inputS"], .registerPanel .panel-register-container .formlogin input[class="register inputS"], .registerPanel .panel-register-container .formregister input[class="register inputS"], .profilePanel .panel-login-container .formlogin input[class="register inputS"], .profilePanel .panel-login-container .formregister input[class="register inputS"], .profilePanel .panel-register-container .formlogin input[class="register inputS"], .profilePanel .panel-register-container .formregister input[class="register inputS"], .forgotpasswordbody .panel-login-container .formlogin input[class="register inputS"], .forgotpasswordbody .panel-login-container .formregister input[class="register inputS"], .forgotpasswordbody .panel-register-container .formlogin input[class="register inputS"], .forgotpasswordbody .panel-register-container .formregister input[class="register inputS"] {
+  width: 37%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin: 0 3%;
+}
+.loginPanel .panel-login-container .formlogin div, .loginPanel .panel-login-container .formregister div, .loginPanel .panel-register-container .formlogin div, .loginPanel .panel-register-container .formregister div, .registerPanel .panel-login-container .formlogin div, .registerPanel .panel-login-container .formregister div, .registerPanel .panel-register-container .formlogin div, .registerPanel .panel-register-container .formregister div, .profilePanel .panel-login-container .formlogin div, .profilePanel .panel-login-container .formregister div, .profilePanel .panel-register-container .formlogin div, .profilePanel .panel-register-container .formregister div, .forgotpasswordbody .panel-login-container .formlogin div, .forgotpasswordbody .panel-login-container .formregister div, .forgotpasswordbody .panel-register-container .formlogin div, .forgotpasswordbody .panel-register-container .formregister div {
+  display: inline;
+}
+.loginPanel .panel-login-container .formlogin div label, .loginPanel .panel-login-container .formregister div label, .loginPanel .panel-register-container .formlogin div label, .loginPanel .panel-register-container .formregister div label, .registerPanel .panel-login-container .formlogin div label, .registerPanel .panel-login-container .formregister div label, .registerPanel .panel-register-container .formlogin div label, .registerPanel .panel-register-container .formregister div label, .profilePanel .panel-login-container .formlogin div label, .profilePanel .panel-login-container .formregister div label, .profilePanel .panel-register-container .formlogin div label, .profilePanel .panel-register-container .formregister div label, .forgotpasswordbody .panel-login-container .formlogin div label, .forgotpasswordbody .panel-login-container .formregister div label, .forgotpasswordbody .panel-register-container .formlogin div label, .forgotpasswordbody .panel-register-container .formregister div label {
+  position: relative;
+  display: inline-flex;
+  margin: 20px 0;
+}
+.loginPanel .panel-login-container .formlogin div label input[type=checkbox], .loginPanel .panel-login-container .formregister div label input[type=checkbox], .loginPanel .panel-register-container .formlogin div label input[type=checkbox], .loginPanel .panel-register-container .formregister div label input[type=checkbox], .registerPanel .panel-login-container .formlogin div label input[type=checkbox], .registerPanel .panel-login-container .formregister div label input[type=checkbox], .registerPanel .panel-register-container .formlogin div label input[type=checkbox], .registerPanel .panel-register-container .formregister div label input[type=checkbox], .profilePanel .panel-login-container .formlogin div label input[type=checkbox], .profilePanel .panel-login-container .formregister div label input[type=checkbox], .profilePanel .panel-register-container .formlogin div label input[type=checkbox], .profilePanel .panel-register-container .formregister div label input[type=checkbox], .forgotpasswordbody .panel-login-container .formlogin div label input[type=checkbox], .forgotpasswordbody .panel-login-container .formregister div label input[type=checkbox], .forgotpasswordbody .panel-register-container .formlogin div label input[type=checkbox], .forgotpasswordbody .panel-register-container .formregister div label input[type=checkbox] {
+  margin-top: 6px;
+}
+.loginPanel .panel-login-container .formlogin div label a, .loginPanel .panel-login-container .formregister div label a, .loginPanel .panel-register-container .formlogin div label a, .loginPanel .panel-register-container .formregister div label a, .registerPanel .panel-login-container .formlogin div label a, .registerPanel .panel-login-container .formregister div label a, .registerPanel .panel-register-container .formlogin div label a, .registerPanel .panel-register-container .formregister div label a, .profilePanel .panel-login-container .formlogin div label a, .profilePanel .panel-login-container .formregister div label a, .profilePanel .panel-register-container .formlogin div label a, .profilePanel .panel-register-container .formregister div label a, .forgotpasswordbody .panel-login-container .formlogin div label a, .forgotpasswordbody .panel-login-container .formregister div label a, .forgotpasswordbody .panel-register-container .formlogin div label a, .forgotpasswordbody .panel-register-container .formregister div label a {
+  display: block;
+  text-align: left;
+}
+.loginPanel .panel-login-container .formlogin div input[class="register inputS"], .loginPanel .panel-login-container .formregister div input[class="register inputS"], .loginPanel .panel-register-container .formlogin div input[class="register inputS"], .loginPanel .panel-register-container .formregister div input[class="register inputS"], .registerPanel .panel-login-container .formlogin div input[class="register inputS"], .registerPanel .panel-login-container .formregister div input[class="register inputS"], .registerPanel .panel-register-container .formlogin div input[class="register inputS"], .registerPanel .panel-register-container .formregister div input[class="register inputS"], .profilePanel .panel-login-container .formlogin div input[class="register inputS"], .profilePanel .panel-login-container .formregister div input[class="register inputS"], .profilePanel .panel-register-container .formlogin div input[class="register inputS"], .profilePanel .panel-register-container .formregister div input[class="register inputS"], .forgotpasswordbody .panel-login-container .formlogin div input[class="register inputS"], .forgotpasswordbody .panel-login-container .formregister div input[class="register inputS"], .forgotpasswordbody .panel-register-container .formlogin div input[class="register inputS"], .forgotpasswordbody .panel-register-container .formregister div input[class="register inputS"] {
+  left: 15px;
+}
+.loginPanel #reklama, .registerPanel #reklama, .profilePanel #reklama, .forgotpasswordbody #reklama {
+  width: 970px;
+  height: 90px;
+  margin: 30px auto;
+  border: 2px solid #48e1ee;
+  background-color: grey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+  font-family: "Catamaran", "Arial Narrow", Arial, sans-serif !important;
+}
+body .fota {
+  height: 100vh;
+  overflow: hidden;
+}
+body .fota img {
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+}
+body .flex-nav .header.hp {
+  position: fixed;
+  top: 0vh;
+  height: 107px;
+  z-index: 1000;
+  background-color: transparent;
+}
+body .flex-nav .header.hp:hover {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+}
+body .flex-nav .header.hp a {
+  color: #000 !important;
+  transition: 0.5s color ease-in-out;
+}
+body .flex-nav .header.hp a:hover {
+  color: #c6c6c6 !important;
+}
+body .header {
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: all 0.5s ease 0.1s;
+  -webkit-transition: all 0.5s ease 0.1s;
+}
+body .header.login {
+  bottom: initial;
+}
+body .header .navContents {
+  position: relative;
+  display: inline-flex;
+  margin: 0 auto;
+}
+body .header .navContentsList {
+  float: left;
+  padding: 0;
+  font-weight: normal;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+body .header .navContentsListC {
+  float: left;
+  min-width: 100px;
+  max-height: 10vh;
+  opacity: 1;
+  list-style-type: none;
+  transition: all 0.5s ease 0.1s;
+  -webkit-transition: all 0.5s ease 0.1s;
+}
+body .header .navContentsListC a {
+  height: 10vh;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 7em;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+body .header .navContentsListC a:hover {
+  color: #c6c6c6;
+}
+body .header .navContentsListCLogo {
+  height: 140px;
+  -webkit-transform: scale(0.6) translateY(-25px);
+          transform: scale(0.6) translateY(-25px);
+}
+
+@media only screen and (max-width: 1760px) {
+  body .flex-nav .header.hp {
+    height: 100px;
+  }
+  body .wrap .header .navContentsListCLogo {
+    height: 140px;
+    -webkit-transform: scale(0.5) translateY(-45px);
+            transform: scale(0.5) translateY(-45px);
+  }
+}
+.weWorkItContainer, .aCV {
+  min-height: 100%;
+}
+.weWorkItContainer .main, .weWorkItContainer .aCV-main, .aCV .main, .aCV .aCV-main {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+}
+.weWorkItContainer .main .left, .weWorkItContainer .aCV-main .left, .aCV .main .left, .aCV .aCV-main .left {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-top: 4px solid #48e1ee;
+  border-left: 4px solid #48e1ee;
+  background-color: transparent;
+}
+.weWorkItContainer .main p, .weWorkItContainer .aCV-main p, .aCV .main p, .aCV .aCV-main p {
+  text-align: center;
+}
+.weWorkItContainer .main .right, .weWorkItContainer .aCV-main .right, .aCV .main .right, .aCV .aCV-main .right {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-right: 4px solid #333;
+  border-bottom: 4px solid #333;
+  background-color: transparent;
+}
+
+.ranking-Table {
+  width: auto;
+}
+.ranking-Table tr {
+  background-color: grey;
+}
+.ranking-Table tr th, .ranking-Table tr td {
+  padding: 7px 10px 10px 10px;
+}
+
+#aboutFirm {
+  position: relative;
+  top: 0;
+  width: inherit;
+  height: 100vh;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+.aboutfirmContainer .main {
+  top: 300px;
+  width: 800px;
+  height: 338px;
+}
+.aboutfirmContainer .main p {
+  position: relative;
+  top: -100px;
+  padding: 80px;
+  color: #333;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+.aboutfirmContainer .main .right {
+  top: calc(-200px - 4px);
+  left: calc(700px - 4px);
+}
+
+#yourChoice {
+  position: relative;
+  top: 100;
+  width: inherit;
+  height: 100vh;
+  font-family: "Catamaran";
+}
+#yourChoice img {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.yourChoiceContainer {
+  position: relative;
+  top: -100vh;
+  height: 100vh;
+  transition: all 500ms;
+  overflow: hidden;
+}
+.yourChoiceContainer h3 {
+  color: #c6c6c6;
+}
+.yourChoiceContainerMain {
+  width: 100%;
+  height: 100%;
+}
+.yourChoiceContainerMain .yourChoicePosition {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.yourChoiceContainerMain .yourChoicePosition .main {
+  top: 0;
+  z-index: 100;
+  height: 100%;
+  text-align: center;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed {
+  position: relative;
+  z-index: 999;
+  display: inline-block;
+  overflow: hidden;
+  height: 80px;
+  margin-top: calc(50% - 80px);
+  text-align: center;
+  transition: all 800ms ease-in-out;
+  vertical-align: middle;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployeeDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployerDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployeeDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployerDropdown {
+  padding: 0;
+  list-style: none;
+  transition: all 1.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployeeDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployerDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployeeDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployerDropdownList {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding: 37px;
+  color: #48e1ee;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployeeDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.closed .yourChoiceEmployerDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployeeDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.closed .yourChoiceEmployerDropdownList a {
+  color: #48e1ee;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s color ease-in-out;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open {
+  position: relative;
+  z-index: 999;
+  display: inline-block;
+  overflow: hidden;
+  height: 40%;
+  margin-top: calc(50% - 160px);
+  text-align: center;
+  transition: all 800ms ease-in-out;
+  vertical-align: middle;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown {
+  position: relative;
+  bottom: 0;
+  padding: 0;
+  opacity: 1;
+  list-style: none;
+  transition: all 1.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding: 37px;
+  color: #48e1ee;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList a,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList a {
+  color: #48e1ee;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s color ease-in-out;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdownList a:hover,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdownList a:hover,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdownList a:hover,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdownList a:hover {
+  color: #0d8590;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployeeDropdown .glyphicon,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployee.open .yourChoiceEmployerDropdown .glyphicon,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployeeDropdown .glyphicon,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployer.open .yourChoiceEmployerDropdown .glyphicon {
+  font-size: 24px;
+}
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployeeTitle,
+.yourChoiceContainerMain .yourChoicePosition .main .yourChoiceEmployerTitle {
+  position: relative;
+  margin: 0;
+  color: #48e1ee;
+  font-weight: 800;
+  font-size: 4em;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.yourChoiceContainerMain .yourChoicePosition .main:hover {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.controlPanel {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.controlPanel-carousel {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1150px;
+  height: 1000px;
+}
+.controlPanel-carousel .slick-carousel .slick-list {
+  padding: 60px 50px !important;
+}
+.controlPanel-carousel .slick-carousel .slick-list .slick-slide {
+  width: 345px;
+  height: 620px;
+  margin: 20px;
+  background-color: white;
+  margin-top: 105px;
+  box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.35);
+}
+.controlPanel-carousel .slick-carousel .slick-list div[aria-hidden=true] {
+  box-shadow: none;
+}
+.controlPanel-carousel .slick-carousel .slick-list .slick-center {
+  z-index: 99;
+  -webkit-transform: scale(1.39161, 1.13);
+          transform: scale(1.39161, 1.13);
+  top: 30px;
+  transition: all 300ms ease-in-out;
+}
+
+body.visiting-card {
+  background-color: grey !important;
+  overflow: hidden;
+}
+body.visiting-card .visiting-card-container {
+  width: 900px;
+  height: 450px;
+  margin: 250px auto;
+  background-color: white;
+  border: 2px solid black;
+}
+body.visiting-card .visiting-card-container .container .row .col-3 .row .vImg {
+  margin: 25px 25px;
+}
+body.visiting-card .visiting-card-container .container .row .col-3 .row .vImg img {
+  height: 200px;
+  width: 166px;
+  border-radius: 4px;
+}
+body.visiting-card .visiting-card-container .container .row .col-3 .row .vLogo img {
+  width: 166px;
+  height: 90px;
+  margin: 0 25px;
+}
+body.visiting-card .visiting-card-container .container .row .col-3 .row button {
+  margin: 25px 0 0 75px;
+}
+
+footer, body::after {
+  background-color: #000;
+}
+
+.footericon {
+  width: 100%;
+  height: 130px;
+}
+.footericon ul {
+  position: absolute;
+  left: calc(50vw - 80px);
+  display: flex;
+  margin: 40px 0;
+  padding: 0;
+}
+.footericon ul li {
+  list-style: none;
+}
+.footericon ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  color: #333;
+  font-size: 20px;
+  line-height: 50px !important;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.footericon ul li a span {
+  position: absolute;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.footericon ul li a span:nth-child(1), .footericon ul li a span:nth-child(3) {
+  width: 100%;
+  height: 1px;
+  background: #333;
+}
+.footericon ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+.footericon ul li a span:nth-child(1), .footericon ul li a span:nth-child(3) {
+  width: 100%;
+  height: 1px;
+  color: #f00;
+}
+.footericon ul li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+.footericon ul li a span:nth-child(2), .footericon ul li a span:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  background: #333;
+}
+.footericon ul li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+.footericon ul li a:hover span:nth-child(1) {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.footericon ul li a:hover span:nth-child(3) {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.footericon ul li a:hover span:nth-child(2) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.footericon ul li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+.footericon ul li a:hover span:nth-child(4) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.account {
+  background-color: #fff;
+}
+.account .container.account {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.account .container.account .row .col-sm-3 {
+  width: 250px;
+  margin: 5px;
+}
+.account .container.account .row .col-sm-3.col-1 .aImg {
+  height: 300px;
+}
+.account .container.account .row .col-sm-3.col-1 .aImg img {
+  width: 244px;
+  height: 294px;
+}
+.account .container.account .row .col-sm-3 .aLogo {
+  margin: 20px 0 13px 0;
+}
+.account .container.account .row .col-sm-3 .aLogo img {
+  height: 125px;
+}
+.account .container.account .row .col-sm-3 .aInfo, .account .container.account .row .col-sm-3 .aSpecial, .account .container.account .row .col-sm-3 .aOpinions {
+  width: 250px;
+  height: 200px;
+  margin: 10px 0 10px 0;
+  box-shadow: 2px 3px 14px -1px rgba(0, 0, 0, 0.75);
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+}
+.account .container.account .row .col-sm-8 .row {
+  width: 100%;
+  margin: 5px;
+}
+.account .container.account .row .col-sm-8 .row .aRanking {
+  width: 100%;
+  height: 50px;
+  box-shadow: 2px 3px 14px -1px rgba(0, 0, 0, 0.75);
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+}
+.account .container.account .row .col-sm-8 .row .aRanking span {
+  margin-left: 16px;
+  line-height: 3.4em;
+}
+.account .container.account .row .col-sm-8 .row .aRanking span h4 {
+  display: inline;
+}
+.account .container.account .row .col-sm-8 .row .aRanking span p {
+  display: contents;
+  line-height: 1.5em;
+}
+.account .container.account .row .col-sm-8 .row .aAbout {
+  width: 100%;
+  height: calc(100% + 10px);
+  margin: 19px 0 19px 0;
+  padding: 10px 0;
+  box-shadow: 2px 3px 14px -1px rgba(0, 0, 0, 0.75);
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+}
+.account .container.account .row .col-sm-8 .row .aAbout h3 {
+  margin: 10px;
+}
+.account .container.account .row .col-sm-8 .row .aAboutPanel {
+  padding: 0 10px;
+}
+.account .container.account .row .col-sm-8 .row .aAboutPanelEdit {
+  display: block;
+}
+.account .container.account .row .col-sm-8 .row .aAboutPanelEdit input {
+  float: right;
+  width: 90px;
+  height: 35px;
+  margin: 12px 0;
+}
+.account .container.account .row .col-sm-8 .row .aAboutPanelSave {
+  display: none;
+}
+.account .container.account .row .col-sm-8 .row .aAboutPanelSave textarea {
+  height: 92px;
+  border: 2px solid #0062cc;
+  border-radius: 3px;
+  white-space: nowrap;
+  font-size: 16px;
+  resize: none;
+}
+.account .container.account .row .col-sm-8 .row .aAboutPanelSave input {
+  float: right;
+  width: 90px;
+  height: 35px;
+}
+.account .container.account .row .col-sm-8 .aCV {
+  height: 700px;
+  background-color: #fff;
+}
+.account .container.account .row .col-sm-8 .aCV-main {
+  height: 100%;
+}
+.account .container.account .row .col-sm-8 .aCV-main .right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content-header {
+  width: calc(100% - 100px);
+  margin: 0 50px 0 50px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 3px solid #48e1ee;
+  color: #7c7f84;
+  text-transform: uppercase;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content-list.saved-exs {
+  display: block;
+  margin: 40px 50px 0 30px;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content-list.saved-exs-saved {
+  margin: 10px 0;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content-list.editing {
+  display: none;
+  margin: 40px 50px 0 30px;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content-list-ex-editing {
+  margin: 10px 0;
+}
+.account .container.account .row .col-sm-8 .aCV-main-content-list-ex-editing:first-child {
+  display: none;
+}
+
+.forgotpassword {
+  width: 100%;
+  height: calc(100% - 135px);
+  padding: 100px;
+  background-color: #c6c6c6;
+}
+.forgotpassword-content {
+  display: block;
+  width: 1055px;
+  height: 486px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.35);
+}
+.forgotpassword-content-box {
+  display: block;
+  margin: 90px 180px 90px 40px;
+}
+.forgotpassword-content-box-image {
+  display: inline-block;
+  margin: 0;
+  vertical-align: bottom;
+}
+.forgotpassword-content-box-title {
+  display: inline-block;
+  width: 210px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+.forgotpassword-content-box-form {
+  float: right;
+  width: 300px;
+  margin: 0;
+}
+.forgotpassword-content-box-form label {
+  padding-left: 10px;
+  margin: 53px 0 0 0;
+}
+.forgotpassword-content-box-form-inputs {
+  width: 300px;
+  height: 40px;
+  line-height: 2;
+  margin-top: 30px;
+  border: 2px solid #afafaf;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.forgotpassword-content-box-form .btn-primary {
+  float: right;
+  margin-top: 20px;
+  border-color: #48e1ee !important;
+  background-color: #48e1ee !important;
+  padding: 7px 30px;
+}
+
+@media only screen and (max-width: 1760px) {
+  .forgotpassword-content {
+    width: 1000px;
+    height: 468px;
+  }
+}
+.report {
+  display: block;
+  height: calc(100% - 130px);
+  padding: 100px;
+  background-color: #c6c6c6;
+}
+.report-content {
+  height: 100%;
+  margin: 100px !important;
+}
+.report-content-personal {
+  height: 100%;
+}
+.report-content-personal-title {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.5em;
+}
+.report-content-personal-form {
+  display: grid;
+}
+.report-content-personal-form-input {
+  width: 270px;
+  height: 35px;
+  border: 2px solid #48e1ee;
+}
+.report-content-personal-form-input.email {
+  width: 350px;
+}
+.report-content-personal-form-label {
+  color: #fff;
+  font-size: 24px;
+}
+.report-content-problem {
+  float: left;
+}
+.report-content-problem-form {
+  width: auto;
+  height: auto;
+}
+.report-content-problem-form-title {
+  color: #fff;
+  font-size: 24px;
+}
+.report-content-problem-form-input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border: 2px solid #48e1ee;
+}
+.report-content-problem-form-textarea {
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+  border: 2px solid #48e1ee;
+  padding: 20px;
+}
+.report-content-problem-form-button {
+  float: right;
+  width: 200px;
+  height: 50px;
+  margin-top: 40px;
+  border: 1px solid #48e1ee;
+  color: #fff;
+  font-size: 24px;
+  background-color: #48e1ee;
+}
+
+.ss .report {
+  display: block;
+  width: 100%;
+  height: calc(100% - 130px);
+  padding: 100px;
+  background-color: #c6c6c6;
+}
+.ss .report-content {
+  width: 100%;
+  height: 100%;
+  margin: 100px auto;
+}
+.header.formComissionheader {
+  position: relative;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+}
+
+.formComission {
+  padding: 100px 0 50px 0;
+  background-color: #d5d5d5;
+}
+.formComission .row {
+  margin: 0;
+}
+.formComission-Section {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /* Point the arrow upwards when the select box is open (active): */
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+.formComission-Section-img {
+  margin: 0 auto;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  background-color: #fff;
+}
+.formComission-Section-img img {
+  max-width: 100%;
+}
+.formComission-Section-info {
+  width: 250px;
+  height: 300px;
+  margin: 50px auto 0 auto;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  background-color: #fff;
+}
+.formComission-Section form {
+  margin: 0 auto;
+  min-width: 100%;
+}
+.formComission-Section-buttonSend {
+  min-width: 100%;
+  height: 60px;
+  padding: 0px 0px;
+  margin: 30px auto;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  background-color: #fff;
+}
+.formComission-Section-buttonSend p {
+  margin: 0 auto;
+  font-size: 1.3em;
+  line-height: 1em;
+  text-align: center;
+  color: #48e1ee;
+}
+.formComission-Section-category {
+  position: relative;
+  font-family: Arial;
+}
+.formComission-Section-category:first-child {
+  margin-bottom: 65px;
+}
+.formComission-Section-category:nth-child(2) {
+  margin-bottom: 145px;
+}
+.formComission-Section .formComission-Section-category {
+  position: relative;
+  width: 50%;
+  font-family: Arial;
+}
+.formComission-Section select {
+  display: none;
+  /*hide original SELECT element: */
+}
+.formComission-Section .select-selected {
+  background-color: #fff;
+}
+.formComission-Section .select-selected::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+.formComission-Section .select-selected.select-arrow-active::after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+.formComission-Section .select-items div,
+.formComission-Section .select-selected {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 20px;
+  color: #48e1ee;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  border-radius: 4px;
+}
+.formComission-Section .select-items {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+.formComission-Section .select-hide {
+  display: none;
+}
+.formComission-Section .select-items div:hover, .formComission-Section .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.formComission-Section-wybrane {
+  display: inline-block;
+  margin: 0 auto;
+  width: 50%;
+}
+.formComission-Section-wybrane .selectedCategory {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  margin: -10px 0 20px 0;
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  overflow-y: hidden;
+}
+.formComission-Section-wybrane .selectedCategory option {
+  display: inline;
+  float: left;
+  color: #868686;
+  font-size: 1.2em;
+  font-family: "catamaran";
+}
+.formComission-Section-wybrane .selectedCategory option::after {
+  content: ", ";
+}
+.formComission-Section-wybrane .selectedCategory option:last-child::after {
+  content: ".";
+}
+.formComission-Section-wybrane .selectedCategory:focus {
+  outline-width: 0;
+}
+.formComission-Section-information {
+  width: 100%;
+  display: inline-flex;
+}
+.formComission-Section-date {
+  width: 100%;
+}
+.formComission-Section-date-box, .formComission-Section-date input {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+}
+.formComission-Section-date-box::-webkit-input-placeholder, .formComission-Section-date input::-webkit-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-date-box:-ms-input-placeholder, .formComission-Section-date input:-ms-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-date-box::-ms-input-placeholder, .formComission-Section-date input::-ms-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-date-box::placeholder, .formComission-Section-date input::placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-date-box::-webkit-inner-spin-button, .formComission-Section-date input::-webkit-inner-spin-button {
+  display: none;
+}
+.formComission-Section-date-box {
+  padding: 0;
+  border: 1px solid #48e1ee;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  padding: 8px;
+  width: 40%;
+  background-color: #fff;
+}
+.formComission-Section-prize {
+  float: right;
+  max-width: 50%;
+}
+.formComission-Section-prize-box, .formComission-Section-prize input {
+  max-width: 100%;
+  height: 40px;
+  padding: 0px 18% 0 10%;
+  border: none;
+  float: right;
+}
+.formComission-Section-prize-box::-webkit-input-placeholder, .formComission-Section-prize input::-webkit-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-prize-box:-ms-input-placeholder, .formComission-Section-prize input:-ms-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-prize-box::-ms-input-placeholder, .formComission-Section-prize input::-ms-input-placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-prize-box::placeholder, .formComission-Section-prize input::placeholder {
+  text-align: center;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-prize-box {
+  background-color: #fff;
+  border: 1px solid #48e1ee;
+  color: #48e1ee;
+  padding-right: 40%;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+}
+.formComission-Section-prize-box p {
+  padding: 8px;
+}
+.formComission-Section-prize::after {
+  z-index: 12;
+  width: 20px;
+  position: relative;
+  padding: 0 20px;
+  content: "€";
+  left: -6px;
+  top: -32px;
+  float: right;
+  background-color: #fff;
+}
+.formComission-Section-title {
+  width: 100%;
+  height: 45px;
+  margin: 40px 0 10px 0;
+  font-family: "catamaran";
+}
+.formComission-Section-title-box, .formComission-Section-title input {
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  color: #868686;
+  background-color: #fff;
+  font-size: 1.2em;
+}
+.formComission-Section-title-box::-webkit-input-placeholder-shown, .formComission-Section-title-box::-webkit-input-placeholder, .formComission-Section-title input::-webkit-input-placeholder-shown, .formComission-Section-title input::-webkit-input-placeholder {
+  text-align: left;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-title-box:-ms-input-placeholder-shown, .formComission-Section-title-box:-ms-input-placeholder, .formComission-Section-title input:-ms-input-placeholder-shown, .formComission-Section-title input:-ms-input-placeholder {
+  text-align: left;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-title-box::-ms-input-placeholder-shown, .formComission-Section-title-box::-ms-input-placeholder, .formComission-Section-title input::-ms-input-placeholder-shown, .formComission-Section-title input::-ms-input-placeholder {
+  text-align: left;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-title-box::placeholder-shown, .formComission-Section-title-box::placeholder, .formComission-Section-title input::placeholder-shown, .formComission-Section-title input::placeholder {
+  text-align: left;
+  color: #48e1ee;
+  font-size: 1.1em;
+}
+.formComission-Section-title-box p {
+  padding: 8px;
+  margin: 0;
+}
+.formComission-Section-about {
+  width: 100%;
+  height: 100%;
+}
+.formComission-Section-about-box, .formComission-Section-about textarea {
+  width: 100%;
+  padding: 15px;
+  min-height: 380px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #48e1ee;
+  color: #868686;
+  background-color: #fff;
+  font-size: 1.4em;
+  font-family: "catamaran";
+}
+
+@media only screen and (min-width: 1800px) {
+  .formComission-Section-date {
+    width: 50%;
+  }
+}

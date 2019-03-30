@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+      <ink rel="manifest" href="manifest.json">
+      <link rel="stylesheet" type="text/css" href="css/builds-dev/main.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <title>WeWorkIt - Start page</title>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/jquery.scrollTo.min.js"></script>
+      <script src="js/builds-dev/scripts.js"></script>
+      <script>
+const PATH = '/service-worker.js';
+
+let isServiceWorkersSupport = ('serviceWorker' in navigator);
+
+if (isServiceWorkersSupport) {
+    console.log('Will service worker register?');
+    navigator.serviceWorker.register(PATH).then(function () {
+        console.log("Yes it did.");
+    }).catch(function (err) {
+        console.log("No it didn't. This happened: ", err)
+    });
+}
+</script>
+</head>
+
+<body>
+<div class="wrap" id="wrap">  
+  <div id="mainpage" class="fota">
+      <img class="background" src="zdjecia/background.webp" alt="Something went wrong, please refresh your page."> 
+  </div> 
+    <header class="header hp"> 
+      <div class="nav" id="nav">
+        <div class="navContents">
+          <ul class="navContentsList">
+            <li class="navContentsListC"><a href="#">regulamin</a></li>
+            <li class="navContentsListC"><a href="#">contact</a></li>
+            <li class="navContentsListC"><a href="#">ranking</a></li>
+            <li class="navContentsListC"><a id="main"><img class="navContentsListCLogo" src="zdjecia/weworkit1.png" alt="Something went wrong, please refresh your page."></a></li>
+            <li class="navContentsListC"><a id="aboutus" href="#">about us</a></li>
+            <li class="navContentsListC"><a href="log/login.php">login</a></li>
+            <li class="navContentsListC"><a id="signin" href="#">register</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+  <section id="aboutFirm">
+    
+        <div class="aboutfirmContainer weWorkItContainer">
+          <div class="main">
+            <div class="left"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur deserunt harum? Facere corrupti iure quod asperiores quisquam illo quam officiis perferendis doloribus ipsa vero, porro accusantium minima dolore earum.</p>
+            <div class="right"></div>
+          </div>
+        </div>
+    
+  </section>
+
+  <section id="yourChoice">
+    <div id="secondpage" class="fota">
+      <img class="background" src="zdjecia/background2-_1_.webp" alt="Something went wrong, please refresh your page."> 
+    </div>
+    <div class="yourChoiceContainer">
+      <div class="yourChoiceContainerMain">
+        <div class="yourChoicePosition">
+            <div class="main">
+                <div class="yourChoiceEmployee closed">
+                  <p class="yourChoiceEmployeeTitle">Employee</p>
+                  <ul class="yourChoiceEmployeeDropdown">
+                    <li class="yourChoiceEmployeeDropdownList"><a href="log/login.php">LOGIN</a></li>
+                    <li class="yourChoiceEmployeeDropdownList"><a href="log/rEmployee.html">REGISTER</a></li>
+                    <li class="yourChoiceEmployeeDropdownList"><a><span class="glyphicon glyphicon2 glyphicon-remove-circle"></span></a></li>
+                  </ul>
+                </div>
+            </div>      
+        </div>
+
+        <div class="yourChoicePosition">
+            <div class="main">
+               
+                <div class="yourChoiceEmployer closed"><p class="yourChoiceEmployerTitle">Employer</p>
+                  <ul class="yourChoiceEmployerDropdown">
+                      <li class="yourChoiceEmployeeDropdownList"><a href="log/login.php">LOGIN</a></li>
+                      <li class="yourChoiceEmployeeDropdownList"><a href="log/rEmployer.html">REGISTER</a></li>
+                      <li class="yourChoiceEmployeeDropdownList"><a><span class="glyphicon glyphicon1 glyphicon-remove-circle"></span></a></li>
+                    </ul>
+                </div>
+             
+            </div>   
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footericon">
+      <ul>
+        <li class="fb-icon">
+          <a href="#">
+            <span>  </span>
+            <span>  </span>
+            <span>  </span>
+            <span>  </span>
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="gg-icon">
+          <a href="#">
+            <span>  </span>
+            <span>  </span>
+            <span>  </span>
+            <span>  </span>
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+ 
+</div> 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+</body>

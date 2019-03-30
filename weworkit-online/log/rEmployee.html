@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <ink rel="manifest" href="../manifest.json">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/builds-dev/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>WeWorkIt - Logowanie</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+        function check_pass() {
+    if (document.getElementById('zpassword').value ==
+            document.getElementById('rpassword').value) {
+        document.getElementById('submit').disabled = false;
+    } else {
+        document.getElementById('submit').disabled = true;
+    }
+}
+ </script>
+</head>
+
+<body class="registerPanel">
+
+   <header class="header register">
+      <div class="nav registerNav" id="nav">
+        <div class="navContents">
+          <ul class="navContentsList">
+            <li class="navContentsListC"><a href="#">regulamin</a></li>
+            <li class="navContentsListC"><a href="#">contact</a></li>
+            <li class="navContentsListC"><a href="#">ranking</a></li>
+            <li class="navContentsListC"><a id="main" href="../index.html"><img class="navContentsListCLogo" src="../zdjecia/weworkit1.png"></a></li>
+            <li class="navContentsListC"><a id="aboutus" href="#">about us</a></li>
+            <li class="navContentsListC"><a href="login.php">login</a></li>
+            <li class="navContentsListC"><a href="#" aria-disabled="true">register</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+ <p><a href="connnect.php">123</a></p>
+    <section id="panelRegister" class="panel-register">
+      <div class="panel-register-container">
+        <div class="panel-register-container-logo">
+          <img src="../zdjecia/weworkit1.png">
+        </div>
+       
+        <form action="connnect.php" method="post"  class="formregister">
+          <input class="log inputS" minlength="5" type="text" name="zlogin" placeholder="Login">
+          <input class="mail inputS" type="email" name="zmail" placeholder="E-mail">
+          <input class="pass inputS" minlength="5" type="password" name="zpassword" placeholder="Password" onchange='check_pass();'>
+          <input class="rpass inputS" minlength="5" type="password" name="rpassword" placeholder="Reapeat password" onchange='check_pass();'></br>
+          <div class="">
+            <label>
+            <input class="acceptreg checkbox" type="checkbox" value="acceptreg" name="check" id="racc"><a href="regulamin.html">Akceptuje Regulamin </a></input>
+            </label>
+                  <div id="html_element">
+       <input class="register inputS" type="submit" name="submit" value="Zarejestruj">
+               <div class="g-recaptcha" data-sitekey="6LdfV4MUAAAAAGBKp0Htf4ionHdc98Q8pO897lh5"></div></div>
+
+            </div>
+            </div>
+        </form>  
+      </div>
+    </section>
+
+    <footer class="footer fRegister">
+        <div class="footericon">
+          <ul>
+            <li class="fb-icon">
+              <a href="#">
+                <span>  </span>
+                <span>  </span>
+                <span>  </span>
+                <span>  </span>
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="gg-icon">
+              <a href="#">
+                <span>  </span>
+                <span>  </span>
+                <span>  </span>
+                <span>  </span>
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+   
+</body>
+</html>
