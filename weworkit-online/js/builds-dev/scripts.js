@@ -231,7 +231,7 @@ function checkeded(){
 
 function updateSelect(){
 	var x, i, j, selElmnt, a, b, c;
-	x = document.getElementsByClassName("formComission-Section-category");
+	x = document.getElementsByClassName("section-category");
 
     for (i = 0; i < x.length; i++) {
       selElmnt = x[i].getElementsByTagName("select")[0];
@@ -272,7 +272,7 @@ function updateSelect(){
 
 var x, i, j, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
-x = document.getElementsByClassName("formComission-Section-category");
+x = document.getElementsByClassName("section-category");
 for (i = 0; i < x.length; i++) {
     selElmnt = x[i].getElementsByTagName("select")[0];
     /* For each element, create a new DIV that will act as the selected item: */
