@@ -8,7 +8,7 @@
 
     <head>
         <ink rel="manifest" href="../manifest.json">
-        <link rel="stylesheet" type="text/css" href="../css/builds-dev/main.css">
+        <link rel="stylesheet" type="text/css" href="../scss/builds-dev/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -37,21 +37,21 @@
         </header>
         <section id="formComission" class="formComission">
             <div class="container">
-                <div class="row formComission-Section">
+                <div class="row formComission-section">
                     <div class="col-md-3">
                         <div class="row">
-                            <div class="formComission-Section-img">
+                            <div class="formComission-section-img">
                                 <img src="../zdjecia/account.png">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="formComission-Section-info">
+                            <div class="formComission-section-info">
 
                             </div>
                         </div>
                         <div class="row">
                             <form  action="commisionadd.php" method="post">
-                            <button type ="submit" name="submit" class="formComission-Section-buttonSend">
+                            <button type ="submit" name="submit" class="formComission-section-buttonSend">
                                 <p>Send</p>
                             </button>
                             
@@ -60,9 +60,9 @@
                     </div>
                     <div class="col-md-8">
                         <div class="row">
-                            <section class="formComission-Section">
+                            <section class="formComission-section">
                                 <div class="row">
-                                    <div class="formComission-Section-category">
+                                    <div class="section-category">
                                         <select name="type" class="selectCategory">
                                             <option hidden>Category</option>
                                             <option <?php if ($type == 1 ) echo 'selected'; value="1">Web site designer</option>
@@ -72,13 +72,13 @@
                                             <option <?php if ($type == 5 ) echo 'selected'; value="5">data base enginer</option>
                                         </select> 
                                     </div>
-                                    <div class="formComission-Section-wybrane">
+                                    <div class="formComission-section-wybrane">
                                         <select class="selectedCategory" onchange="removeOptions(0)" multiple="multiple">
                                         </select>
                                     </div>
                                 </div>
                                 <div class="row"> 
-                                    <div class="formComission-Section-category">
+                                    <div class="section-category">
                                         <select class="selectCategory">
                                             <option hidden>Mam dość</option>
                                             <option value="1">Maku</option>
@@ -88,7 +88,7 @@
                                             <option value="5">Piwo</option>
                                         </select>
                                     </div>
-                                    <div class="formComission-Section-wybrane">
+                                    <div class="formComission-section-wybrane">
                                         <select class="selectedCategory" multiple="multiple">
                                         </select>
                                     </div>
@@ -96,22 +96,22 @@
                             </section>
                         </div>
                         <div class="row">
-                            <div class="formComission-Section-information">
+                            <div class="formComission-section-information">
                                 <div class="formComission-Section-date opt">
                                     <input type="date" name="date">
                                 </div>
-                                <div class="formComission-Section-prize opt">
+                                <div class="formComission-section-prize opt">
                                     <input type="text" name="prize" placeholder="Prize">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                                 <form  action="commisionadd.php" method="post">
-                            <div class="formComission-Section-title">
+                            <div class="formComission-section-title">
                                 <input type="text" name="title" placeholder="Title">
                             </div>
                             
-                            <div class="formComission-Section-about">
+                            <div class="formComission-section-about">
                                 <textarea name="description" placeholder="About comission" ></textarea>
                             </div>
                         </div>
