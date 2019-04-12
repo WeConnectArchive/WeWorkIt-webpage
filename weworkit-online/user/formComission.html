@@ -9,7 +9,7 @@
     <head>
         <ink rel="manifest" href="../manifest.json">
         <link rel="stylesheet" type="text/css" href="../scss/builds-dev/main.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -36,91 +36,85 @@
             </div>
         </header>
         <section id="formComission" class="formComission">
-            <div class="container">
-                <div class="row formComission-section">
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="formComission-section-img">
-                                <img src="../zdjecia/account.png">
+            <form  action="commisionadd.php" method="post">
+                <div class="container">
+                    <div class="row formComission-section">
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="formComission-section-img">
+                                    <img src="../zdjecia/account.png">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="formComission-section-info">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button type ="submit" name="submit" class="formComission-section-buttonSend">
+                                    <p>Send</p>
+                                </button>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="formComission-section-info">
-
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="sectionCategory">
+                                    <div class="dropdown-toggles tggclose" id="toggle" onclick="opens(this)">
+                                        <span class="selectName">Category</span>
+                                        <i class="fas fa-chevron-up"></i>
+                                        <div class="selectCategory" id="drop-menu">
+                                            <div class="container-label">
+                                                <label><input type="checkbox" name="websitedesigner" value="1"><span class="label-text">Web site designer</span></label>
+                                                <label><input type="checkbox" name="programist" value="2"><span class="label-text">Programist</label>
+                                                <label><input type="checkbox" name="graphic" value="3"><span class="label-text">Graphic</label>
+                                                <label><input type="checkbox" name="moblieaplication" value="4"><span class="label-text">Mobile aplication</label>
+                                                <label><input type="checkbox" name="databaseenginer" value="5"><span class="label-text">Data base enginer</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="sectionCategory">
+                                    <div class="dropdown-toggles tggclose" id="toggles" onclick="opens(this)">
+                                        <span class="selectName">Programist Language</span>
+                                        <i class="fas fa-chevron-up"></i>
+                                        <div class="selectCategory" id="drop-menu">
+                                            <div class="container-label">
+                                                <label><input type="checkbox" name="check[]" value="1"><span class="label-text">Web site designer</label>
+                                                <label><input type="checkbox" name="check[]" value="2"><span class="label-text">Programist</label>
+                                                <label><input type="checkbox" name="check[]" value="3"><span class="label-text">Graphic</label>
+                                                <label><input type="checkbox" name="check[]" value="4"><span class="label-text">Mobile aplication</label>
+                                                <label><input type="checkbox" name="check[]" value="5"><span class="label-text">Data base enginer</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <form  action="commisionadd.php" method="post">
-                            <button type ="submit" name="submit" class="formComission-section-buttonSend">
-                                <p>Send</p>
-                            </button>
-                            
-                        </div>
                         
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <section class="formComission-section">
-                                <div class="row">
-                                    <div class="section-category">
-                                        <select name="type" class="selectCategory">
-                                            <option hidden>Category</option>
-                                            <option <?php if ($type == 1 ) echo 'selected'; value="1">Web site designer</option>
-                                            <option <?php if ($type == 2 ) echo 'selected'; value="2">Programist</option>
-                                            <option <?php if ($type == 3 ) echo 'selected'; value="3">graphic</option>
-                                            <option <?php if ($type == 4 ) echo 'selected'; value="4">mobile aplication</option>
-                                            <option <?php if ($type == 5 ) echo 'selected'; value="5">data base enginer</option>
-                                        </select> 
+                        
+                            <div class="row">
+                                <div class="formComission-section-information">
+                                    <div class="formComission-section-date opt">
+                                        <input type="date" name="date">
                                     </div>
-                                    <div class="formComission-section-wybrane">
-                                        <select class="selectedCategory" onchange="removeOptions(0)" multiple="multiple">
-                                        </select>
+                                    <div class="formComission-section-prize opt">
+                                        <input type="text" name="prize" placeholder="Prize">
                                     </div>
                                 </div>
-                                <div class="row"> 
-                                    <div class="section-category">
-                                        <select class="selectCategory">
-                                            <option hidden>Mam dość</option>
-                                            <option value="1">Maku</option>
-                                            <option value="2">Kurwa</option>
-                                            <option value="3">Wisisz</option>
-                                            <option value="4">Mi</option>
-                                            <option value="5">Piwo</option>
-                                        </select>
-                                    </div>
-                                    <div class="formComission-section-wybrane">
-                                        <select class="selectedCategory" multiple="multiple">
-                                        </select>
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="formComission-section-title">
+                                    <input type="text" name="title" placeholder="Title">
                                 </div>
-                            </section>
-                        </div>
-                        <div class="row">
-                            <div class="formComission-section-information">
-                                <div class="formComission-Section-date opt">
-                                    <input type="date" name="date">
-                                </div>
-                                <div class="formComission-section-prize opt">
-                                    <input type="text" name="prize" placeholder="Prize">
+                                <div class="formComission-section-about">
+                                    <textarea name="description" placeholder="About comission" ></textarea>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                                <form  action="commisionadd.php" method="post">
-                            <div class="formComission-section-title">
-                                <input type="text" name="title" placeholder="Title">
-                            </div>
-                            
-                            <div class="formComission-section-about">
-                                <textarea name="description" placeholder="About comission" ></textarea>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
         </section>
+
         <footer class="footer">
                 <div class="footericon">
                   <ul>

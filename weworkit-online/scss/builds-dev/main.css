@@ -1103,8 +1103,8 @@ footer, body::after {
   border: 1px solid #48e1ee;
   background-color: #fff;
 }
-.formComission-section-info form,
-.searchPanel-section-info form {
+.formComission-section form,
+.searchPanel-section form {
   margin: 0 auto;
   min-width: 100%;
 }
@@ -1127,6 +1127,117 @@ footer, body::after {
   line-height: 1em;
   text-align: center;
   color: #48e1ee;
+}
+.formComission-section .sectionCategory,
+.searchPanel-section .sectionCategory {
+  float: left;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.formComission-section .sectionCategory .dropdown-toggles,
+.searchPanel-section .sectionCategory .dropdown-toggles {
+  z-index: 1;
+  width: 300px;
+  background-color: #fff;
+  color: #afafaf;
+  border: 1px solid #afafaf;
+  margin: 0 0 90px 0;
+}
+.formComission-section .sectionCategory .dropdown-toggles .fas,
+.searchPanel-section .sectionCategory .dropdown-toggles .fas {
+  float: right;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.formComission-section .sectionCategory .dropdown-toggles.tggclose .fas,
+.searchPanel-section .sectionCategory .dropdown-toggles.tggclose .fas {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.formComission-section .sectionCategory .dropdown-toggles.tggclose .selectCategory,
+.searchPanel-section .sectionCategory .dropdown-toggles.tggclose .selectCategory {
+  display: none;
+}
+.formComission-section .sectionCategory .dropdown-toggles .selectName,
+.searchPanel-section .sectionCategory .dropdown-toggles .selectName {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.3em;
+  padding: 10px;
+}
+.formComission-section .sectionCategory .dropdown-toggles span, .formComission-section .sectionCategory .dropdown-toggles i,
+.searchPanel-section .sectionCategory .dropdown-toggles span,
+.searchPanel-section .sectionCategory .dropdown-toggles i {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.3em;
+  padding: 10px;
+}
+.formComission-section .sectionCategory .selectCategory,
+.searchPanel-section .sectionCategory .selectCategory {
+  position: absolute;
+  z-index: 10;
+  width: inherit;
+  height: auto;
+  background-color: #fff;
+  left: 0;
+  border: 1px solid #afafaf;
+  border-radius: 0 0 5px 5px;
+}
+.formComission-section .sectionCategory .selectCategory .container-label,
+.searchPanel-section .sectionCategory .selectCategory .container-label {
+  display: inline-grid;
+  padding: 0;
+  width: 100%;
+}
+.formComission-section .sectionCategory .selectCategory label,
+.searchPanel-section .sectionCategory .selectCategory label {
+  width: auto;
+  padding: 5px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px 0 0 0;
+  cursor: pointer;
+}
+.formComission-section .sectionCategory .selectCategory label:first-child,
+.searchPanel-section .sectionCategory .selectCategory label:first-child {
+  border-width: 0;
+}
+.formComission-section .sectionCategory .selectCategory label input[type=checkbox],
+.searchPanel-section .sectionCategory .selectCategory label input[type=checkbox] {
+  z-index: 20;
+  display: none;
+}
+.formComission-section .sectionCategory .selectCategory label input[type=checkbox] + .label-text::before,
+.searchPanel-section .sectionCategory .selectCategory label input[type=checkbox] + .label-text::before {
+  color: #48e1ee;
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  margin: 5px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  display: inline-block;
+}
+.formComission-section .sectionCategory .selectCategory label input[type=checkbox] + .label-text::before:hover::before,
+.searchPanel-section .sectionCategory .selectCategory label input[type=checkbox] + .label-text::before:hover::before {
+  font-family: "Font Awesome 5 Free";
+  content: "f14a";
+}
+.formComission-section .sectionCategory .selectCategory label input[type=checkbox]:checked + .label-text::before,
+.searchPanel-section .sectionCategory .selectCategory label input[type=checkbox]:checked + .label-text::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
 }
 .formComission-section .section-category,
 .searchPanel-section .section-category {

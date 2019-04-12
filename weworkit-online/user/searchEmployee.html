@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../scss/builds-dev/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <title>WeWorkIt - Search comission</title>
     </head>
 
@@ -34,7 +34,7 @@
                             <section class="searchPanel-section">
                                 <div class="row">
                                     <div class="section-category">
-                                        <select class="selectCategory">
+                                        <select>
                                             <option hidden>Category</option>
                                             <option value="1">Web site designer</option>
                                             <option value="2">Programist</option>
@@ -43,10 +43,14 @@
                                             <option value="5">data base enginer</option>
                                         </select> 
                                     </div>
+                                    <!-- <div class="formComission-section-wybrane">
+                                        <select class="selectedCategory" multiple="multiple">
+                                        </select>
+                                    </div> -->
                                 </div>
                                 <div class="row"> 
                                     <div class="section-category">
-                                        <select class="selectCategory">
+                                        <select>
                                             <option hidden>Mam dość</option>
                                             <option value="1">Maku</option>
                                             <option value="2">Kurwa</option>
@@ -55,6 +59,10 @@
                                             <option value="5">Piwo</option>
                                         </select>
                                     </div>
+                                    <!-- <div class="formComission-section-wybrane">
+                                        <select class="selectedCategory" multiple="multiple">
+                                        </select>
+                                    </div> -->
                                 </div>
                             </section>
                         </div>
@@ -100,7 +108,7 @@
             </div>
         </footer>
         
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        
         <script src="../js/builds-dev/scripts.js" type="text/javascript"></script>
         <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

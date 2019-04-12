@@ -32,12 +32,13 @@
                 margin: 50px auto 0 auto;
                 @include b-radius-cl;
                 background-color: $white;
+            }
             
                 form {
                     margin: 0 auto;
                     min-width: 100%;
                 }
-            }
+            
 
             &-buttonSend {
                 min-width: 100%;
@@ -53,6 +54,118 @@
                     line-height: 1em;
                     text-align: center;
                     color: $colorLogo;
+                }
+            }
+
+            .sectionCategory {
+                float: left;
+                position: relative;
+                display: block;
+                width: 100%;
+                height: auto;
+                
+                .dropdown-toggles {
+                    z-index: 1;
+                    width: 300px;
+                    background-color: $white;
+                    color: $grey;
+                    border: 1px solid $grey;
+                    margin: 0 0 90px 0;
+                  
+                  
+                    .fas {
+                        float:right;
+                        transition: transform 0.3s ease-in-out;
+                    }
+                  
+                    &.tggclose {
+                        
+                        .fas {
+                            transform: rotate(180deg);
+                        }
+
+                        .selectCategory { 
+                            display:none;
+                        }
+                    }
+                    &.tggopen {
+                    
+                    }
+                    .selectName {
+                        position: relative;
+                        display: inline-block;
+                        font-size: 18px;
+                        line-height: 1.3em;
+                        padding: 10px;
+                    }
+                  
+                    span, i {
+                        position: relative;
+                        display: inline-block;
+                        font-size: 18px;
+                        line-height: 1.3em;
+                        padding: 10px;
+                    } 
+                }
+                .selectCategory {
+                    position: absolute;
+                    z-index: 10;
+                    width: inherit;
+                    height: auto;
+                    background-color: $white;
+                    left: 0;
+                    border: 1px solid $grey;
+                    border-radius: 0 0 5px 5px;
+                  
+                    .container-label {
+                        display: inline-grid;
+                        padding: 0;
+                        width: 100%;
+                        
+                    }
+                  
+                    label {
+                        width: auto;
+                        padding: 5px ;
+                        border-style: solid;
+                        border-color: gray;
+                        border-width: 1px 0 0 0;
+                        cursor: pointer;
+                    
+                        &:first-child {
+                            border-width: 0;
+                        }
+                    
+                        input[type='checkbox'] {
+                            z-index: 20;
+                            display: none;
+                        
+                            + .label-text::before {
+                                color: #48e1ee;
+                                font-family: 'Font Awesome 5 Free';
+                                content: '\f0c8';
+                                margin: 5px;
+                                speak: none;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-variant: normal;
+                                text-transform: none;
+                                line-height: 1;
+                                -webkit-font-smoothing: antialiased;
+                                width: 1em;
+                                display: inline-block;
+                        
+                                &:hover::before {
+                                font-family: "Font Awesome 5 Free";
+                                content: 'f14a';
+                                }
+                            }
+                            &:checked + .label-text::before {
+                                font-family: 'Font Awesome 5 Free';
+                                content: '\f14a';
+                            }
+                        }
+                    }
                 }
             }
 

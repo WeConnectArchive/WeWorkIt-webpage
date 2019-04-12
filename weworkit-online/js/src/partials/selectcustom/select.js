@@ -8,34 +8,34 @@ function updateSelect(){
       b = document.getElementsByClassName("select-items")[i];
       b.innerHTML = "";
       
-      for (j = 1; j < selElmnt.length; j++) {
-        /* For each option in the original select element,
-        create a new DIV that will act as an option item: */
-        c = document.createElement("DIV");
-        c.innerHTML = selElmnt.options[j].innerHTML;
-        c.addEventListener("click", function(e) {
-          /* When an item is clicked, update the original select box,
-          and the selected item: */
-          var y, i, k, s, h;
-          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-          h = this.parentNode.previousSibling;
-          for (i = 0; i < s.length; i++) {
-            if (s.options[i].innerHTML == this.innerHTML) {
-              s.selectedIndex = i;
-              h.innerHTML = "Category";
-              y = this.parentNode.getElementsByClassName("same-as-selected");
-              for (k = 0; k < y.length; k++) {
-                y[k].removeAttribute("class");
-              }
-              this.setAttribute("class", "same-as-selected");
-              break;
-            }
-          }
-            h.click();
-        });
-        b.appendChild(c);
-      } 
-	  }
+		for (j = 1; j < selElmnt.length; j++) {
+			/* For each option in the original select element,
+			create a new DIV that will act as an option item: */
+			c = document.createElement("DIV");
+			c.innerHTML = selElmnt.options[j].innerHTML;
+				c.addEventListener("click", function(e) {
+					/* When an item is clicked, update the original select box,
+					and the selected item: */
+					var y, i, k, s, h;
+					s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+					h = this.parentNode.previousSibling;
+					for (i = 0; i < s.length; i++) {
+						if (s.options[i].innerHTML == this.innerHTML) {
+							s.selectedIndex = i;
+							h.innerHTML = "Category";
+							y = this.parentNode.getElementsByClassName("same-as-selected");
+								for (k = 0; k < y.length; k++) {
+									y[k].removeAttribute("class");
+								}
+							this.setAttribute("class", "same-as-selected");
+						break;
+					}
+				}
+				h.click();
+			});
+		b.appendChild(c);
+		} 
+	}
 }
 
 
@@ -52,9 +52,11 @@ for (i = 0; i < x.length; i++) {
     /* For each element, create a new DIV that will contain the option list: */
     b = document.createElement("DIV");
     b.setAttribute("class", "select-items select-hide");
-    b.setAttribute("onclick", "moveOptions("+i+")");
-    document.getElementsByClassName('selectedCategory')[i].setAttribute("onchange", "removeOptions("+i+")");
-
+	
+	if(selElmnt.classList[0]=="selectCategory"){
+		b.setAttribute("onclick", "moveOptions("+i+")");
+		document.getElementsByClassName('selectedCategory')[i].setAttribute("onchange", "removeOptions("+i+")");
+	}
     for (j = 1; j < selElmnt.length; j++) {
         /* For each option in the original select element,
         create a new DIV that will act as an option item: */
@@ -69,7 +71,9 @@ for (i = 0; i < x.length; i++) {
           for (i = 0; i < s.length; i++) {
             if (s.options[i].innerHTML == this.innerHTML) {
               s.selectedIndex = i;
-              h.innerHTML = "Programist Language";
+              h.innerHTML = "Programist Language2";
+			  if(selElmnt.classList[0]!="selectCategory")
+				   h.innerHTML = s.options[i].innerHTML;
               y = this.parentNode.getElementsByClassName("same-as-selected");
               for (k = 0; k < y.length; k++) {
                 y[k].removeAttribute("class");
@@ -152,4 +156,19 @@ const selectCategory = selectCategories[x];
     }
 }
 
-
+function opens(toggle) {
+  
+  var x = toggle.getElementsByClassName("selectCategory")[0];
+  
+        if(toggle.classList.contains("tggopen")) {
+          toggle.classList.remove("tggopen");
+          toggle.classList.add("tggclose");
+          x.style.display = "none";
+        }
+      
+        else if(toggle.classList.contains("tggclose")) {
+        toggle.classList.remove("tggclose");
+        toggle.classList.add("tggopen");
+        x.style.display = "block";
+        }
+}
